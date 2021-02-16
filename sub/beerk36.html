@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = 0, viewport-fit=cover"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="../assets/css/pages.css">
+    <title>BeerK</title>
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="skip">
+            <li><a href="#nav">메뉴바로가기</a></li>
+            <li><a href="#contents">본문바로가기</a></li>
+        </ul>
+        <header>
+            <div class="pc-wrap">
+                <h1 class="logo">
+                    <a href="javascript:void(0)">
+                        BK Co.,Ltd Import & Distribution pf world's finest beers
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li>ID : ABC0001</li>
+                        <li><a href="javascript:void(0)">수도권 도매 1파트&nbsp;<strong>김영업<span>님</span></strong></a></li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn btn_logout">로그아웃</a>
+                </nav>
+            </div>
+            <div class="mobile-wrap center">
+                <h2 class="title">Seg별 Listing 현황</h2>
+                <!-- <button class="btn btn-menu" type="button">메뉴 열기</button> -->
+                <button class="btn btn-back" type="button">뒤로가기</button>
+            </div>
+        </header>
+        <nav id="nav">
+            <h1 class="hidden">메인 내비게이션</h1>
+            <button class="btn btn-menu-close" type="button">메뉴 닫기</button>
+            <ul class="gnb">
+                <li class="gnb1">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 활동 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li>
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb2">
+                    <a href="javascript:void(0)"  class="on current"><span>도매장 수주 관리</span></a>
+                    <ul>
+                        <li><a href="#">수주 조회</a></li>
+                        <li><a href="#">수주 등록</a></li>
+                        <li><a href="#">반품 조회</a></li>
+                        <li><a href="#">반품 등록</a></li>
+                        <!-- <li><a href="#">도매장 기말 재고 등록</a></li>
+                        <li><a href="#">도매장 기말 재고 조회</a></li>
+                        <li><a href="#">도매장 평균 재고 관리</a></li>
+                        <li><a href="#"> 파트별 도매장 재고 현황</a></li> -->
+                    </ul>
+                </li>
+                <li class="gnb3">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 운영 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li>
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul> -->
+                    <!-- <ul>
+                        <li><a href="#">신규 입점 현황</a></li>
+                        <li><a href="#">개인 별 신규 영업 목표 실적</a></li>
+                        <li><a href="#">파트 별 목표 실적 현황</a></li>
+                        <li><a href="#">posm 등록</a></li>                       
+                    </ul> -->
+                </li>
+                <li class="gnb4">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>판매량 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb5">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>도매장 재고 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 판매량 등록</a></li>
+                        <li><a href="#">재널 별 판매량 등록</a></li>
+                        <li><a href="#">지역 별 판매량 등록</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb6">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>거래처 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb7">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>프로모션 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">visibility 영업 조회 등록</a></li> 
+                        <li><a href="#">visibility 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 대시보드</a></li> 
+                        <li><a href="#">gift 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 대시보드</a></li>
+                    </ul> -->
+                </li>
+            </ul>
+        </nav>
+        <section id="contents" class="salesActivitySegListing">
+           <div class="container">
+                <div class="headline clear">
+                    <h1 class="title-style">Seg별 Listing 현황</h1>
+                    <!-- <ul class="location">
+                        <li><a href="javascript:void(0)">홈</a></li>
+                        <li><a href="javascript:void(0)">수주 관리</a></li>
+                        <li><a href="javascript:void(0)" class="on">수주 조회</a></li>
+                    </ul> -->
+                </div>
+                <div class="info">
+                    <dl class="dl_col02">
+                        <dt>조회일자</dt>
+                        <dd>
+                            <div class="row">
+                                <select name="" id="">
+                                    <option value="">2020년</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">1월</option>
+                                </select>
+                            </div>
+                        </dd>
+                        <dt>거래처 담당</dt>
+                        <dd>
+                            <div class="row">
+                                <select name="" id="">
+                                    <option value="">전체</option>
+                                    <option value="">전체</option>
+                                    <option value="">전체</option>
+                                </select>
+                                <div class="result-box searchManager">
+                                    <input type="text" class="input_type02" onkeyup="searchsManger(this)" placeholder="담당자를 입력하세요" title="담당자">
+                                    <div class="searchList">
+                                        <div class="searchList-box">
+                                            <ul class="sManageList"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                    
+                    <div class="btn_wrap">
+                        <button type="button" class="btn btn_navy">조회</button> <!-- 01.22 조회 버튼 파란색으로 변경 -->
+                    </div>
+                </div>
+               
+                <div class="result-box box_flow">
+                    <div class="scroll-box">
+                        <div class="lBox">
+                            <table class="table01">
+                                <caption>Seg별 Listing 현황 리스트</caption>
+                                <thead>
+                                   <tr>
+                                       <th colspan="3">구분</th>
+                                       <th>Total</th>
+                                       <th>비중</th>
+                                   </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th rowspan="5">Seg.별</th>
+                                        <th rowspan="5">Seg. </th>
+                                        <th>Social <br>Drinking</th>
+                                        <td>2772</td>
+                                        <td>52%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Simply Food</th>
+                                        <td>2250</td>
+                                        <td>42%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Party Night </th>
+                                        <td>9</td>
+                                        <td>0.2%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Free Time</th>
+                                        <td>56</td>
+                                        <td>1.0%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>OFF</th>
+                                        <td>290</td>
+                                        <td>5.4%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="rBox">
+                            <div class="scroll-box">
+                                <table class="table01">
+                                    <caption>Seg별 Listing 현황 리스트</caption>
+                                    <thead>
+                                       <tr>
+                                            <th colspan="3" rowspan="2" class="fix-data">구분</th>
+                                            <th rowspan="2" class="fix-data">Total</th>
+                                            <th rowspan="2" class="fix-data">비중</th>
+    
+                                           <th colspan="8">칭따오</th>
+                                           <th colspan="11">에딩거</th>
+                                           <th colspan="9">캔 제품</th>
+                                       </tr>
+                                       <tr>
+                                           <th>330병</th>
+                                           <th>640병</th>
+                                           <th>Wheat</th>
+                                           <th>Stout</th>
+                                           <th>IPA</th>
+                                           <th>순생</th>
+                                           <th>Keg</th>
+                                           <th  class="gray02">칭따오 계</th>
+                                           
+                                           <th>헤페330</th>
+                                           <th>헤페500</th>
+                                           <th>둔켈330</th>
+                                           <th>둔켈500</th>
+                                           <th class="gray02">Bottle 계</th>
+            
+                                           <th>헤페 20L </th>
+                                           <th>헤페 30L </th>
+                                           <th>둔켈20L </th>
+                                           <th>우르바이스</th>
+                                           <th class="gray02">Keg 계</th>
+                                           <th class="gray02">에딩거 계</th>
+            
+                                           <th>라오샨 캔 </th>
+                                           <th>칭500캔</th>
+                                           <th>칭330캔 </th>
+                                           <th>Wheat캔 </th>
+                                           <th>Stout캔 </th>
+                                           <th>P.D캔</th>
+                                           <th>헤페캔 </th>
+                                           <th>둔켈캔 </th>
+                                           <th class="gray02">캔제품 계</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody><!--  Social Drinking -->
+                                        <tr>
+                                            <th rowspan="0" class="fix-data">Seg.별</th>
+                                            <th rowspan="5" class="fix-data">Seg. </th>
+                                            <th class="fix-data">Social <br>Drinking</th>
+                                            <td class="fix-data">2772</td>
+                                            <td class="fix-data">52%</td>
+    
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td   class="gray02">0</td>
+        
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td class="gray02">0</td>
+        
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td  class="gray02">0</td>
+                                            <td  class="gray02">0</td>
+        
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td  class="gray02">0</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="fix-data">Simply Food</th>
+                                            <td class="fix-data">2250</td>
+                                            <td class="fix-data">42%</td>
+    
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td   class="gray02">0</td>
+        
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td class="gray02">0</td>
+        
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td  class="gray02">0</td>
+                                            <td  class="gray02">0</td>
+        
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td  class="gray02">0</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="fix-data">Party Night </th>
+                                            <td class="fix-data">9</td>
+                                            <td class="fix-data">0.2%</td>
+    
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td   class="gray02">0</td>
+        
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td class="gray02">0</td>
+        
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td  class="gray02">0</td>
+                                            <td  class="gray02">0</td>
+        
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td  class="gray02">0</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="fix-data">Free Time</th>
+                                            <td class="fix-data">56</td>
+                                            <td class="fix-data">1.0%</td>
+    
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td   class="gray02">0</td>
+        
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td class="gray02">0</td>
+        
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td  class="gray02">0</td>
+                                            <td  class="gray02">0</td>
+        
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td  class="gray02">0</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="fix-data">OFF</th>
+                                            <td class="fix-data">290</td>
+                                            <td class="fix-data">5.4%</td>
+                                            
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td   class="gray02">0</td>
+        
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td class="gray02">0</td>
+        
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td  class="gray02">0</td>
+                                            <td  class="gray02">0</td>
+        
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td  class="gray02">0</td>
+                                        </tr>
+            
+                                    </tbody>  
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--//result-box-->
+                <div class="pagination">
+                    <ul>
+                        <li class="arrow_left">
+                            <a href="javascript:void(0)" title="이전"></a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="on">1</a></li>
+                        <li><a href="javascript:void(0)">2</a></li>
+                        <li><a href="javascript:void(0)">3</a></li>
+                        <li><a href="javascript:void(0)">4</a></li>
+                        <li><a href="javascript:void(0)">5</a></li>
+                        <li class="arrow_right">
+                            <a href="javascript:void(0)" title="다음"></a>
+                        </li>
+                    </ul>
+                    <div class="btn-area right">
+                        <button type="button" class="btn btn btn_navy btn-big btn-excel">EXCEL</button>
+                    </div>
+                </div> 
+           </div>
+        </section> <!--// contents -->
+    </div> <!--// wrapper -->
+    <script src="../assets/js/jquery-1.12.4.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+    <script src="../assets/js/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script>
+        
+        var sManagerData = [ //  임시 데이터
+            {'name':'김길동'},
+            {'name':'김길동'},
+            {'name':'김길동'},
+            {'name':'김길동'}
+        ];
+
+        
+       function searchsManger(event){
+            var $this = $(event),
+                $container = $this.parent(),
+                $listContainer = $container.find('.searchList');
+                $list = $listContainer.find('.sManageList');
+            if($this.val() =="" || $this.val() == null) alert('[입력값]을 입력해 주세요');
+            else{
+                $list.html('');
+                var keyword = "김";
+                $.each(sManagerData,function(i,item){
+                    var broken = item.name.split(keyword);
+                    var result = broken[0] + "<strong>"+keyword+"</strong>" + broken[1];
+                    var temp = '<li><button type="button" class="btn-put">'+result+'</button></li>';
+                    $list.append(temp);
+                })
+                $listContainer.show();
+            }
+            $list.find('.btn-put').on('click',function(){
+                $this.val($(this).text());
+                $listContainer.hide();
+            });
+        }
+    </script>
+</body>
+</html>

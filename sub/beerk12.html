@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = 0, viewport-fit=cover"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="../assets/css/pages.css">
+    <title>BeerK</title>
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="skip">
+            <li><a href="#nav">메뉴바로가기</a></li>
+            <li><a href="#contents">본문바로가기</a></li>
+        </ul>
+        <header>
+            <div class="pc-wrap">
+                <h1 class="logo">
+                    <a href="javascript:void(0)">
+                        BK Co.,Ltd Import & Distribution pf world's finest beers
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li>ID : ABC0001</li>
+                        <li><a href="javascript:void(0)">수도권 도매 1파트&nbsp;<strong>김영업<span>님</span></strong></a></li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn btn_logout">로그아웃</a>
+                </nav>
+            </div>
+            <div class="mobile-wrap center">
+                <h2 class="title">업장 상세 수정</h2>
+                <!-- <button class="btn btn-menu" type="button">메뉴 열기</button> -->
+                <button class="btn btn-back" type="button">뒤로가기</button>
+            </div>
+        </header>
+        <nav id="nav">
+            <h1 class="hidden">메인 내비게이션</h1>
+            <button class="btn btn-menu-close" type="button">메뉴 닫기</button>
+            <ul class="gnb">
+                <li class="gnb1">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 활동 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li>
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb2">
+                    <a href="javascript:void(0)"  class="on current"><span>도매장 수주 관리</span></a>
+                    <ul>
+                        <li><a href="#">수주 조회</a></li>
+                        <li><a href="#">수주 등록</a></li>
+                        <li><a href="#">반품 조회</a></li>
+                        <li><a href="#">반품 등록</a></li>
+                        <!-- <li><a href="#">도매장 기말 재고 등록</a></li>
+                        <li><a href="#">도매장 기말 재고 조회</a></li>
+                        <li><a href="#">도매장 평균 재고 관리</a></li>
+                        <li><a href="#"> 파트별 도매장 재고 현황</a></li> -->
+                    </ul>
+                </li>
+                <li class="gnb3">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 운영 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li>
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul> -->
+                    <!-- <ul>
+                        <li><a href="#">신규 입점 현황</a></li>
+                        <li><a href="#">개인 별 신규 영업 목표 실적</a></li>
+                        <li><a href="#">파트 별 목표 실적 현황</a></li>
+                        <li><a href="#">posm 등록</a></li>                       
+                    </ul> -->
+                </li>
+                <li class="gnb4">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>판매량 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb5">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>도매장 재고 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 판매량 등록</a></li>
+                        <li><a href="#">재널 별 판매량 등록</a></li>
+                        <li><a href="#">지역 별 판매량 등록</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb6">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>거래처 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb7">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>프로모션 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">visibility 영업 조회 등록</a></li> 
+                        <li><a href="#">visibility 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 대시보드</a></li> 
+                        <li><a href="#">gift 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 대시보드</a></li>
+                    </ul> -->
+                </li>
+            </ul>
+        </nav>
+        <section id="contents" class="businessRegister">
+           <div class="container">
+                <div class="headline clear">
+                    <h1 class="title-style">업장 상세 수정</h1>
+                    <!-- <ul class="location">
+                        <li><a href="javascript:void(0)">홈</a></li>
+                        <li><a href="javascript:void(0)">수주 관리</a></li>
+                        <li><a href="javascript:void(0)" class="on">수주 등록</a></li>
+                    </ul> -->
+                </div>
+               <form action="">
+                <div class="info_form clear">
+                    <div class="detail_wrap">
+                        <div class="detail clear">
+                            <div class="list">
+                                <dl>
+                                    <dt>업장명</dt>
+                                    <dd>
+                                        <p class="name">(신당)기배이자카야</p>
+                                    </dd>
+                                </dl>
+                                <dl class="col02">
+                                    <dt>업장 구분</dt>
+                                    <dd>
+                                       <div class="row">
+                                            <select name="" id="">
+                                                <option value="2020년">ON</option>
+                                                <option value="2020년">OFF</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="">Social Drinking</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="">이자카야</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="">Sub Seg2</option>
+                                            </select>
+                                       </div>
+                                    </dd>
+                                </dl>
+                                <dl class="col01">
+                                    <dt>등급</dt>
+                                    <dd>
+                                       <div class="row">
+                                            <select name="" id="">
+                                                <option value="2020년">A등급</option>
+                                                <option value="2020년">B등급</option>
+                                                <option value="2020년">C등급</option>
+                                            </select>
+                                       </div>
+                                    </dd>
+                                </dl>
+                                <dl class="col02">
+                                    <dt>대표자/연락처</dt>
+                                    <dd>
+                                        <div class="row row-input">
+                                            <input type="text" title="대표자 이름">
+                                            <input type="text" title="전화번호">
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="col02 col_btn01">
+                                    <dt>사업자 등록번호</dt>
+                                    <dd>
+                                        <div class="row">
+                                            <input type="text" value="123-45-67890" readonly="readonly" title="사업자 등록번호">
+                                            <button type="button" class="btn_navy">수정하기</button>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>사업장 전화번호</dt>
+                                    <dd>
+                                       <div class="row">
+                                         <input type="text" title="사업장 전화번호">
+                                       </div>
+                                    </dd>
+                                </dl>
+                                <dl class="col02">
+                                    <dt>키맨1 (이름/연락처)</dt>
+                                    <dd>
+                                        <div class="row row-input">
+                                            <input type="text" value="홍길동" title="이름">
+                                            <input type="text" value="010-0000-0000" title="전화번호">
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="col02">
+                                    <dt>키맨2 (이름/연락처)</dt>
+                                    <dd>
+                                        <div class="row row-input">
+                                            <input type="text" title="이름">
+                                            <input type="text" title="전화번호">
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="col02">
+                                    <dt>키맨3 (이름/연락처)</dt>
+                                    <dd>
+                                        <div class="row row-input">
+                                            <input type="text" title="이름">
+                                            <input type="text" title="전화번호">
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="col03">
+                                    <dt>지역1</dt>
+                                    <dd>서울</dd>
+                                </dl>
+                                <dl class="col03">
+                                    <dt>지역2</dt>
+                                    <dd>중구</dd>
+                                </dl>
+                                <dl>
+                                    <dt>지역3</dt>
+                                    <dd>도원동</dd>
+                                </dl>
+                                <dl class="col02 col_btn02">
+                                    <dt>우편번호</dt>
+                                    <dd>
+                                        <div class="row">
+                                            <input type="text" value="04607" title="우편번호">
+                                            <button type="button" class="btn btn_navy btn-big">우편번호 찾기</button>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="newAdress">
+                                    <dt>신주소</dt>
+                                    <dd>
+                                      <div class="row row-input">
+                                        <input type="text" value="서울특별시 중구 다산로(신당동)" title="신주소">
+                                        <input type="text" value="155-1" title="상세주소">
+                                      </div>
+                                    </dd>
+                                </dl>
+                                <dl class="adress">
+                                    <dt>구주소</dt>
+                                    <dd>
+                                        <div class="row row-input">
+                                            <input type="text" title="구주소">
+                                            <input type="text" title="상세주소">
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+    
+                        <div class="detail clear">
+                            <div class="list">
+                                <dl class="col01">
+                                    <dt>영업상태</dt>
+                                    <dd>
+                                        <select name="" id="">
+                                            <option value="1">영업</option>
+                                            <option value="2">휴업</option>
+                                            <option value="3">폐업</option>
+                                            <option value="3">폐업</option>
+                                        </select>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>담당자 부서</dt>
+                                    <dd>
+                                        <div class="result-box">
+                                            <input type="text" value="수도권 업장2파트" id="departName" onkeyup="searchDepart()" title="담당자 부서">
+                                            <div class="searchList">
+                                                <div class="searchList-box">
+                                                    <ul id="departList"> </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>담당자</dt>
+                                    <dd>
+                                        <div class="result-box">
+                                            <input type="text" value="주종원" id="managerName" onkeyup="searchManager(this)" title="담당자">
+                                            <div class="searchList">
+                                                <div class="searchList-box">
+                                                    <ul class="managerList"> </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>사용도매장</dt>
+                                    <dd>
+                                        <div class="result-box">
+                                            <input type="text" value="(주)양지종합주류(석관)"id="useName" onkeyup="searchUse(this)" title="사용도매장">
+                                            <div class="searchList">
+                                                <div class="searchList-box">
+                                                    <ul class="useList"> </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>도매장 담당자 부서</dt>
+                                    <dd>
+                                        <input type="text" value="수도권 도매2" readonly="readonly" title="수도권 도매2">
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>도매장 담당자</dt>
+                                    <dd>
+                                        <input type="text" value="김도매" readonly="readonly" title="도매장 담당자">
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>배달업체 여부</dt>
+                                    <dd>
+                                        <div class="row">
+                                            <div class="chk_area chk02 t_chk">
+                                                <input type="checkbox" id="t_chk1" name="tchk">
+                                                <label for="t_chk1"> </label>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>업체 등록일</dt>
+                                    <dd>
+                                        <p class="date">2020-09-23</p>
+                                    </dd>
+                                </dl>
+                                <dl class="txtarea">
+                                    <dt>비고</dt>
+                                    <dd>
+                                        <textarea name="" id="" cols="30" rows="10" title="비고"></textarea>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_wrap clear">
+                        <button type="button" class="btn btn02 btn_white">취소</button>
+                        <button type="button" class="btn btn02 btn_white">수정</button>
+                    </div>
+                </div>
+               </form>
+           </div>
+        </section> <!--// contents -->
+    </div> <!--// wrapper -->
+    <script src="../assets/js/jquery-1.12.4.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+    <script src="../assets/js/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script>
+        var departData = [ //  임시 데이터
+           {'name':'수도권 업장2파트'},
+           {'name':'수도권 업장2파트'},
+           {'name':'수도권 업장2파트'},
+           {'name':'수도권 업장2파트'}
+       ];
+        var dpManagertData = [ //  임시 데이터
+            {'name':'주종원'},
+            {'name':'주종원'},
+            {'name':'주종원'},
+            {'name':'주종원'}
+        ];
+        var usetData = [ //  임시 데이터
+            {'name':'(주)양지종합주류(석관)'},
+            {'name':'(주)양지종합주류(석관)'},
+            {'name':'(주)양지종합주류(석관)'},
+            {'name':'(주)양지종합주류(석관)'}
+        ];
+       //var partnerPs = null; //scroll design 관련
+       function searchDepart(){
+           if($('#departName').val() =="" || $('#departName').val() == null) alert('[입력값]을 입력해 주세요');
+           else{
+               //var keyword = $('#partnerName').val();
+               $('#departList').html('');
+               var keyword = "수";
+               $.each(departData,function(i,item){
+                   var broken = item.name.split(keyword);
+                   var result = broken[0] + "<strong>"+keyword+"</strong>" + broken[1];
+                   var temp = '<li><button type="button" class="btn-put">'+result+'</button></li>';
+                   $('#departList').append(temp);
+               })
+               $('#departName').siblings('.searchList').show();
+               
+               //if(partnerPs == null) partnerPs = new PerfectScrollbar('.searchList-box');	//scroll design 관련
+           }
+           $(document).on('click','#departList .btn-put',function(){
+               $('#departName').val($(this).text());
+               $('.searchList').hide();
+               // if(partnerPs != null){ //scroll design 관련
+               // 	partnerPs.destory();
+               // 	partnerPs = null;
+               // }
+           });
+       }
+       
+        function searchManager(event){
+            var $this = $(event),
+                $container = $this.parent(),
+                $listContainer = $container.find('.searchList');
+                $list = $listContainer.find('.managerList');
+            if($this.val() =="" || $this.val() == null) alert('[입력값]을 입력해 주세요');
+            else{
+                $list.html('');
+                var keyword = "주";
+                $.each(dpManagertData,function(i,item){
+                    var broken = item.name.split(keyword);
+                    var result = broken[0] + "<strong>"+keyword+"</strong>" + broken[1];
+                    var temp = '<li><button type="button" class="btn-put">'+result+'</button></li>';
+                    $list.append(temp);
+                })
+                $listContainer.show();
+            }
+            $list.find('.btn-put').on('click',function(){
+                $this.val($(this).text());
+                $listContainer.hide();
+            });
+        }
+        function searchUse(event){
+            var $this = $(event),
+                $container = $this.parent(),
+                $listContainer = $container.find('.searchList');
+                $list = $listContainer.find('.useList');
+            if($this.val() =="" || $this.val() == null) alert('[입력값]을 입력해 주세요');
+            else{
+                $list.html('');
+                var keyword = "(";
+                $.each(usetData,function(i,item){
+                    var broken = item.name.split(keyword);
+                    var result = broken[0] + "<strong>"+keyword+"</strong>" + broken[1];
+                    var temp = '<li><button type="button" class="btn-put">'+result+'</button></li>';
+                    $list.append(temp);
+                })
+                $listContainer.show();
+            }
+            $list.find('.btn-put').on('click',function(){
+                $this.val($(this).text());
+                $listContainer.hide();
+            });
+        }
+       </script>
+</body>
+</html>

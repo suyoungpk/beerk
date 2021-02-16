@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = 0, viewport-fit=cover"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <title>BeerK</title>
+    <script src="./assets/js/jquery-1.12.4.js"></script>
+    <script src="./assets/js/jquery-ui.js"></script>
+    <script src="./assets/js/common.js"></script>
+</head>
+<body>
+    <div class="wrapper login">
+        <div class="login_wrap">
+            <h1 class="logo">
+                <img src="assets/images/logo_b.png" alt="beerk logo">
+            </h1>
+            <div class="login_form">
+                <div class="id">
+                    <label for="id">아이디 입력</label>
+                    <input type="text" id="id" placeholder="아이디를 입력하세요.">
+                </div>
+                <div class="pwd">
+                    <label for="pwd">비밀번호 입력</label>
+                    <input type="text" id="pwd" placeholder="비밀번호를 입력하세요.">
+                </div>
+            </div>
+            <div class="chk_area chk_label chk01">
+                <input type="checkbox" id="ex_chk"> 
+                <label for="ex_chk">아이디 저장</label> 
+            </div>
+            <button type="button" class="btn_login" onclick="modal('아이디 또는 패스워드가 맞지 않습니다.')">로그인</button>
+            <!-- <button type="button" class="btn_login" onclick="modal('아이디를 입력해주세요.')">로그인</button> -->
+            <!-- <button type="button" class="btn_login" onclick="modal('패스워드를 입력해주세요.')">로그인</button> -->
+        </div>
+    </div>
+    <!-- <div class="popup pop_alert">
+        <div class="popup_container">
+            <p class="pop_icon"><img src="assets/images/icon_notice.png" alt="경고 표시"></p>
+            <span>아이디 또는 패스워드가 맞지 않습니다.</span>
+            <button type="button" class="btn_navy02">확인</button>
+        </div>
+    </div> -->
+</body>
+</html>

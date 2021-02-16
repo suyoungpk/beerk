@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = 0, viewport-fit=cover"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="../assets/css/pages.css">
+    <title>BeerK</title>
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="skip">
+            <li><a href="#nav">메뉴바로가기</a></li>
+            <li><a href="#contents">본문바로가기</a></li>
+        </ul>
+        <header>
+            <div class="pc-wrap">
+                <h1 class="logo">
+                    <a href="javascript:void(0)">
+                        BK Co.,Ltd Import & Distribution pf world's finest beers
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li>ID : ABC0001</li>
+                        <li><a href="javascript:void(0)">수도권 도매 1파트&nbsp;<strong>김영업<span>님</span></strong></a></li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn btn_logout">로그아웃</a>
+                </nav>
+            </div>
+            <div class="mobile-wrap">
+                <h2 class="title">수주 등록</h2>
+                <button class="btn btn-menu" type="button">메뉴 열기</button>
+            </div>
+        </header>
+        <nav id="nav">
+            <h1 class="hidden">메인 내비게이션</h1>
+            <button class="btn btn-menu-close" type="button">메뉴 닫기</button>
+            <ul class="gnb">
+                <li class="gnb1">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 활동 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li>
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb2">
+                    <a href="javascript:void(0)"  class="on current"><span>도매장 수주 관리</span></a>
+                    <ul>
+                        <li><a href="#">수주 조회</a></li>
+                        <li><a href="#">수주 등록</a></li>
+                        <li><a href="#">반품 조회</a></li>
+                        <li><a href="#">반품 등록</a></li>
+                        <!-- <li><a href="#">도매장 기말 재고 등록</a></li>
+                        <li><a href="#">도매장 기말 재고 조회</a></li>
+                        <li><a href="#">도매장 평균 재고 관리</a></li>
+                        <li><a href="#"> 파트별 도매장 재고 현황</a></li> -->
+                    </ul>
+                </li>
+                <li class="gnb3">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 운영 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li>
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul> -->
+                    <!-- <ul>
+                        <li><a href="#">신규 입점 현황</a></li>
+                        <li><a href="#">개인 별 신규 영업 목표 실적</a></li>
+                        <li><a href="#">파트 별 목표 실적 현황</a></li>
+                        <li><a href="#">posm 등록</a></li>                       
+                    </ul> -->
+                </li>
+                <li class="gnb4">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>판매량 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb5">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>도매장 재고 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 판매량 등록</a></li>
+                        <li><a href="#">재널 별 판매량 등록</a></li>
+                        <li><a href="#">지역 별 판매량 등록</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb6">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>거래처 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb7">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>프로모션 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">visibility 영업 조회 등록</a></li> 
+                        <li><a href="#">visibility 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 대시보드</a></li> 
+                        <li><a href="#">gift 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 대시보드</a></li>
+                    </ul> -->
+                </li>
+            </ul>
+        </nav>
+        <section id="contents" class="orderRegister">
+           <div class="container">
+                <div class="headline clear">
+                    <h1 class="title-style">수주 등록</h1>
+                    <!-- <ul class="location">
+                        <li><a href="javascript:void(0)">홈</a></li>
+                        <li><a href="javascript:void(0)">수주 관리</a></li>
+                        <li><a href="javascript:void(0)" class="on">수주 등록</a></li>
+                    </ul> -->
+                </div>
+               <form action="">
+                <div class="info_form clear">
+                    <div class="detail_wrap ">
+                        <div class="detail clear">
+                            <div class="list">
+                                <dl>
+                                    <dt>수주 일자</dt>
+                                    <dd>
+                                        <input type="text"  value="2020-10-30" readonly="readonly">
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>거래처</dt>
+                                    <dd>
+                                        <div class="result-box">
+                                            <input type="text" placeholder="거래처명을 입력하세요." id="partnerName" onkeyup="searchPartner()">
+                                            <div class="searchList">
+                                                <div class="searchList-box">
+                                                    <ul id="partnerList"> </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chk_area chk01">
+                                            <input type="checkbox" id="new">
+                                            <label for="new">담당 거래처만 조회</label>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>수주유</dt>
+                                    <dd>
+                                        <select name="" id="">
+                                            <option value="" selected="" disabled="" hidden="">수주유를 선택하세요.</option>
+                                            <option value="1">수주유</option>
+                                            <option value="2">수주유</option>
+                                            <option value="3">수주유</option>
+                                        </select>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>결제조건</dt>
+                                    <dd>
+                                        <input type="text"  value="조건" readonly="readonly">
+                                    </dd>
+                                </dl>
+                                <template id="productTemp">
+                                    <div class="active">
+                                        <dl>
+                                            <dt>품목</dt>
+                                            <dd>
+                                                <div class="result-box">
+                                                    <input type="text" placeholder="품목을 입력하세요." onkeyup="searchProduct(this)">
+                                                    <div class="searchList">
+                                                        <div class="searchList-box">
+                                                            <ul class="productList"> </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>단가</dt>
+                                            <dd>
+                                                <input type="text" value="77,000" readonly="readonly">
+                                            </dd>
+                                        </dl>
+                                        <div class="row row-col">
+                                            <dl>
+                                                <dt>수량</dt>
+                                                <dd>
+                                                    <input type="text"   placeholder="수량을 입력하세요.">
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>단위</dt>
+                                                <dd>
+                                                    <input type="text"  value="BOX" readonly="readonly">
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="btn-area">
+                                            <button class="btn btn-blue mid btn-add" type="button">추가</button>
+                                            <button class="btn btn-red mid btn-delete" type="button">삭제</button>
+                                        </div>
+                                    </div>
+                                </template>
+                                <div id="productList">
+                                    <div class="active">
+                                        <dl>
+                                            <dt>품목</dt>
+                                            <dd>
+                                                <div class="result-box">
+                                                    <input type="text" placeholder="품목을 입력하세요." onkeyup="searchProduct(this)">
+                                                    <div class="searchList">
+                                                        <div class="searchList-box">
+                                                            <ul class="productList"> </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>단가</dt>
+                                            <dd>
+                                                <input type="text"  value="77,000" readonly="readonly">
+                                            </dd>
+                                        </dl>
+                                        <div class="row row-col">
+                                            <dl>
+                                                <dt>수량</dt>
+                                                <dd>
+                                                    <input type="text"  placeholder="수량을 입력하세요.">
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>단위</dt>
+                                                <dd>
+                                                    <input type="text"  value="BOX" readonly="readonly">
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="btn-area">
+                                            <button class="btn btn-blue mid btn-add" type="button">추가</button>
+                                            <button class="btn btn-red mid btn-delete" type="button">삭제</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail clear">
+                            <div class="list">
+                                <dl class="calendar-picker">
+                                    <dt>납기일 선택</dt>
+                                    <dd>
+                                        <div class="calendar-box">
+                                            <div class="calendar" id="datepicker"></div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <ol>
+                                        <dt>공급가액</dt>
+                                        <dd>
+                                            &#8361;&nbsp;<em>900,000</em>
+                                        </dd>
+                                    </ol>
+                                    <ol>
+                                        <dt>부가세</dt>
+                                        <dd>
+                                            &#8361;&nbsp;<em>100,000</em>
+                                        </dd>
+                                    </ol>
+                                    <ol>
+                                        <dt>보증금</dt>
+                                        <dd>
+                                            &#8361;&nbsp;<em>100,000</em>
+                                        </dd>
+                                    </ol>
+                                </dl>
+                                <dl class="total">
+                                    <dt>합계</dt>
+                                    <dd>
+                                        &#8361;<em>1,000,000</em>
+                                    </dd>
+                                </dl>
+                                <dl class="txtarea">
+                                    <dt>비고</dt>
+                                    <dd>
+                                        <textarea name="" id="" placeholder="특이사항을 입력하세요." maxlength="1000"></textarea>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="btn_wrap clear">
+                                <button type="button" class="btn btn-blue big"  onclick="modal('거래처를 입력해주세요.')">수주 등록</button>
+                                <!-- <button type="button" class="btn btn-blue big"  onclick="modal('수주유를 선택해주세요.')">수주 등록</button> -->
+                                <!-- <button type="button" class="btn btn-blue big"  onclick="modal('품목을 선택해주세요.')">수주 등록</button> -->
+                                <!-- <button type="button" class="btn btn-blue big"  onclick="modal('수량을 선택해주세요.')">수주 등록</button> -->
+                                <!-- <button type="button" class="btn btn-blue big"  onclick="modal('납품일을 선택해주세요.')">수주 등록</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </form>
+           </div>
+        </section> <!--// contents -->
+    </div> <!--// wrapper -->
+    <script src="../assets/js/jquery-1.12.4.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+    <script src="../assets/js/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script>
+     var partnerData = [ //  임시 데이터
+		{'name':'시오 구로 Nc 백화점'},
+		{'name':'시오 구로 Nc 백화점2'},
+		{'name':'시오 구로 Nc 백화점3'},
+		{'name':'시오 구로 Nc 백화점4'}
+    ];
+    var productData = [ //  임시 데이터
+		{'name':'품목1'},
+		{'name':'품목2'},
+		{'name':'품목3'},
+		{'name':'품목4'}
+	];
+	//var partnerPs = null; //scroll design 관련
+	function searchPartner(){
+		if($('#partnerName').val() =="" || $('#partnerName').val() == null) alert('[입력값]을 입력해 주세요');
+		else{
+            //var keyword = $('#partnerName').val();
+            $('#partnerList').html('');
+            var keyword = "시";
+			$.each(partnerData,function(i,item){
+                var broken = item.name.split(keyword);
+                var result = broken[0] + "<strong>"+keyword+"</strong>" + broken[1];
+                var temp = '<li><button type="button" class="btn-put">'+result+'</button></li>';
+				$('#partnerList').append(temp);
+            })
+			$('#partnerName').siblings('.searchList').show();
+			
+			//if(partnerPs == null) partnerPs = new PerfectScrollbar('.searchList-box');	//scroll design 관련
+		}
+		$(document).on('click','#partnerList .btn-put',function(){
+			$('#partnerName').val($(this).text());
+			$('.searchList').hide();
+			// if(partnerPs != null){ //scroll design 관련
+			// 	partnerPs.destory();
+			// 	partnerPs = null;
+			// }
+		});
+    }
+    function searchProduct(event){
+        var $this = $(event),
+            $container = $this.parent(),
+            $listContainer = $container.find('.searchList');
+            $list = $listContainer.find('.productList');
+		if($this.val() =="" || $this.val() == null) alert('[입력값]을 입력해 주세요');
+		else{
+            $list.html('');
+            var keyword = "품";
+			$.each(productData,function(i,item){
+                var broken = item.name.split(keyword);
+                var result = broken[0] + "<strong>"+keyword+"</strong>" + broken[1];
+                var temp = '<li><button type="button" class="btn-put">'+result+'</button></li>';
+				$list.append(temp);
+            })
+			$listContainer.show();
+        }
+        $list.find('.btn-put').on('click',function(){
+            $this.val($(this).text());
+            $listContainer.hide();
+        });
+    }
+    var automationUI = function(){ // 동적 추가, 삭제 관련 
+        var $objList = $('#productList'),
+            $objTemp = $('#productTemp');
+
+		var add = function(){
+            if($objList.children().length >= 10){
+                modal('최대 10개까지 추가 가능합니다.');
+                return;
+            }
+			var $clonedTemplate  = $objTemp.clone();
+			var $temp = $($clonedTemplate.html());
+            $clonedTemplate.html($temp.prop('outerHTML'));
+            $objList.children().removeClass('active');
+			$objList.append($clonedTemplate.html());			
+		};
+		var remove= function(e){
+			var $list = $objList.find('.btn-delete');
+            var idx = $list.index($(e.target));
+            $objList.children().eq(idx).remove();
+            if($objList.children().length < 2){
+                $objList.children().addClass('active');
+            }
+			
+		};
+		
+		$(document).on('click','#productList .btn-add',function(){
+			add();
+		}).on('click','#productList .btn-delete',function(e){
+			remove(e);
+		});
+        
+        // Seting up disabled days
+		var disabledDays=["2020-8-24","2020-8-25","2020-8-26"];
+		var autoSeletedDay=["2020-8-17"];
+		var disabledSomeday = function(date){
+			var month = date.getMonth()+1;
+			var dates = date.getDate();
+			var year = date.getFullYear();
+			var dateString =year+'-'+month+'-'+dates;
+			for(var i=0;i<disabledDays.length;i++){
+				if($.inArray(dateString,disabledDays) != -1)
+					return [false, "disabled"];	
+			}
+			if($.inArray(dateString,autoSeletedDay) != -1)
+					return [true, "autoSeleted"];	
+			return [true, ""];
+		}
+		$( "#datepicker" ).datepicker({
+            beforeShowDay:disabledSomeday
+		}).datepicker("setDate",null);
+		$('#datepicker').find(".ui-datepicker-current-day").removeClass("ui-datepicker-current-day"); // this actually removes the highlight
+	}();
+    </script>
+</body>
+</html>

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = 0, viewport-fit=cover"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="../assets/css/pages.css">
+    <title>BeerK</title>
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="skip">
+            <li><a href="#nav">메뉴바로가기</a></li>
+            <li><a href="#contents">본문바로가기</a></li>
+        </ul>
+        <header>
+            <div class="pc-wrap">
+                <h1 class="logo">
+                    <a href="javascript:void(0)">
+                        BK Co.,Ltd Import & Distribution pf world's finest beers
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li>ID : ABC0001</li>
+                        <li><a href="javascript:void(0)">수도권 도매 1파트&nbsp;<strong>김영업<span>님</span></strong></a></li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn btn_logout">로그아웃</a>
+                </nav>
+            </div>
+            <div class="mobile-wrap center">
+                <h2 class="title">영업 행사 캘린더</h2>
+                <!-- <button class="btn btn-menu" type="button">메뉴 열기</button> -->
+                <button class="btn btn-back" type="button">뒤로가기</button>
+            </div>
+        </header>
+        <nav id="nav">
+            <h1 class="hidden">메인 내비게이션</h1>
+            <button class="btn btn-menu-close" type="button">메뉴 닫기</button>
+            <ul class="gnb">
+                <li class="gnb1">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 활동 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li>
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb2">
+                    <a href="javascript:void(0)"  class="on current"><span>도매장 수주 관리</span></a>
+                    <ul>
+                        <li><a href="#">수주 조회</a></li>
+                        <li><a href="#">수주 등록</a></li>
+                        <li><a href="#">반품 조회</a></li>
+                        <li><a href="#">반품 등록</a></li>
+                        <!-- <li><a href="#">도매장 기말 재고 등록</a></li>
+                        <li><a href="#">도매장 기말 재고 조회</a></li>
+                        <li><a href="#">도매장 평균 재고 관리</a></li>
+                        <li><a href="#"> 파트별 도매장 재고 현황</a></li> -->
+                    </ul>
+                </li>
+                <li class="gnb3">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 운영 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li>
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul> -->
+                    <!-- <ul>
+                        <li><a href="#">신규 입점 현황</a></li>
+                        <li><a href="#">개인 별 신규 영업 목표 실적</a></li>
+                        <li><a href="#">파트 별 목표 실적 현황</a></li>
+                        <li><a href="#">posm 등록</a></li>                       
+                    </ul> -->
+                </li>
+                <li class="gnb4">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>판매량 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb5">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>도매장 재고 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 판매량 등록</a></li>
+                        <li><a href="#">재널 별 판매량 등록</a></li>
+                        <li><a href="#">지역 별 판매량 등록</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb6">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>거래처 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb7">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>프로모션 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">visibility 영업 조회 등록</a></li> 
+                        <li><a href="#">visibility 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 대시보드</a></li> 
+                        <li><a href="#">gift 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 대시보드</a></li>
+                    </ul> -->
+                </li>
+            </ul>
+        </nav>
+        <section id="contents" class="salesEventCalendar">
+           <div class="container">
+                <div class="headline clear">
+                    <h1 class="title-style">영업 행사 캘린더</h1>
+                    <!-- <ul class="location">
+                        <li><a href="javascript:void(0)">홈</a></li>
+                        <li><a href="javascript:void(0)">수주 관리</a></li>
+                        <li><a href="javascript:void(0)" class="on">수주 조회</a></li>
+                    </ul> -->
+                </div>
+                <!--
+                    [ 달력 설명 ]
+                    이전 달의 날짜는 td에 class="prev"
+                    다음 달의 날짜는 td에 class="next"
+                    오늘 날짜는 td에 class="today" 
+                    <p class="date">날짜</p>
+                    <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                    버튼을 누르면 등록 팝업이 뜰 수 있도록 테스트 용으로 하단 script에 연결 해놨습니다. 수정하여 사용하시면 됩니다.
+
+                    * 등록된 일정이 있을 경우 스케쥴 표기
+                    해당 일정이 있는 기간의 날짜의 td 안에 .btn-register 다음 순서로
+                    <div class="list-bar" ></div> 가 스케줄별로 삽입 되어 져야 합니다.
+
+                    일정이 시작되는 날짜에만  
+                    <div class="list-bar">
+                        <button class="btn-list" data-eventId="123" style="width:400%" onclick="openPop('pop-plan01-mod');">
+                            <span>[행사업체] 행사품목(수량단위 가격) / 에딩거 500(8입 14,990원)</span>
+                        </button>
+                    </div>
+                    이 형태로 버튼이 삽입되어야 하며, dataset에는 해당 이벤트에 대한 고유값이 들어가면 됩니다.(자동 스타일 분리 때문)
+                    style의 width는 시작하는 날로부터 일정 수(한 주당) * 100으로 계산하여 (2일 200%, 3일 300%..) 넣어주시면 됩니다.
+                
+
+                    * 등록된 일정이 7일 이상일 경우
+
+                    -시작되는 날짜로부터 다음 주로 일정이 이어져 있는 경우,시작되는 날 버튼 삽입 후 list-bar에 continue-right 클래스 추가 
+                    <div class="list-bar continue-right">
+                        <button class="btn-list" data-eventId="111" style="width:100%" onclick="openPop('pop-plan01-mod');">
+                            <span>[코스트코] 칭따오 660ml(6압 11,990원) / 에딩거 500(8입 14,990원)</span>
+                        </button>
+                    </div>
+
+                    -이전 주의 계속된 일정이 다음 주까지 이어진 경우, 주 첫번째날 버튼 삽입 후 list-bar에 full 클래스 추가 
+                    <div class="list-bar full">
+                        <button class="btn-list" data-eventId="111" style="width:700%" onclick="openPop('pop-plan01-mod');">
+                            <span>[코스트코] 칭따오 660ml(6압 11,990원) / 에딩거 500(8입 14,990원)</span>
+                        </button>
+                    </div>
+
+                    -이전 주의 계속된 일정, 끝나는 주의 첫번째 날 버튼 삽입 후 list-bar에 continue-left 클래스 추가
+                     <div class="list-bar continue-left">
+                        <button class="btn-list" data-eventId="111" style="width:200%" onclick="openPop('pop-plan01-mod');">
+                            <span>[코스트코] 칭따오 660ml(6압 11,990원) / 에딩거 500(8입 14,990원)</span>
+                        </button>
+                    </div>
+
+                    해당 작업이 왼료된 채로 로드 될 경우, 
+                    하단 script의 monthlyCalendar 이 dataset으로 입력된 이벤트 id 개수별로 스타일 10가지를 돌아가며 붙여줍니다.
+                    (.list-bar.style1, style2, style3... style10) 
+                    비동기로 달력을 그려줄 경우, monthlyCalendar()를 다시 call 해서 사용하시면 됩니다.
+                --> 
+                <div class="calendar-header">
+                    <div class="header-left">
+                        <button type="button" class="btn btn-red btn-today">Today</button>
+                    </div>
+                    <div class="header-center">
+                        <button type="button" class="btn btn-cal-change btn-prev">이전달</button>
+                        <h2 class="calendar-title"><span class="momth">July</span> <span class="year">2020</span></h2>
+                        <button type="button" class="btn btn-cal-change btn-next">다음달</button>
+                    </div>
+                    <div class="header-right">
+                       <!-- <select name="" id="" onchange="location.href=this.value;">
+                            <option value="./beerk17.html">Month</option>
+                            <option value="./beerk18.html">Week</option>
+                            <option value="./beerk19.html">Day</option>
+                        </select>
+                        <button type="button" class="btn btn_white btn-cal-type btn-month active" onclick="location.href='beerk17.html'">Month</button>
+                        <button type="button" class="btn btn_white btn-cal-type btn-week" onclick="location.href='beerk18.html'">Week</button>
+                        <button type="button" class="btn btn_white btn-cal-type btn-day"  onclick="location.href='beerk19.html'">Day</button>
+                    -->
+                    </div>
+                </div><!--// calendar-header  -->
+                <div class="calandar-table-wrap">
+                    <table class="calendar-monthly-table">
+                        <thead>
+                            <tr>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                                <th>Sun</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="prev">
+                                   <div>
+                                        <p class="date">30</p>
+                                   </div>
+                                </td>
+                                <td class="prev">
+                                    <div>
+                                        <p class="date">31</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">1</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                    </div>
+                                </td>
+                                <td class="today">
+                                   <div>
+                                        <p class="date">2</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                   </div>
+                                </td>
+                                <td>
+                                   <div>
+                                        <p class="date">3</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                   </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">4</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">5</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   <div>
+                                        <p class="date">6</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                   </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">7</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">8</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                        <div class="list-bar">
+                                            <button class="btn-list" data-eventId="123" style="width:400%" onclick="openPop('pop-plan01-mod');"><span>[코스트코] 칭따오 660ml(6압 11,990원) / 에딩거 500(8입 14,990원)</span></button>
+                                        </div>
+                                        <div class="list-bar">
+                                            <button class="btn-list" data-eventId="234" style="width:200%" onclick="openPop('pop-plan01-mod');"><span>[코스트코] 칭따오 660ml(6압 11,990원) / 에딩거 500(8입 14,990원)</span></button>
+                                        </div>
+                                        <div class="list-bar">
+                                            <button class="btn-list" data-eventId="345" style="width:200%" onclick="openPop('pop-plan01-mod');"><span>[코스트코] 칭따오 660ml(6압 11,990원) / 에딩거 500(8입 14,990원)</span></button>
+                                        </div>
+                                        <div class="list-bar">
+                                            <button class="btn-list" data-eventId="456" style="width:100%" onclick="openPop('pop-plan01-mod');"><span>[코스트코] 칭따오 660ml(6압 11,990원) / 에딩거 500(8입 14,990원)</span></button>
+                                        </div>
+                                        <div class="list-bar">
+                                            <button class="btn-list" data-eventId="567" style="width:200%" onclick="openPop('pop-plan01-mod');"><span>[코스트코] 칭따오 660ml(6압 11,990원) / 에딩거 500(8입 14,990원)</span></button>
+                                        </div>
+                                        <div class="list-bar">
+                                            <button class="btn-list" data-eventId="678" style="width:200%" onclick="openPop('pop-plan01-mod');"><span>[코스트코] 칭따오 660ml(6압 11,990원) / 에딩거 500(8입 14,990원)</span></button>
+                                        </div>
+                                        <div class="list-bar">
+                                            <button class="btn-list" data-eventId="789" style="width:200%" onclick="openPop('pop-plan01-mod');"><span>[코스트코] 칭따오 660ml(6압 11,990원) / 에딩거 500(8입 14,990원)</span></button>
+                                        </div>
+                                        <div class="list-bar">
+                                            <button class="btn-list" data-eventId="890" style="width:200%" onclick="openPop('pop-plan01-mod');"><span>[코스트코] 칭따오 660ml(6압 11,990원) / 에딩거 500(8입 14,990원)</span></button>
+                                        </div>
+                                        <div class="list-bar">
+                                            <button class="btn-list" data-eventId="901" style="width:200%" onclick="openPop('pop-plan01-mod');"><span>[코스트코] 칭따오 660ml(6압 11,990원) / 에딩거 500(8입 14,990원)</span></button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">9</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">10</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">11</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">12</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                        <div class="list-bar continue-right">
+                                            <button class="btn-list" data-eventId="111" style="width:100%" onclick="openPop('pop-plan01-mod');"><span>[코스트코] 칭따오 660ml(6압 11,990원) / 에딩거 500(8입 14,990원)</span></button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   <div>
+                                        <p class="date">13</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                        <div class="list-bar full">
+                                            <button class="btn-list" data-eventId="111" style="width:700%" onclick="openPop('pop-plan01-mod');"><span>[코스트코] 칭따오 660ml(6압 11,990원) / 에딩거 500(8입 14,990원)</span></button>
+                                        </div>
+                                   </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">14</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                        <div class="list-bar" data-eventId="111" ></div>
+                                        <div class="list-bar">
+                                            <button class="btn-list" data-eventId="222" style="width:200%" onclick="openPop('pop-plan01-mod');"><span>[코스트코] 칭따오 660ml(6압 11,990원) / 에딩거 500(8입 14,990원)</span></button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">15</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                        <div class="list-bar" data-eventId="111" ></div>
+                                        <div class="list-bar" data-eventId="222" ></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">16</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                        <div class="list-bar" data-eventId="111" ></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">17</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                        <div class="list-bar" data-eventId="111" ></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">18</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                        <div class="list-bar" data-eventId="111" ></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">19</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                        <div class="list-bar" data-eventId="111" > </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   <div>
+                                        <p class="date">20</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                        <div class="list-bar continue-left">
+                                            <button class="btn-list" data-eventId="111" style="width:200%" onclick="openPop('pop-plan01-mod');"><span>[코스트코] 칭따오 660ml(6압 11,990원) / 에딩거 500(8입 14,990원)</span></button>
+                                        </div>
+                                   </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">21</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                        <div class="list-bar" data-eventId="111" > </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">22</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">23</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">24</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">25</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">26</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   <div>
+                                        <p class="date">27</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                   </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">28</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">29</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p class="date">30</p>
+                                        <button type="button" class="btn btn-register" title="행사계획입력"></button>
+                                    </div>
+                                </td>
+                                <td class="next">
+                                    <div>
+                                        <p class="date">1</p>
+                                    </div>
+                                </td>
+                                <td class="next">
+                                    <div>
+                                        <p class="date">2</p>
+                                    </div>
+                                </td>
+                                <td class="next">
+                                    <div>
+                                        <p class="date">3</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+           </div>
+            <div class="popup popup_wrap pop02" id="pop-plan01">
+                <div class="popup_container">
+                    <h2 class="pop_tit">영업행사등록</h2>
+                    <div class="pop_contents">
+                        <div class="scrollBox">
+                            <div class="pop_info_form">
+                                <div class="list">
+                                    <p class="tit03">행사일자</p>
+                                    <input type="text" id="calender3" placeholder="2020.07.06" class="input_type02 calender" title="년도.월.일">
+                                    <span class="etc">~</span>
+                                    <input type="text" id="calender4" placeholder="2020.07.06" class="input_type02 calender" title="년도.월.일">
+                                </div>
+                                <div class="list col01">
+                                    <p class="tit03">행사거래처</p>
+                                        <div class="row">
+                                            <select name="" id="">
+                                                <option value="">전체</option>
+                                                <option value="">전체</option>
+                                                <option value="">전체</option>
+                                            </select>
+                                            <div class="count">
+                                                <select name="" id="">
+                                                    <option value="">제품선택</option>
+                                                    <option value="">전체</option>
+                                                    <option value="">전체</option>
+                                                </select>
+                                                <input type="text" placeholder="내용 입력" title="내용 입력">
+                                                <button type="button" class="btn_plus" title="더하기"></button>
+                                            </div>
+                                        </div>
+                                    <div class="count row">
+                                        <select name="" id="">
+                                            <option value="">칭따오 660ml</option>
+                                            <option value="">전체</option>
+                                            <option value="">전체</option>
+                                        </select>
+                                        <input type="text" value="6입 11,900원" placeholder="내용 입력" title="내용 입력">
+                                        <button type="button" class="btn_minus" title="빼기"></button>
+                                    </div>
+                                    <div class="count row">
+                                        <select name="" id="">
+                                            <option value="">에딩거 500</option>
+                                            <option value="">전체</option>
+                                            <option value="">전체</option>
+                                        </select>
+                                        <input type="text" value="8입 14,900원" placeholder="내용 입력" title="내용 입력">
+                                        <button type="button" class="btn_minus" title="빼기"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-area right">
+                                <button type="submit" class="btn btn_white">등록</button>
+                            </div>
+                        </div><!--// scrollBox -->
+                    </div>
+                    <button type="button" class="btn_close">닫기</button>
+                </div>
+            </div>
+            <div class="popup popup_wrap pop02" id="pop-plan01-mod">
+                <div class="popup_container">
+                    <h2 class="pop_tit">영업행사수정</h2>
+                    <div class="pop_contents">
+                        <div class="scrollBox">
+                            <div class="pop_info_form">
+                                <div class="list col01">
+                                    <p class="tit03">행사일자</p>
+                                    <input type="text" id="calender3" placeholder="2020.07.06" class="input_type02 calender" title="년도.월.일">
+                                    <span class="etc">~</span>
+                                    <input type="text" id="calender4" placeholder="2020.07.06" class="input_type02 calender" title="년도.월.일">
+                                </div>
+                                <div class="list col01">
+                                    <p class="tit03">행사거래처</p>
+                                    <select name="" id="">
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                    </select>
+                                    <div class="count">
+                                        <select name="" id="">
+                                            <option value="">제품선택</option>
+                                            <option value="">전체</option>
+                                            <option value="">전체</option>
+                                        </select>
+                                        <input type="text" placeholder="내용 입력" title="내용 입력">
+                                        <button type="button" class="btn_plus" title="더하기"></button>
+                                    </div>
+                                    <div class="count row">
+                                        <select name="" id="">
+                                            <option value="">칭따오 660ml</option>
+                                            <option value="">전체</option>
+                                            <option value="">전체</option>
+                                        </select>
+                                        <input type="text" value="6입 11,900원" placeholder="내용 입력" title="내용 입력">
+                                        <button type="button" class="btn_minus" title="빼기"></button>
+                                    </div>
+                                    <div class="count row">
+                                        <select name="" id="">
+                                            <option value="">에딩거 500</option>
+                                            <option value="">전체</option>
+                                            <option value="">전체</option>
+                                        </select>
+                                        <input type="text" value="8입 14,900원" placeholder="내용 입력" title="내용 입력">
+                                        <button type="button" class="btn_minus" title="빼기"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-area right col02">
+                                <button type="button" class="btn btn_white mr10">삭제</button>
+                                <button type="button" class="btn btn_white">수정</button>
+                            </div>
+                        </div><!--// scrollBox -->
+                    </div>
+                    <button type="button" class="btn_close">닫기</button>
+                </div>
+            </div>
+        </section> <!--// contents -->
+    </div> <!--// wrapper -->
+   <script src="../assets/js/jquery-1.12.4.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+    <script src="../assets/js/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script>
+        var btns =  document.querySelectorAll('.btn-register');
+        [].forEach.call(btns,function(btn){
+            btn.addEventListener('click',function(){
+                openPop('pop-plan01');
+            },false);
+        });
+       var monthlyCalendar=function(){
+        var eventIdList = [], eventObjList = [],
+                eventStyleNum=1;
+            $.each($('.btn-list'),function(index,item){
+                var $this = $(item),
+                    compareId = $this.data('eventid');
+                if(eventIdList.indexOf(compareId)  == -1){
+                    $this.parent().addClass('style'+eventStyleNum);
+                    eventIdList.push(compareId);
+                    eventObjList.push({eventid:compareId,num:eventStyleNum});
+                    eventStyleNum++;
+                    if(eventStyleNum>10) eventStyleNum =1;
+                }else 
+                    $.each(eventObjList,function(index2,item2){
+                        if(item2.eventid === compareId) $this.parent().addClass('style'+item2.num);
+                    });
+            });
+       };
+       monthlyCalendar();
+    </script>
+</body>
+</html>

@@ -1,0 +1,1866 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = 0, viewport-fit=cover"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <title>BeerK</title>
+    <script src="assets/js/jquery-1.12.4.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/common.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="skip">
+            <li><a href="#nav">메뉴바로가기</a></li>
+            <li><a href="#contents">본문바로가기</a></li>
+        </ul>
+        <header>
+            <div class="pc-wrap">
+                <h1 class="logo">
+                    <a href="javascript:void(0)">
+                        BK Co.,Ltd Import & Distribution pf world's finest beers
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li>ID : ABC0001</li>
+                        <li><a href="javascript:void(0)">수도권 도매 1파트&nbsp;<strong>김영업<span>님</span></strong></a></li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn btn_logout">로그아웃</a>
+                </nav>
+            </div>
+            <div class="mobile-wrap">
+                <h2 class="title">업소 조회 관리</h2>
+                <button class="btn btn-menu" type="button">메뉴 열기</button>
+            </div>
+        </header>
+        <!-- 201230 GNB 수정 -->
+        <nav id="nav">
+            <h1 class="hidden">메인 내비게이션</h1>
+            <button class="btn btn-menu-close" type="button">메뉴 닫기</button>
+            <ul class="gnb">
+                 <!-- 해당 페이지에 현재 위치 class 추가 class="on current" -->
+                <li class="hasmenu gnb1 on current">
+                    <a href="javascript:void(0)"><span>거래처 관리</span></a>
+                    <ul>
+                        <li><a href="#">업장 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul>
+                </li>
+                <li class="hasmenu gnb2">
+                    <a href="javascript:void(0)"><span>영업 활동 관리</span></a>
+                    <ul>
+                        <li><a href="#">영업활동캘린더</a></li>
+                        <li><a href="#">영업활동내역</a></li>
+                        <li class="hasmenu"><a href="javascript:void(0)">영업 call 현황</a>
+                            <ul>
+                                <li><a href="#">1본부 call 현황</a></li>
+                                <li><a href="#">2본부 call 현황</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">영업행사캘린더</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li class="hasmenu"><a href="javascript:void(0)">coverage/listing 현황</a>
+                            <ul>
+                                <li><a href="#">월별 listing 현황</a></li>
+                                <li><a href="#">전월대비 listing 현황</a></li>
+                                <li><a href="#">파트 별 listing 현황</a></li>
+                                <li><a href="#">Seg 별 listing 현황</a></li>
+                                <li><a href="#">coverage 현황</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hasmenu gnb3">
+                    <a href="javascript:void(0)"><span>영업 실적 현황</span></a>
+                     <ul>
+                        <li><a href="#">파트 별 목표 실적 현황</a></li>
+                        <li><a href="#">posm 등록</a></li>
+                    </ul> 
+                </li>
+                <!--보류 
+                <li class="hasmenu gnb4">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>프로모션 관리</span></a>
+                    <ul>
+                        <li><a href="#">visibility 영업 조회</a></li>
+                        <li><a href="#">visibility 프로모션 조회</a></li>
+                        <li><a href="#">set 프로모션 영업 조회</a></li>
+                        <li><a href="#">set 프로모션 조회</a></li>
+                        <li><a href="#">set 프로모션 대시보드</a></li>
+                        <li><a href="#">gift 프로모션 영업 조회</a></li>
+                        <li><a href="#">gift 프로모션 조회</a></li>
+                        <li><a href="#">gift 프로모션 대시보드</a></li>
+                    </ul>
+                </li> -->
+                <li class="hasmenu gnb5">
+                    <a href="javascript:void(0)"><span>업장 판매량 관리</span></a>
+                    <ul>
+                        <li><a href="#">업소 판매량 조회</a></li>
+                        <li><a href="#">재널 별 판매량 조회</a></li>
+                        <li><a href="#">지역 별 판매량 조회</a></li>
+                    </ul>
+                </li>
+                <li class="hasmenu gnb6">
+                    <a href="javascript:void(0)"><span>도매장 재고 관리</span></a>
+                    <ul>
+                        <li><a href="#">도매장 재고 조회</a></li>
+                        <li><a href="#">도매장 평균 재고 관리</a></li>
+                        <li><a href="#">파트별 도매장 재고 현황</a></li>
+                    </ul>
+                </li>
+                <li class="hasmenu gnb7">
+                    <a href="javascript:void(0)"><span>도매장 수주 관리</span></a>
+                    <ul>
+                        <li><a href="#">수주 조회</a></li> 
+                        <li><a href="#">수주 등록</a></li> 
+                        <li><a href="#">반품 조회</a></li> 
+                        <li><a href="#">반품 등록</a></li>
+                    </ul>
+                </li>
+                <li class="gnb8">
+                    <a href="#"><span>관리자 관리</span></a>
+                </li>
+            </ul>
+        </nav>
+         <!--// 201230 GNB 수정 -->
+        <section id="contents">
+           <div class="container">
+            <div class="headline clear">
+                <h1 class="title-style">업소 조회 관리</h1>
+                <ol class="location">
+                    <li><a href="javascript:void(0)">홈</a></li>
+                    <li><a href="javascript:void(0)">거래처관리</a></li>
+                    <li><a href="javascript:void(0)" class="on">업소조회관리</a></li>
+                </ol>
+            </div>
+            <!-- ======= 탭 ======= -->
+            <div class="tab_wrap01">
+                <ul class="tab tab01 clear">
+                    <li>
+                        <a href="javascript:void(0)" class="on">당사 월 현황</a> 
+                    </li>
+                    <li><a href="javascript:void(0)">당사 분기 현황</a></li>
+                    <li><a href="javascript:void(0)">당사 연 현황</a></li>
+                </ul>
+                <div class="tab-con" style="display:block">
+                    <div class="info">
+                        <dl class="dl_col02">
+                            <dt>업소명</dt>
+                            <dd>
+                                <div class="row">
+                                    <input type="text" class="input_type01" title="입력">
+                                </div>
+                            </dd>
+                            <dt>업소 담당</dt>
+                            <dd>
+                                <div class="row">
+                                    <select name="" id="">
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                    </select>
+                                    <input type="text1" class="input_type02" title="입력">
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl_col01">
+                            <dt>업소 구분</dt>
+                            <dd>
+                                <div class="row">
+                                    <select name="" id="">
+                                        <option value="">채널</option>
+                                        <option value="">Seg</option>
+                                        <option value="">Seg</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">Seg</option>
+                                        <option value="">Seg</option>
+                                        <option value="">Sub Seg</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">Sub Seg1</option>
+                                        <option value="">Sub Seg1</option>
+                                        <option value="">Sub Seg1</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">Sub Seg2</option>
+                                        <option value="">Sub Seg2</option>
+                                        <option value="">Sub Seg2</option>
+                                    </select>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl_col02">
+                            <dt>지역</dt>
+                            <dd>
+                                <div class="row select-col2">
+                                    <select name="" id="">
+                                        <option value="">A등급</option>
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                    </select>
+                                </div>
+                            </dd>
+                            <dt>최근 방문일</dt>
+                            <dd>
+                                <div class="row">
+                                    <input type="text" id="calender1" class="calender" title="날짜">
+                                    <span class="etc">~</span>
+                                    <input type="text" id="calender2" class="calender" title="날짜">
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl_col02">
+                            <dt>조회 일자</dt>
+                            <dd>
+                                <div class="row">
+                                    <select name="" id="">
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                    </select>
+                                </div>
+                            </dd>
+                            <dt>거래처 담당</dt>
+                            <dd>
+                                <div class="row">
+                                    <select name="" id="">
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                    </select>
+                                    <input type="text" class="input_type02" title="입력">
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl_col01">
+                            <dt>등급</dt>
+                            <dd>
+                                <div class="row">
+                                    <div class="chk_area chk_label chk01">
+                                        <input type="checkbox" id="chk01" class="chk01">
+                                        <label for="chk01">A등급</label>
+                                    </div>
+                                    <div class="chk_area chk_label chk01">
+                                        <input type="checkbox" id="chk02" class="chk01">
+                                        <label for="chk02">B등급</label>
+                                    </div>
+                                    <div class="chk_area chk_label chk01">
+                                        <input type="checkbox" id="chk03" class="chk01">
+                                        <label for="chk03">C등급</label>
+                                    </div>
+                                    <div class="chk_area chk_label chk01">
+                                        <input type="checkbox" id="chk04" class="chk01">
+                                        <label for="chk04">등급없음</label>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl_col01">
+                            <dt>상태</dt>
+                            <dd>
+                                <div class="row">
+                                    <div class="chk_area chk_label chk01">
+                                        <input type="checkbox" id="chk05" class="chk01">
+                                        <label for="chk05">영업</label>
+                                    </div>
+                                    <div class="chk_area chk_label chk01">
+                                        <input type="checkbox" id="chk06" class="chk01">
+                                        <label for="chk06">휴업</label>
+                                    </div>
+                                    <div class="chk_area chk_label chk01">
+                                        <input type="checkbox" id="chk07" class="chk01">
+                                        <label for="chk07">폐업</label>
+                                    </div>
+                                    <div class="chk_area chk_label chk01">
+                                        <input type="checkbox" id="chk08" class="chk01">
+                                        <label for="chk08">삭제요청</label>
+                                    </div>
+                                    <div class="chk_area chk_label chk01">
+                                        <input type="checkbox" id="chk09" class="chk01">
+                                        <label for="chk09">삭제</label>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <div class="btn_wrap">
+                            <button type="button" class="btn_white">검색내역 초기화</button>
+                            <button type="button" class="btn_red">조회</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-con">컨텐츠2</div>
+                <div class="tab-con">컨텐츠3</div>
+            </div>
+            <div class="tab_wrap02">
+                <ul class="tab tab02 clear">
+                    <li class="on"><a href="javascript:void(0)">기초 재고</a></li>
+                    <li><a href="javascript:void(0)">당월 입고</a></li>
+                    <li><a href="javascript:void(0)">기말 재고</a></li>
+                    <li><a href="javascript:void(0)">당월 판매</a></li>
+                    <li><a href="javascript:void(0)">재고 일수</a></li>
+                    <li><a href="javascript:void(0)">전월 대비</a></li>
+                </ul>
+                <div class="tab_contents">
+                    <div class="contents01">
+                    </div>
+                </div>
+            </div>
+            <div class="box_flow">
+                <div class="sum">
+                    <p>전체 <em>250</em>개 / 조회 <span>80</span>개</p>
+                    <div class="chk_area chk_label chk01">
+                        <input type="checkbox" id="chk2-1">
+                        <label for="chk2-1">기존 신규 제외</label>
+                    </div>
+                </div>
+                <div class="scroll-box">
+                    <table class="table01 adv chk">
+                        <caption>기초 재고의 수도권 1팀, 지역팀의 전체합계, 비중, 수도권계, 지역계 테이블 입니다.</caption>
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col style="width:104px">
+                            <col style="width:88px">
+                            <col style="width:88px">
+                            <col style="width:88px">
+                            <col style="width:70px">
+                            <col style="width:104px">
+                            <col style="width:72px">
+                            <col style="width:72px">
+                            <col style="width:72px">
+                            <col style="width:72px">
+                            <col style="width:72px">
+                            <col style="width:72px">
+                            <col style="width:88px">
+                            <col style="width:104px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th rowspan="2" colspan="2"></th>
+                                <th rowspan="2">전체합계</th>
+                                <th rowspan="2">비중</th>
+                                <th rowspan="1" colspan="3">수도권1팀</th>
+                                <th rowspan="2">수도권계</th>
+                                <th rowspan="1" colspan="6">지역팀</th>
+                                <th rowspan="2">지역계</th>
+                                <th rowspan="2">에딩거</th>
+                            </tr>
+                            <tr>
+                                <th class="gray02 fw_nl">수도권<span class="word">도매1</span></th>
+                                <th class="gray02 fw_nl">수도권<span class="word">업소1</span></th>
+                                <th class="gray02">팀계</th>
+                                <th class="gray02">부산</th>
+                                <th class="gray02">경남</th>
+                                <th class="gray02">경북</th>
+                                <th class="gray02">충정</th>
+                                <th class="gray02">전라</th>
+                                <th class="gray02">제주</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="3" class="gray pd18">Social<span class="word">Drinking</span></td>
+                                <td rowspan="1" class="wd110 center">A등급</td>
+                                <td>1,776</td>
+                                <td>30%</td>
+                                <td>30%</td>
+                                <td>1</td>
+                                <td class="gray03">125</td>
+                                <td>699</td>
+                                <td>303</td>
+                                <td>303</td>
+                                <td>303</td>
+                                <td>303</td>
+                                <td>303</td>
+                                <td>303</td>
+                                <td class="gray03">1,077</td>
+                                <td class="center gray03 bl_chk">
+                                    <div class="chk_area chk02 t_chk">
+                                        <input type="checkbox" id="tchk2-1">
+                                        <label for="tchk2-1"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" class="wd110 center">B등급</td>
+                                <td>1,776</td>
+                                <td>20%</td>
+                                <td>20%</td>
+                                <td></td>
+                                <td class="gray03">243</td>
+                                <td>643</td>
+                                <td>167</td>
+                                <td>167</td>
+                                <td>167</td>
+                                <td>167</td>
+                                <td>167</td>
+                                <td>167</td>
+                                <td class="gray03">539</td>
+                                <td class="center gray03 bl_chk">
+                                    <div class="chk_area chk02 t_chk">
+                                        <input type="checkbox" id="tchk2-2" >
+                                        <label for="tchk2-2"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blue center">합계</td>
+                                <td class="blue">2,949</td>
+                                <td class="blue">50%</td>
+                                <td class="blue">50%</td>
+                                <td class="blue">1</td>
+                                <td class="blue gray03">367</td>
+                                <td class="blue">1,333</td>
+                                <td class="blue">470</td>
+                                <td class="blue">470</td>
+                                <td class="blue">470</td>
+                                <td class="blue">470</td>
+                                <td class="blue">470</td>
+                                <td class="blue">470</td>
+                                <td class="blue">1,616</td>
+                                <td class="blue center gray03 bl_chk">
+                                    <div class="chk_area chk02 t_chk">
+                                        <input type="checkbox" id="tchk2-3">
+                                        <label for="tchk2-3"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" class="gray pd18">Social<span class="word">Drinking</span></td>
+                                <td rowspan="1" class="wd110 center">A등급</td>
+                                <td>1,776</td>
+                                <td>30%</td>
+                                <td>30%</td>
+                                <td>1</td>
+                                <td class="gray03">125</td>
+                                <td>699</td>
+                                <td>303</td>
+                                <td>303</td>
+                                <td>303</td>
+                                <td>303</td>
+                                <td>303</td>
+                                <td>303</td>
+                                <td class="gray03">1,077</td>
+                                <td class="center gray03 bl_chk">
+                                    <div class="chk_area chk02 t_chk">
+                                        <input type="checkbox" id="tchk2-4" >
+                                        <label for="tchk2-4"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" class="wd110 center">B등급</td>
+                                <td>1,776</td>
+                                <td>20%</td>
+                                <td>20%</td>
+                                <td></td>
+                                <td class="gray03">243</td>
+                                <td>643</td>
+                                <td>167</td>
+                                <td>167</td>
+                                <td>167</td>
+                                <td>167</td>
+                                <td>167</td>
+                                <td>167</td>
+                                <td class="gray03">539</td>
+                                <td class="center gray03 bl_chk">
+                                    <div class="chk_area chk02 t_chk">
+                                        <input type="checkbox" id="tchk2-5">
+                                        <label for="tchk2-5"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blue center">합계</td>
+                                <td class="blue">2,949</td>
+                                <td class="blue">50%</td>
+                                <td class="blue">50%</td>
+                                <td class="blue">1</td>
+                                <td class="blue gray03">367</td>
+                                <td class="blue">1,333</td>
+                                <td class="blue">470</td>
+                                <td class="blue">470</td>
+                                <td class="blue">470</td>
+                                <td class="blue">470</td>
+                                <td class="blue">470</td>
+                                <td class="blue">470</td>
+                                <td class="blue gray03">1,616</td>
+                                <td class="center gray03 bl_chk">
+                                    <div class="chk_area chk02 t_chk">
+                                        <input type="checkbox" id="tchk2-6">
+                                        <label for="tchk2-6"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" class="gray center total">총계</span></td>
+                                <td rowspan="1" class="wd110 center pd0">A등급 합계</td>
+                                <td>3,630</td>
+                                <td>61%</td>
+                                <td>61%</td>
+                                <td>1</td>
+                                <td class="gray03">229</td>
+                                <td>1,398</td>
+                                <td>165</td>
+                                <td>165</td>
+                                <td>165</td>
+                                <td>165</td>
+                                <td>165</td>
+                                <td>165</td>
+                                <td class="gray03">2,232</td>
+                                <td class="center gray03 bl_chk">
+                                    <div class="chk_area chk02 t_chk">
+                                        <input type="checkbox" id="tchk2-7">
+                                        <label for="tchk2-7"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" class="wd110 center pd0">B등급 합계</td>
+                                <td>2,330</td>
+                                <td>39%</td>
+                                <td>39%</td>
+                                <td></td>
+                                <td class="gray03">532</td>
+                                <td>1,294</td>
+                                <td>160</td>
+                                <td>160</td>
+                                <td>160</td>
+                                <td>160</td>
+                                <td>160</td>
+                                <td>160</td>
+                                <td class="gray03">1,006</td>
+                                <td class="center gray03 bl_chk">
+                                    <div class="chk_area chk02 t_chk">
+                                        <input type="checkbox" id="tchk2-8">
+                                        <label for="tchk2-8"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blue center">합계</td>
+                                <td class="blue">5,930</td>
+                                <td class="blue">100%</td>
+                                <td class="blue">100%</td>
+                                <td class="blue">1</td>
+                                <td class="blue gray01">761</td>
+                                <td class="blue">2,692</td>
+                                <td class="blue">325</td>
+                                <td class="blue">325</td>
+                                <td class="blue">325</td>
+                                <td class="blue">325</td>
+                                <td class="blue">325</td>
+                                <td class="blue">325</td>
+                                <td class="blue gray03">3,228</td>
+                                <td class="blue gray03 bl_chk">
+                                    <div class="chk_area chk02 t_chk">
+                                        <input type="checkbox" id="tchk2-9">
+                                        <label for="tchk2-9"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+               
+            </div>
+            <div class="box_flow">
+                <div class="lBox">
+                    <table class="table01 adv chk">
+                        <caption>수도권 1팀, 지역팀의 전체합계, 비중, 수도권계, 지역계 테이블 입니다.</caption>
+                        <!-- <colgroup>
+                            <col style="width:110px">
+                            <col style="width:118px">
+                            <col style="width:104px">
+                            <col style="width:88px">
+                            <col style="width:88px">
+                            <col style="width:88px">
+                            <col style="width:70px">
+                            <col style="width:104px">
+                            <col style="width:72px">
+                            <col style="width:72px">
+                            <col style="width:72px">
+                            <col style="width:72px">
+                            <col style="width:72px">
+                            <col style="width:72px">
+                            <col style="width:88px">
+                            <col style="width:104px">
+                        </colgroup> -->
+                        <thead>
+                            <tr>
+                                <th rowspan="2" colspan="2"></th>
+                                <th rowspan="2">전체합계</th>
+                                <th rowspan="2" class="he104">비중</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th rowspan="3" class="gray pd18">Social<span class="word">Drinking</span></th>
+                                <td rowspan="1" class="wd110 center">A등급</td>
+                                <td>1,776</td>
+                                <td>30%</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" class="wd110 center">B등급</td>
+                                <td>1,776</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td class="blue center">합계</td>
+                                <td class="blue">2,949</td>
+                                <td class="blue">50%</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="3" class="gray pd18">Social<span class="word">Drinking</span></th>
+                                <td rowspan="1" class="wd110 center">A등급</td>
+                                <td>1,776</td>
+                                <td>30%</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" class="wd110 center">B등급</td>
+                                <td>1,776</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td class="blue center">합계</td>
+                                <td class="blue">2,949</td>
+                                <td class="blue">50%</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="3" class="gray center total">총계</span></th>
+                                <td rowspan="1" class="wd110 center pd0">A등급 합계</td>
+                                <td>3,630</td>
+                                <td>61%</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" class="wd110 center pd0">B등급 합계</td>
+                                <td>2,330</td>
+                                <td>39%</td>
+                            </tr>
+                            <tr>
+                                <td class="blue center">합계</td>
+                                <td class="blue">5,930</td>
+                                <td class="blue">100%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="rBox">
+                    <div class="scroll-box">
+                        <table class="table01 adv chk">
+                            <caption>수도권 1팀, 지역팀의 전체합계, 비중, 수도권계, 지역계 테이블 입니다.</caption>
+                            <!-- <colgroup>
+                                <col style="width:110px">
+                                <col style="width:118px">
+                                <col style="width:104px">
+                                <col style="width:88px">
+                                <col style="width:88px">
+                                <col style="width:88px">
+                                <col style="width:70px">
+                                <col style="width:104px">
+                                <col style="width:72px">
+                                <col style="width:72px">
+                                <col style="width:72px">
+                                <col style="width:72px">
+                                <col style="width:72px">
+                                <col style="width:72px">
+                                <col style="width:88px">
+                                <col style="width:104px">
+                            </colgroup> -->
+                            <thead>
+                                <tr>
+                                    <th rowspan="2" colspan="2" class="fix-data"></th>
+                                    <th rowspan="2" class="fix-data">전체합계</th>
+                                    <th rowspan="2" class="fix-data he104">비중</th>
+
+                                    <th rowspan="1" colspan="3">수도권1팀</th>
+                                    <th rowspan="2">수도권계</th>
+                                    <th rowspan="1" colspan="6">지역팀</th>
+                                    <th rowspan="2">지역계</th>
+                                    <th rowspan="2">에딩거</th>
+                                </tr>
+                                <tr>
+                                    <th class="gray02 fw_nl">수도권<span class="word">도매1</span></th>
+                                    <th class="gray02 fw_nl">수도권<span class="word">업소1</span></th>
+                                    <th class="gray02">팀계</th>
+                                    <th class="gray02">부산</th>
+                                    <th class="gray02">경남</th>
+                                    <th class="gray02">경북</th>
+                                    <th class="gray02">충정</th>
+                                    <th class="gray02">전라</th>
+                                    <th class="gray02">제주</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th rowspan="3" class="fix-data gray pd18">Social<span class="word">Drinking</span></th>
+                                    <td rowspan="1" class="fix-data wd110 center">A등급</td>
+                                    <td class="fix-data">1,776</td>
+                                    <td class="fix-data">30%</td>
+                                    
+                                    <td>30%</td>
+                                    <td>1</td>
+                                    <td class="gray03">125</td>
+                                    <td>699</td>
+                                    <td>303</td>
+                                    <td>303</td>
+                                    <td>303</td>
+                                    <td>303</td>
+                                    <td>303</td>
+                                    <td>303</td>
+                                    <td class="gray03">1,077</td>
+                                    <td class="center gray03 bl_chk">
+                                        <div class="chk_area chk02 t_chk">
+                                            <input type="checkbox" id="chk3-1">
+                                            <label for="chk3-1"> </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fix-data blue center">합계</td>
+                                    <td class="fix-data blue">2,949</td>
+                                    <td class="fix-data blue">50%</td>
+                                    
+                                    <td>20%</td>
+                                    <td></td>
+                                    <td class="gray03">243</td>
+                                    <td>643</td>
+                                    <td>167</td>
+                                    <td>167</td>
+                                    <td>167</td>
+                                    <td>167</td>
+                                    <td>167</td>
+                                    <td>167</td>
+                                    <td class="gray03">539</td>
+                                    <td class="center gray03 bl_chk">
+                                        <div class="chk_area chk02 t_chk">
+                                            <input type="checkbox" id="chk3-2">
+                                            <label for="chk3-2"> </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fix-data blue center">합계</td>
+                                    <td class="fix-data blue">2,949</td>
+                                    <td class="fix-data blue">50%</td>
+
+                                    <td class="blue">50%</td>
+                                    <td class="blue">1</td>
+                                    <td class="blue gray03">367</td>
+                                    <td class="blue">1,333</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue">1,616</td>
+                                    <td class="blue center gray03 bl_chk">
+                                        <div class="chk_area chk02 t_chk">
+                                            <input type="checkbox" id="chk3-3">
+                                            <label for="chk3-3"> </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="3" class="fix-data  gray pd18">Social<span class="word">Drinking</span></th>
+                                    <td rowspan="1" class="fix-data  wd110 center">A등급</td>
+                                    <td class="fix-data ">1,776</td>
+                                    <td class="fix-data ">30%</td>
+
+                                    <td>30%</td>
+                                    <td>1</td>
+                                    <td class="gray03">125</td>
+                                    <td>699</td>
+                                    <td>303</td>
+                                    <td>303</td>
+                                    <td>303</td>
+                                    <td>303</td>
+                                    <td>303</td>
+                                    <td>303</td>
+                                    <td class="gray03">1,077</td>
+                                    <td class="center gray03 bl_chk">
+                                        <div class="chk_area chk02 t_chk">
+                                            <input type="checkbox" id="chk3-4">
+                                            <label for="chk3-4"> </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" class="fix-data   wd110 center">B등급</td>
+                                    <td class="fix-data  ">1,776</td>
+                                    <td class="fix-data  ">20%</td>
+
+                                    <td>20%</td>
+                                    <td></td>
+                                    <td class="gray03">243</td>
+                                    <td>643</td>
+                                    <td>167</td>
+                                    <td>167</td>
+                                    <td>167</td>
+                                    <td>167</td>
+                                    <td>167</td>
+                                    <td>167</td>
+                                    <td class="gray03">539</td>
+                                    <td class="center gray03 bl_chk">
+                                        <div class="chk_area chk02 t_chk">
+                                            <input type="checkbox" id="chk3-5">
+                                            <label for="chk3-5"> </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fix-data  blue center">합계</td>
+                                    <td class="fix-data  blue">2,949</td>
+                                    <td class="fix-data  blue">50%</td>
+                                    
+                                    <td class="blue">50%</td>
+                                    <td class="blue">1</td>
+                                    <td class="blue gray03">367</td>
+                                    <td class="blue">1,333</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue gray03">1,616</td>
+                                    <td class="center gray03 bl_chk">
+                                        <div class="chk_area chk02 t_chk">
+                                            <input type="checkbox" id="chk3-6">
+                                            <label for="chk3-6"> </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="3" class="fix-data gray center total">총계</span></th>
+                                    <td rowspan="1" class="fix-data wd110 center pd0">A등급 합계</td>
+                                    <td class="fix-data">3,630</td>
+                                    <td class="fix-data">61%</td>
+                                    
+                                    <td>61%</td>
+                                    <td>1</td>
+                                    <td class="gray03">229</td>
+                                    <td>1,398</td>
+                                    <td>165</td>
+                                    <td>165</td>
+                                    <td>165</td>
+                                    <td>165</td>
+                                    <td>165</td>
+                                    <td>165</td>
+                                    <td class="gray03">2,232</td>
+                                    <td class="center gray03 bl_chk">
+                                        <div class="chk_area chk02 t_chk">
+                                            <input type="checkbox" id="chk3-7">
+                                            <label for="chk3-7"> </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" class="fix-data wd110 center pd0">B등급 합계</td>
+                                    <td class="fix-data">2,330</td>
+                                    <td class="fix-data">39%</td>
+                                    
+                                    <td>39%</td>
+                                    <td></td>
+                                    <td class="gray03">532</td>
+                                    <td>1,294</td>
+                                    <td>160</td>
+                                    <td>160</td>
+                                    <td>160</td>
+                                    <td>160</td>
+                                    <td>160</td>
+                                    <td>160</td>
+                                    <td class="gray03">1,006</td>
+                                    <td class="center gray03 bl_chk">
+                                        <div class="chk_area chk02 t_chk">
+                                            <input type="checkbox" id="chk3-8">
+                                            <label for="chk3-8"> </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fix-data  blue center">합계</td>
+                                    <td class="fix-data  blue">5,930</td>
+                                    <td class="fix-data  blue">100%</td>
+
+                                    <td class="blue">100%</td>
+                                    <td class="blue">1</td>
+                                    <td class="blue gray01">761</td>
+                                    <td class="blue">2,692</td>
+                                    <td class="blue">325</td>
+                                    <td class="blue">325</td>
+                                    <td class="blue">325</td>
+                                    <td class="blue">325</td>
+                                    <td class="blue">325</td>
+                                    <td class="blue">325</td>
+                                    <td class="blue gray03">3,228</td>
+                                    <td class="blue gray03 bl_chk">
+                                        <div class="chk_area chk02 t_chk">
+                                            <input type="checkbox" id="chk3-9" >
+                                            <label for="chk3-9"> </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="radio_form">
+                <div class="detail_wrap">
+                    <div class="detail clear">
+                        <h3 class="tit3">당사 입점제품</h3>
+                        <div class="radio_wrap">
+                            <div class="list">
+                                <input type="checkbox" id="box1">
+                                <label for="box1">라오샨 600ml(병)</label>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox" id="box2">
+                                <label for="box2">칭따오 330ml(병)</label>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox" id="box3">
+                                <label for="box3">칭따오 330ml(병)</label>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox" id="box4">
+                                <label for="box4">칭따오 640ml(병)</label>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox" id="box5">
+                                <label for="box5">라오샨 600ml(병)</label>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox" id="box6">
+                                <label for="box6">칭따오 330ml(병)</label>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox" id="box7">
+                                <label for="box7">칭따오 330ml(병)</label>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox" id="box8">
+                                <label for="box8">칭따오 640ml(병)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail clear">
+                        <h3 class="tit3">경쟁사 입점제품</h3>
+                        <div class="radio_wrap">
+                            <div class="list">
+                                <input type="checkbox" id="box17">
+                                <label for="box17">경쟁사1</span></label>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox" id="box18">
+                                <label for="box18">경쟁사2</span></label>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox" id="box19">
+                                <label for="box19">경쟁사3</span></label>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox" id="box20">
+                                <label for="box20">경쟁사4</span></label>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox" id="box21">
+                                <label for="box21">경쟁사5</span></label>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox" id="box22">
+                                <label for="box22">경쟁사6</span></label>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox" id="box23">
+                                <label for="box23">경쟁사7</span></label>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox" id="box24">
+                                <label for="box24">경쟁사8</span></label>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox" id="box25">
+                                <label for="box25">경쟁사9</label>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox" id="box26">
+                                <label for="box26">경쟁사9</label>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox" id="box27">
+                                <label for="box27">경쟁사9</label>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox" id="box28">
+                                <label for="box28">경쟁사9</label>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox" id="box29">
+                                <label for="box29">경쟁사9</label>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox" id="box30">
+                                <label for="box30">경쟁사9</label>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox" id="box31">
+                                <label for="box31">경쟁사9</label>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox" id="box32">
+                                <label for="box32">경쟁사9</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="box_wrap">
+                <div class="sum">
+                    <p>영업활동내역 (최근 <span>5</span>개)</p>
+                </div>
+                <div class="box_flow">
+                    <div class="scroll-box">
+                        <table class="table01">
+                            <caption>영업활동내역 테이블의 일자, 활동 구분, 활동 내용 테이블 입니다.</caption>
+                            <colgroup>
+                                <col style="width:20%">
+                                <col style="width:40%">
+                                <col style="width:40%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>일자</th>
+                                    <th>활동 구분</th>
+                                    <th>활동 내용</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="center">2020.08.23</td>
+                                    <td>업장방문>업주면담</td>
+                                    <td>발주관련 내역 확인</td>
+                                </tr>
+                                <tr>
+                                    <td class="center">2020.08.23</td>
+                                    <td>업장방문>판촉물 전달</td>
+                                    <td>에딩거 판촉물 전달</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <p class="tit2 mb0">선택된 거래처들</p>
+                <div class="box">
+                    <div class="list">
+                        <div class="row">
+                            <select name="" id="">
+                                <option value="rate">등급선택</option>
+                                <option value="a">A</option>
+                                <option value="b">B</option>
+                                <option value="c">C</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="1">상태선택</option>
+                                <option value="2">영업</option>
+                                <option value="3">휴업</option>
+                                <option value="4">폐업</option>
+                                <option value="5">삭제요청</option>
+                            </select>
+                            <button type="button" class="btn btn_white">변경</button>
+                        </div>
+                    </div>
+                    <div class="list btn-area">
+                        <div class="row">
+                            <button type="button" class="btn btn_navy btn-big">신규 영업 목표 등록</button>
+                            <button type="button" class="btn btn_navy">저장</button>
+                            <select name="" id="">
+                                <option value="10">10건</option>
+                                <option value="20">20건</option>
+                                <option value="50">50건</option>
+                                <option value="50">100건</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_flow">
+                    <div class="scroll-box">
+                        <table class="table01 chk">
+                            <caption>선택된 거래처들 테이블의 거래처 명, 채널, seg, subseg1, 등급, 거래처 담당 부서, 거래처 담당자, 최근 방문일, 상태 테이블 입니다.</caption>
+                            <colgroup>
+                                <col style="width:5%">
+                                <col style="width:15%">
+                                <col style="width:10%">
+                                <col style="width:10%">
+                                <col style="width:10%">
+                                <col style="width:5%">
+                                <col style="width:15%">
+                                <col style="width:15%">
+                                <col style="width:10%">
+                                <col style="width:5%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="chk_area chk_all chk02">
+                                            <input type="checkbox" id="t_chk-all" name="tchk">
+                                            <label for="t_chk-all"> </label>
+                                        </div>
+                                    </th>
+                                    <th>대림종합주류</th>
+                                    <th>채널</th>
+                                    <th>Seg</th>
+                                    <th>subseg1</th>
+                                    <th>등급</th>
+                                    <th>거래처 담당 부서</th>
+                                    <th>거래처 담당자</th>
+                                    <th>최근 방문일</th>
+                                    <th>상태</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="center">
+                                        <div class="chk_area chk02 t_chk">
+                                            <input type="checkbox" id="t_chk1" name="tchk">
+                                            <label for="t_chk1"> </label>
+                                        </div>
+                                    </td>
+                                    <td>대림종합주류</td>
+                                    <td class="center">도매장</td>
+                                    <td class="center">도매장</td>
+                                    <td class="center">도매장</td>
+                                    <td class="center">A</td>
+                                    <td>수도권 도매2</td>
+                                    <td>강도매</td>
+                                    <td class="center">2020-09-03</td>
+                                    <td class="center">영업</td>
+                                </tr>
+                                <tr>
+                                    <td class="center">
+                                        <div class="chk_area chk02 t_chk">
+                                            <input type="checkbox" id="t_chk2" name="tchk">
+                                            <label for="t_chk2"> </label>
+                                        </div>
+                                    </td>
+                                    <td>대림종합주류</td>
+                                    <td class="center">도매장</td>
+                                    <td class="center">도매장</td>
+                                    <td class="center">도매장</td>
+                                    <td class="center">B</td>
+                                    <td>수도권 도매2</td>
+                                    <td>김도매</td>
+                                    <td class="center">2020-09-03</td>
+                                    <td class="center">영업</td>
+                                </tr>
+                                <tr>
+                                    <td class="center">
+                                        <div class="chk_area chk02 t_chk">
+                                            <input type="checkbox" id="t_chk3" name="tchk">
+                                            <label for="t_chk3"> </label>
+                                        </div>
+                                    </td>
+                                    <td>대림종합주류</td>
+                                    <td class="center">도매장</td>
+                                    <td class="center">도매장</td>
+                                    <td class="center">도매장</td>
+                                    <td class="center">C</td>
+                                    <td>수도권 도매2</td>
+                                    <td>최기재</td>
+                                    <td class="center">2020-09-03</td>
+                                    <td class="center">영업</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <ul>
+                    <li class="arrow_left">
+                        <a href="javascript:void(0)" title="이전"></a>
+                    </li>
+                    <li><a href="javascript:void(0)" class="on">1</a></li>
+                    <li><a href="javascript:void(0)">2</a></li>
+                    <li><a href="javascript:void(0)">3</a></li>
+                    <li><a href="javascript:void(0)">4</a></li>
+                    <li><a href="javascript:void(0)">5</a></li>
+                    <li class="arrow_right">
+                        <a href="javascript:void(0)" title="다음"></a>
+                    </li>
+                </ul>
+                <div class="btn-area right">
+                    <button type="button" class="btn btn_navy btn-big mr10">신규 업장 등록</button>
+                    <button type="button" class="btn btn btn_navy btn-excel mr0">EXCEL</button>
+                </div>
+            </div>  
+            <div class="info_form clear">
+                <h2 class="tit01">업소 상세 수정</h2>
+                <div class="detail_wrap">
+                    <div class="detail clear">
+                        <div class="list">
+                            <dl>
+                                <dt><span class="star">*</span>업소명</dt>
+                                <dd>
+                                    <p class="name">(신당)기배이자카야</p>
+                                </dd>
+                            </dl>
+                            <dl class="col02">
+                                <dt><span class="star">*</span>업소 구분</dt>
+                                <dd>
+                                   <div class="row">
+                                        <select name="" id="">
+                                            <option value="2020년">2020년</option>
+                                            <option value="2020년">2021년</option>
+                                            <option value="2020년">2022년</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="1">1월</option>
+                                            <option value="2">2월</option>
+                                            <option value="3">3월</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="2020년">2020년</option>
+                                            <option value="2020년">2021년</option>
+                                            <option value="2020년">2022년</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="1">1월</option>
+                                            <option value="2">2월</option>
+                                            <option value="3">3월</option>
+                                        </select>
+                                   </div>
+                                </dd>
+                            </dl>
+                            <dl class="col01">
+                                <dt>등급</dt>
+                                <dd>
+                                   <div class="row">
+                                        <select name="" id="">
+                                            <option value="2020년">A등급</option>
+                                            <option value="2020년">B등급</option>
+                                            <option value="2020년">C등급</option>
+                                        </select>
+                                   </div>
+                                </dd>
+                            </dl>
+                            <dl class="col02">
+                                <dt>대표자</dt>
+                                <dd>
+                                    <div class="row row-input">
+                                        <input type="text" title="입력">
+                                        <input type="text" title="입력">
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="col02 col_btn01">
+                                <dt>사업자 등록번호</dt>
+                                <dd>
+                                    <div class="row">
+                                        <input type="text" title="입력">
+                                        <button type="button" class="btn_navy">중복확인</button>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>사업장 전화번호</dt>
+                                <dd>
+                                   <div class="row">
+                                     <input type="text" title="입력">
+                                   </div>
+                                </dd>
+                            </dl>
+                            <dl class="col02">
+                                <dt>키맨 1</dt>
+                                <dd>
+                                    <div class="row row-input">
+                                        <input type="text" title="입력">
+                                        <input type="text" title="입력">
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="col03">
+                                <dt>지역</dt>
+                                <dd>
+                                    <div class="row ea3">
+                                        <select name="" id="">
+                                            <option value="2020년">지역1</option>
+                                            <option value="2020년">지역1</option>
+                                            <option value="2020년">지역1</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="2020년">지역1</option>
+                                            <option value="2020년">지역1</option>
+                                            <option value="2020년">지역1</option>
+                                        </select>
+                                        <select name="" id="" >
+                                            <option value="1">지역1</option>
+                                            <option value="2">지역1</option>
+                                            <option value="3">지역1</option>
+                                        </select>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="col02 col_btn02">
+                                <dt>우편번호</dt>
+                                <dd>
+                                    <div class="row">
+                                        <input type="text" title="입력">
+                                        <button type="button" class="btn btn_navy btn-big">우편번호 찾기</button>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>신주소</dt>
+                                <dd>
+                                  <div class="row">
+                                        <input type="text" title="입력">
+                                  </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>구주소</dt>
+                                <dd>
+                                   <div class="row">
+                                     <input type="text" title="입력">
+                                   </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="detail clear">
+                        <div class="list">
+                            <dl class="col01">
+                                <dt><span class="star">*</span>영업상태</dt>
+                                <dd>
+                                    <select name="" id="">
+                                        <option value="1">영업</option>
+                                        <option value="2">영업</option>
+                                        <option value="3">영업</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><span class="star">*</span>담당자 부서</dt>
+                                <dd>
+                                    <input type="text" title="입력">
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><span class="star">*</span>담당자</dt>
+                                <dd>
+                                    <input type="text" title="입력">
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>사용도매장</dt>
+                                <dd>
+                                    <input type="text" title="입력">
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>도매장 담당자 부서</dt>
+                                <dd>
+                                    <input type="text" title="입력">
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>도매장 담당자</dt>
+                                <dd>
+                                    <input type="text" title="입력">
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>업체 등록일</dt>
+                                <dd>
+                                    <p class="date">2020-09-23</p>
+                                </dd>
+                            </dl>
+                            <dl class="txtarea">
+                                <dt>비고</dt>
+                                <dd>
+                                    <textarea name="" id="" cols="30" rows="10" title="입력"></textarea>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn_wrap clear">
+                    <div class="row">
+                        <button type="button" class="btn btn_white">취소</button>
+                        <button type="button" class="btn btn_white">등록</button>
+                    </div>
+                </div>
+                <div class="btn_wrap mt76">
+                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                    <button type="button" class="btn btn02 btn_white">수정</button>
+                    <button type="button" class="btn btn_white mr10">등록</button>
+                    <button type="button" class="btn btn_white mr10">확인</button>
+                    <button type="button" class="btn btn btn_navy btn-excel mr10">EXCEL</button>
+                    <button type="button" class="btn btn_navy btn-big mr0">신규 업소 등록</button>
+                </div>
+            </div>
+            <!-- ======= popup ======= -->
+            <div>
+                <ul>
+                    <li><a href="javascript:openPop('popup1')">팝업 열기 </a></li>
+                    <li><a href="javascript:openPop('popup2')">팝업 열기 </a></li>
+                    <li><a href="javascript:openPop('popup3')">팝업 열기 </a></li>
+                    <li><a href="javascript:openPop('popup4')">팝업 열기 </a></li>
+                    <li><a href="javascript:openPop('popup5')">팝업 열기 </a></li>
+                    <li><a href="javascript:openPop('popup6')">팝업 열기 </a></li>
+                    <li><a href="javascript:openPop('popup7')">팝업 열기 </a></li>
+                </ul>
+            </div>
+            <!-- popup area -->
+            <div class="popup popup_wrap pop01" id="popup1">
+                <div class="popup_container">
+                    <h2 class="pop_tit">활동계획입력</h2>
+                    <div class="pop_contents">
+                        <div class="scrollBox">
+                            <div class="pop_info_form">
+                                <div class="list row">
+                                    <select name="" id="" class="mr10">
+                                        <option value="">매니저 코칭</option>
+                                        <option value="">매니저 코칭</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">매니저 코칭</option>
+                                        <option value="">매니저 코칭</option>
+                                    </select>
+                                </div>
+                                <div class="list input-col3">
+                                    <input type="text" class="mr10" placeholder="년도" title="년도">
+                                    <input type="text" class="mr10" placeholder="월" title="월">
+                                    <input type="text" placeholder="일" title="일">
+                                </div>
+                                <div class="list row">
+                                    <input type="text" class="mr10" placeholder="시/분" title="시/분">
+                                    <input type="text" placeholder="시/분" title="시/분">
+                                </div>
+                                <div class="list select-col3">
+                                    <p class="tit03">방문 지역</p>
+                                    <div class="row">
+                                        <select name="" id="" class="mr10">
+                                            <option value="">지역</option>
+                                            <option value="">서울</option>
+                                        </select>
+                                        <select name="" id="" class="mr10">
+                                            <option value="">지역</option>
+                                            <option value="">서울</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">지역</option>
+                                            <option value="">서울</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <label for="">방문 도매장 수</label>
+                                    <input type="text" placeholder="입력" title="입력">
+                                </div>
+                                <div class="list">
+                                    <label for="">방문 입장 수</label>
+                                    <input type="text" placeholder="입력" title="입력">
+                                </div>
+                                <div class="list">
+                                    <label for="">동행 사원 수</label>
+                                    <input type="text" placeholder="입력" title="입력">
+                                </div>
+                                <div class="list">
+                                    <label for="">동행 사원 성명</label>
+                                    <input type="text" placeholder="입력" title="입력">
+                                </div>
+                                <div class="list">
+                                    <label for="">코칭 내용</label>
+                                    <textarea type="text" placeholder="활동 내용 입력" title="입력"></textarea>
+                                </div>
+                            </div>
+                            <div class="btn-area between">
+                                <div class="chk_area chk01">
+                                    <input type="checkbox" id="new" >
+                                    <label for="new">활동완료</label>
+                                </div>
+                                <button type="button" class="btn btn_white">등록</button>
+                            </div>
+                        </div><!--// scrollBox -->
+                    </div>
+                    <button type="button" class="btn_close">닫기</button>
+                </div>
+            </div>
+            <div class="popup popup_wrap pop01" id="popup2">
+                <div class="popup_container">
+                    <h2 class="pop_tit">활동계획입력</h2>
+                    <div class="pop_contents">
+                        <div class="scrollBox">
+                            <div class="pop_info_form">
+                                <div class="list">
+                                    <select name="" id="" class="mr10">
+                                        <option value="">매니저 코칭</option>
+                                        <option value="">매니저 코칭</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">매니저 코칭</option>
+                                        <option value="">매니저 코칭</option>
+                                    </select>
+                                </div>
+                                <div class="list">
+                                    <input type="text" placeholder="거래처 조회">
+                                </div>
+                                <div class="list select-col3">
+                                    <select name="" id="" class="mr10">
+                                        <option value="">2020년</option>
+                                        <option value="">1월</option>
+                                    </select>
+                                    <select name="" id="" class="mr10">
+                                        <option value="">1월</option>
+                                        <option value="">1월</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">1일</option>
+                                        <option value="">1월</option>
+                                    </select>
+                                </div>
+                                <div class="list">
+                                    <select name="" id="" class="mr10">
+                                        <option value="">시/분</option>
+                                        <option value="">시/분</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">시/분</option>
+                                        <option value="">시/분</option>
+                                    </select>
+                                </div>
+                                <div class="list">
+                                    <label for=""></label>
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="활동 내용 입력"></textarea>
+                                </div>
+                            </div>
+                            <div class="btn-area between">
+                                <div class="chk_area">
+                                    <input type="checkbox" id="new" class="chk01">
+                                    <label for="new">활동완료</label>
+                                </div>
+                                <button type="button" class="btn btn_white">등록</button>
+                            </div>
+                        </div><!--// scrollBox -->
+                    </div>
+                    <button type="button" class="btn_close">닫기</button>
+                </div>
+            </div>
+            <div class="popup popup_wrap pop01" id="popup3">
+                <div class="popup_container">
+                    <h2 class="pop_tit">입점품목 Listing 설정</h2>
+                    <div class="pop_contents">
+                        <div class="scrollBox">
+                            <div class="pop_info_form">
+                                <div class="list col02">
+                                    <p class="tit03">Listing 일자</p>
+                                    <input type="text" placeholder="Yyyy-mm-dd">
+                                </div>
+                            </div>
+                            <div class="btn-area between">
+                                <div class="chk_area chk01">
+                                    <input type="checkbox" id="new">
+                                    <label for="new">기존 신규</label>
+                                </div>
+                                <button type="button" class="btn btn_white">등록</button>
+                            </div>
+                        </div><!--// scrollBox -->
+                    </div>
+                    <button type="button" class="btn_close">닫기</button>
+                </div>
+            </div>
+            <div class="popup popup_wrap pop02" id="popup4">
+                <div class="popup_container">
+                    <h2 class="pop_tit">영업행사등록</h2>
+                    <div class="pop_contents">
+                        <div class="scrollBox">
+                            <div class="pop_info_form">
+                                <div class="list">
+                                    <p class="tit03">행사일자</p>
+                                    <input type="text" id="calender3" class="input_type02 calender">
+                                    <span class="etc">~</span>
+                                    <input type="text" id="calender4" class="input_type02 calender">
+                                </div>
+                                <div class="list col01">
+                                    <p class="tit03">행사거래처</p>
+                                        <div class="row">
+                                        <select name="" id="">
+                                            <option value="">전체</option>
+                                            <option value="">전체</option>
+                                            <option value="">전체</option>
+                                        </select>
+                                        <div class="count">
+                                            <select name="" id="">
+                                                <option value="">제품선택</option>
+                                                <option value="">전체</option>
+                                                <option value="">전체</option>
+                                            </select>
+                                            <input type="text" placeholder="내용 입력">
+                                            <button type="button" class="btn_minus" title="빼기"></button>
+                                        </div>
+                                    </div>
+                                    <div class="count row">
+                                        <select name="" id="">
+                                            <option value="">제품선택</option>
+                                            <option value="">전체</option>
+                                            <option value="">전체</option>
+                                        </select>
+                                        <input type="text" placeholder="내용 입력">
+                                        <button type="button" class="btn_plus" title="더하기"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-area right">
+                                <button type="submit" class="btn btn_white">등록</button>
+                            </div>
+                        </div><!--// scrollBox -->
+                    </div>
+                    <button type="button" class="btn_close">닫기</button>
+                </div>
+            </div>
+            <div class="popup popup_wrap pop02" id="popup5">
+                <div class="popup_container">
+                    <h2 class="pop_tit">영업행사등록</h2>
+                    <div class="pop_contents">
+                        <div class="scrollBox">
+                            <div class="pop_info_form">
+                                <div class="list col01">
+                                    <p class="tit03">행사일자</p>
+                                    <input type="text" id="calender3" class="input_type02 calender">
+                                    <span class="etc">~</span>
+                                    <input type="text" id="calender4" class="input_type02 calender">
+                                </div>
+                                <div class="list col01">
+                                    <p class="tit03">행사거래처</p>
+                                    <select name="" id="">
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                    </select>
+                                    <div class="count">
+                                        <select name="" id="">
+                                            <option value="">제품선택</option>
+                                            <option value="">전체</option>
+                                            <option value="">전체</option>
+                                        </select>
+                                        <input type="text" placeholder="내용 입력">
+                                        <button type="button" class="btn_plus" title="더하기"></button>
+                                    </div>
+                                    <div class="count">
+                                        <select name="" id="">
+                                            <option value="">제품선택</option>
+                                            <option value="">전체</option>
+                                            <option value="">전체</option>
+                                        </select>
+                                        <input type="text" placeholder="내용 입력">
+                                        <button type="button" class="btn_minus" title="빼기"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-area right col02">
+                                <button type="button" class="btn btn_white mr10">삭제</button>
+                                <button type="button" class="btn btn_white">수정</button>
+                            </div>
+                        </div><!--// scrollBox -->
+                    </div>
+                    <button type="button" class="btn_close">닫기</button>
+                </div>
+            </div>
+            <div class="popup popup_wrap pop03" id="popup6">
+                <div class="popup_container">
+                    <h2 class="pop_tit">공지사항</h2>
+                    <div class="pop_contents">
+                        <div class="scrollBox">
+                            <div class="pop_head">
+                                <p>2020년 부서 간 휴가기간 안내</p>
+                                <span>2020-07-01 <em>SDM 홍길동</em></span>
+                            </div>
+                            <div class="editor">
+                                <p>이 부분은 웹 에디터 영역 입니다.</p>
+                            </div>
+                        </div><!--// scrollBox -->
+                    </div>
+                    <button type="button" class="btn_close">닫기</button>
+                </div>
+            </div>
+            <div class="popup popup_wrap pop04" id="popup7">
+                <div class="popup_container">
+                    <h2 class="pop_tit">업소 판매량 등록</h2>
+                    <div class="pop_contents">
+                        <div class="scrollBox">
+                            <div class="pop_head">
+                                <input type="text">
+                                <div class="row">
+                                    <select name="" id="">
+                                        <option value="2020년">2020년</option>
+                                        <option value="2020년">2021년</option>
+                                        <option value="2020년">2022년</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="1">1월</option>
+                                        <option value="2">2월</option>
+                                        <option value="3">3월</option>
+                                    </select>
+                                </div>
+                                <button type="button" class="btn btn_red">조회</button>
+                            </div>
+                            <div class="pop_list">
+                                <dl>
+                                    <dt>라오샨 600ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 330ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 640ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 위트 330ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 스타우트 330ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 IPA 330ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 논알콜릭 330ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 640ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 20L(keg)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>매그너스 쥬시 애플 330ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>라오샨 600ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 330ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 640ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 위트 330ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 스타우트 330ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 IPA 330ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 논알콜릭 330ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 640ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 20L(keg)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>매그너스 쥬시 애플 330ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>라오샨 600ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 330ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 640ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 위트 330ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 스타우트 330ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 IPA 330ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 논알콜릭 330ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 640ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>칭따오 20L(keg)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>매그너스 쥬시 애플 330ml(병)</dt>
+                                    <dd><input type="text"></dd>
+                                </dl>
+                            </div>
+                            <div class="btn-area right">
+                                <button type="button" class="btn btn_white">등록</button>
+                            </div>
+                        </div><!--// scrollBox -->
+                    </div>
+                    <button type="button" class="btn_close">닫기</button>
+                </div>
+            </div>
+           </div>
+        </section> <!--// contents -->
+    </div> <!--// wrapper -->
+
+</body>
+</html>

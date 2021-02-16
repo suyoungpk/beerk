@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = 0, viewport-fit=cover"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="../assets/css/pages.css">
+    <title>BeerK</title>
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="skip">
+            <li><a href="#nav">메뉴바로가기</a></li>
+            <li><a href="#contents">본문바로가기</a></li>
+        </ul>
+        <header>
+            <div class="pc-wrap">
+                <h1 class="logo">
+                    <a href="javascript:void(0)">
+                        BK Co.,Ltd Import & Distribution pf world's finest beers
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li>ID : ABC0001</li>
+                        <li><a href="javascript:void(0)">수도권 도매 1파트&nbsp;<strong>김영업<span>님</span></strong></a></li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn btn_logout">로그아웃</a>
+                </nav>
+            </div>
+            <div class="mobile-wrap center">
+                <h2 class="title">영업활동 조회</h2>
+                <!-- <button class="btn btn-menu" type="button">메뉴 열기</button> -->
+                <button class="btn btn-back" type="button">뒤로가기</button>
+            </div>
+        </header>
+        <nav id="nav">
+            <h1 class="hidden">메인 내비게이션</h1>
+            <button class="btn btn-menu-close" type="button">메뉴 닫기</button>
+            <ul class="gnb">
+                <li class="gnb1">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 활동 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li>
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb2">
+                    <a href="javascript:void(0)"  class="on current"><span>도매장 수주 관리</span></a>
+                    <ul>
+                        <li><a href="#">수주 조회</a></li>
+                        <li><a href="#">수주 등록</a></li>
+                        <li><a href="#">반품 조회</a></li>
+                        <li><a href="#">반품 등록</a></li>
+                        <!-- <li><a href="#">도매장 기말 재고 등록</a></li>
+                        <li><a href="#">도매장 기말 재고 조회</a></li>
+                        <li><a href="#">도매장 평균 재고 관리</a></li>
+                        <li><a href="#"> 파트별 도매장 재고 현황</a></li> -->
+                    </ul>
+                </li>
+                <li class="gnb3">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 운영 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li>
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul> -->
+                    <!-- <ul>
+                        <li><a href="#">신규 입점 현황</a></li>
+                        <li><a href="#">개인 별 신규 영업 목표 실적</a></li>
+                        <li><a href="#">파트 별 목표 실적 현황</a></li>
+                        <li><a href="#">posm 등록</a></li>                       
+                    </ul> -->
+                </li>
+                <li class="gnb4">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>판매량 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb5">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>도매장 재고 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 판매량 등록</a></li>
+                        <li><a href="#">재널 별 판매량 등록</a></li>
+                        <li><a href="#">지역 별 판매량 등록</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb6">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>거래처 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb7">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>프로모션 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">visibility 영업 조회 등록</a></li> 
+                        <li><a href="#">visibility 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 대시보드</a></li> 
+                        <li><a href="#">gift 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 대시보드</a></li>
+                    </ul> -->
+                </li>
+            </ul>
+        </nav>
+        <section id="contents" class="salesActivityList">
+           <div class="container">
+                <div class="headline clear">
+                    <h1 class="title-style">영업활동 조회</h1>
+                    <!-- <ul class="location">
+                        <li><a href="javascript:void(0)">홈</a></li>
+                        <li><a href="javascript:void(0)">수주 관리</a></li>
+                        <li><a href="javascript:void(0)" class="on">수주 조회</a></li>
+                    </ul> -->
+                </div>
+                <div class="info">
+                    <dl class="dl_col02">
+                        <dt>거래처 명</dt>
+                        <dd>
+                            <div class="result-box">
+                                <input type="text" class="input_type01" placeholder="거래처 명 입력하세요" id="partnerName" onkeyup="searchPartner()" title="거래처 명">
+                                <div class="searchList">
+                                    <div class="searchList-box">
+                                        <ul id="partnerList"> </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+                        <dt>거래처 담당</dt>
+                        <dd>
+                            <div class="row">
+                                <select name="" id="">
+                                    <option value="">전체</option>
+                                    <option value="">전체</option>
+                                    <option value="">전체</option>
+                                </select>
+                                <div class="result-box searchManager">
+                                    <input type="text" class="input_type02" placeholder="담당자를 입력하세요"  onkeyup="searchProduct(this)" title="담당자">
+                                    <div class="searchList">
+                                        <div class="searchList-box">
+                                            <ul class="productList"> </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="dl_col02">
+                        <dt>지역</dt>
+                        <dd>
+                            <div class="row">
+                                <select name="" id="" class="mCalc">
+                                    <option value="">지역1</option>
+                                    <option value="">지역1</option>
+                                    <option value="">지역1</option>
+                                </select>
+                                <select name="" id="" class="mCalc">
+                                    <option value="">지역2</option>
+                                    <option value="">지역2</option>
+                                </select>
+                            </div>
+                        </dd>
+                        <dt>활동</dt>
+                        <dd>
+                            <div class="row">
+                                <select name="" id="" class="mCalc">
+                                    <option value="">전체</option>
+                                </select>
+                                <select name="" id="" class="mCalc">
+                                    <option value="">전체</option>
+                                </select>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="dl_col02">
+                        <dt>활동일자</dt>
+                        <dd>
+                            <div class="row">
+                                <input type="text" id="calender1" class="calender" placeholder="2020-08-01"  title="활동일자">
+                                <span class="etc">~</span>
+                                <input type="text" id="calender2" class="calender" placeholder="2020-09-28" title="활동일자">
+                            </div>
+                        </dd>
+                        <dt></dt>
+                        <dd></dd>
+                    </dl>
+                   
+                    <div class="btn_wrap">
+                        <button type="button" class="btn btn_navy">조회</button> <!-- 01.22 조회 버튼 파란색으로 변경 -->
+                    </div>
+                </div>
+                <!-- <p class="tit2 mb0">선택된 거래처들</p> -->
+                <div class="result-box box_flow">
+                    <div class="sum box">
+                        <p >
+                            <!-- 전체 <em>250</em>개 / 조회 <span>80</span>개 -->
+                        </p>
+                        <div class="list btn-area">
+                           <div class="row">
+                                <select name="" id="">
+                                    <option value="10">10건</option>
+                                    <option value="20">20건</option>
+                                    <option value="50">50건</option>
+                                    <option value="50">100건</option>
+                                </select>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="scroll-box">
+                        <table class="table01 chk">
+                            <caption>영업활동 결과 리스트</caption>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">No</th>
+                                    <th>담당 부서</th>
+                                    <th  rowspan="2">거래처 명</th>
+                                    <th>지역1</th>
+                                    <th rowspan="2">활동 일자</th>
+                                    <th>활동 목적</th>
+                                    <th rowspan="2">활동 내용</th>
+                                    <th>방문 도매장 수 </th>
+                                    <th rowspan="2">동행사원 수</th>
+                                    <th rowspan="2">동행사원 성명</th>
+                                </tr>
+                                <tr>
+                                    <th>담당자</th>
+                                    <th>지역2</th>
+                                    <th>활동 구분</th>
+                                    <th>방문 업장 수</th>
+                                    </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>78</td>
+                                    <td class="div-td">
+                                        <p class="row">수도권 업장2</p>
+                                        <p class="row">추종원</p>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:void(0)">(신당)기배이자캬야</a>
+                                    </td>
+                                    <td class="div-td">
+                                        <p class="row">서울</p>
+                                        <p class="row">중구</p>
+                                    </td>
+                                    <td>2020-06-30</td>
+                                    <td class="div-td">
+                                        <p class="row">업장 방문  </p>
+                                        <p class="row">업주면담</p>
+                                    </td>
+                                    <td>발주관련 내역 확인</td>
+                                    <td class="div-td">
+                                    <p class="row">1</p>
+                                    <p class="row">0</p>
+                                    </td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                <td>78</td>
+                                <td class="div-td">
+                                        <p class="row">수도권 업장2</p>
+                                        <p class="row">추종원</p>
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0)">(신당)기배이자캬야</a>
+                                </td>
+                                <td class="div-td">
+                                        <p class="row">서울</p>
+                                        <p class="row">중구</p>
+                                </td>
+                                <td>2020-06-30</td>
+                                <td class="div-td">
+                                        <p class="row">업장 방문  </p>
+                                        <p class="row">업주면담</p>
+                                </td>
+                                <td>발주관련 내역 확인</td>
+                                <td class="div-td">
+                                    <p class="row">1</p>
+                                    <p class="row">0</p>
+                                </td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>78</td>
+                                <td class="div-td">
+                                        <p class="row">수도권 업장2</p>
+                                        <p class="row">추종원</p>
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0)">(신당)기배이자캬야</a>
+                                </td>
+                                <td class="div-td">
+                                        <p class="row">서울</p>
+                                        <p class="row">중구</p>
+                                </td>
+                                <td>2020-06-30</td>
+                                <td class="div-td">
+                                        <p class="row">업장 방문  </p>
+                                        <p class="row">업주면담</p>
+                                </td>
+                                <td>발주관련 내역 확인</td>
+                                <td class="div-td">
+                                    <p class="row">1</p>
+                                    <p class="row">0</p>
+                                </td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>78</td>
+                                <td class="div-td">
+                                        <p class="row">수도권 업장2</p>
+                                        <p class="row">추종원</p>
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0)">(신당)기배이자캬야</a>
+                                </td>
+                                <td class="div-td">
+                                        <p class="row">서울</p>
+                                        <p class="row">중구</p>
+                                </td>
+                                <td>2020-06-30</td>
+                                <td class="div-td">
+                                        <p class="row">업장 방문  </p>
+                                        <p class="row">업주면담</p>
+                                </td>
+                                <td>발주관련 내역 확인</td>
+                                <td class="div-td">
+                                    <p class="row">1</p>
+                                    <p class="row">0</p>
+                                </td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>78</td>
+                                <td class="div-td">
+                                        <p class="row">수도권 업장2</p>
+                                        <p class="row">추종원</p>
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0)">(신당)기배이자캬야</a>
+                                </td>
+                                <td class="div-td">
+                                        <p class="row">서울</p>
+                                        <p class="row">중구</p>
+                                </td>
+                                <td>2020-06-30</td>
+                                <td class="div-td">
+                                        <p class="row">업장 방문  </p>
+                                        <p class="row">업주면담</p>
+                                </td>
+                                <td>발주관련 내역 확인</td>
+                                <td class="div-td">
+                                    <p class="row">1</p>
+                                    <p class="row">0</p>
+                                </td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>78</td>
+                                <td class="div-td">
+                                        <p class="row">수도권 업장2</p>
+                                        <p class="row">추종원</p>
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0)">(신당)기배이자캬야</a>
+                                </td>
+                                <td class="div-td">
+                                        <p class="row">서울</p>
+                                        <p class="row">중구</p>
+                                </td>
+                                <td>2020-06-30</td>
+                                <td class="div-td">
+                                        <p class="row">업장 방문  </p>
+                                        <p class="row">업주면담</p>
+                                </td>
+                                <td>발주관련 내역 확인</td>
+                                <td class="div-td">
+                                    <p class="row">1</p>
+                                    <p class="row">0</p>
+                                </td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>78</td>
+                                <td class="div-td">
+                                        <p class="row">수도권 업장2</p>
+                                        <p class="row">추종원</p>
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0)">(신당)기배이자캬야</a>
+                                </td>
+                                <td class="div-td">
+                                        <p class="row">서울</p>
+                                        <p class="row">중구</p>
+                                </td>
+                                <td>2020-06-30</td>
+                                <td class="div-td">
+                                        <p class="row">업장 방문  </p>
+                                        <p class="row">업주면담</p>
+                                </td>
+                                <td>발주관련 내역 확인</td>
+                                <td class="div-td">
+                                    <p class="row">1</p>
+                                    <p class="row">0</p>
+                                </td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>78</td>
+                                <td class="div-td">
+                                        <p class="row">수도권 업장2</p>
+                                        <p class="row">추종원</p>
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0)">(신당)기배이자캬야</a>
+                                </td>
+                                <td class="div-td">
+                                        <p class="row">서울</p>
+                                        <p class="row">중구</p>
+                                </td>
+                                <td>2020-06-30</td>
+                                <td class="div-td">
+                                        <p class="row">업장 방문  </p>
+                                        <p class="row">업주면담</p>
+                                </td>
+                                <td>발주관련 내역 확인</td>
+                                <td class="div-td">
+                                    <p class="row">1</p>
+                                    <p class="row">0</p>
+                                </td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>78</td>
+                                <td class="div-td">
+                                        <p class="row">수도권 업장2</p>
+                                        <p class="row">추종원</p>
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0)">(신당)기배이자캬야</a>
+                                </td>
+                                <td class="div-td">
+                                        <p class="row">서울</p>
+                                        <p class="row">중구</p>
+                                </td>
+                                <td>2020-06-30</td>
+                                <td class="div-td">
+                                        <p class="row">업장 방문  </p>
+                                        <p class="row">업주면담</p>
+                                </td>
+                                <td>발주관련 내역 확인</td>
+                                <td class="div-td">
+                                    <p class="row">1</p>
+                                    <p class="row">0</p>
+                                </td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>78</td>
+                                <td class="div-td">
+                                        <p class="row">수도권 업장2</p>
+                                        <p class="row">추종원</p>
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0)">(신당)기배이자캬야</a>
+                                </td>
+                                <td class="div-td">
+                                        <p class="row">서울</p>
+                                        <p class="row">중구</p>
+                                </td>
+                                <td>2020-06-30</td>
+                                <td class="div-td">
+                                        <p class="row">업장 방문  </p>
+                                        <p class="row">업주면담</p>
+                                </td>
+                                <td>발주관련 내역 확인</td>
+                                <td class="div-td">
+                                    <p class="row">1</p>
+                                    <p class="row">0</p>
+                                </td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div><!--// result-box -->
+                <div class="pagination">
+                    <ul>
+                        <li class="arrow_left">
+                            <a href="javascript:void(0)" title="이전"></a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="on">1</a></li>
+                        <li><a href="javascript:void(0)">2</a></li>
+                        <li><a href="javascript:void(0)">3</a></li>
+                        <li><a href="javascript:void(0)">4</a></li>
+                        <li><a href="javascript:void(0)">5</a></li>
+                        <li class="arrow_right">
+                            <a href="javascript:void(0)" title="다음"></a>
+                        </li>
+                    </ul>
+                    <div class="btn-area right">
+                        <button type="button" class="btn btn btn_navy btn-big btn-excel">EXCEL</button>
+                    </div>
+                </div>  
+           </div>
+        </section> <!--// contents -->
+    </div> <!--// wrapper -->
+    <script src="../assets/js/jquery-1.12.4.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+    <script src="../assets/js/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script>
+        var partnerData = [ //  임시 데이터
+           {'name':'(신당)기배이자카야'},
+           {'name':'(신당)기배이자카야'},
+           {'name':'(신당)기배이자카야'},
+           {'name':'(신당)기배이자카야'}
+       ];
+        var ManagertData = [ //  임시 데이터
+            {'name':'김도매'},
+            {'name':'김도매'},
+            {'name':'김도매'},
+            {'name':'김도매'}
+        ];
+       //var partnerPs = null; //scroll design 관련
+       function searchPartner(){
+           if($('#partnerName').val() =="" || $('#partnerName').val() == null) alert('[입력값]을 입력해 주세요');
+           else{
+               //var keyword = $('#partnerName').val();
+               $('#partnerList').html('');
+               var keyword = "(";
+               $.each(partnerData,function(i,item){
+                   var broken = item.name.split(keyword);
+                   var result = broken[0] + "<strong>"+keyword+"</strong>" + broken[1];
+                   var temp = '<li><button type="button" class="btn-put">'+result+'</button></li>';
+                   $('#partnerList').append(temp);
+               })
+               $('#partnerName').siblings('.searchList').show();
+               
+               //if(partnerPs == null) partnerPs = new PerfectScrollbar('.searchList-box');	//scroll design 관련
+           }
+           $(document).on('click','#partnerList .btn-put',function(){
+               $('#partnerName').val($(this).text());
+               $('.searchList').hide();
+               // if(partnerPs != null){ //scroll design 관련
+               // 	partnerPs.destory();
+               // 	partnerPs = null;
+               // }
+           });
+       }
+       
+       function searchProduct(event){
+            var $this = $(event),
+                $container = $this.parent(),
+                $listContainer = $container.find('.searchList');
+                $list = $listContainer.find('.productList');
+            if($this.val() =="" || $this.val() == null) alert('[입력값]을 입력해 주세요');
+            else{
+                $list.html('');
+                var keyword = "김";
+                $.each(ManagertData,function(i,item){
+                    var broken = item.name.split(keyword);
+                    var result = broken[0] + "<strong>"+keyword+"</strong>" + broken[1];
+                    var temp = '<li><button type="button" class="btn-put">'+result+'</button></li>';
+                    $list.append(temp);
+                })
+                $listContainer.show();
+            }
+            $list.find('.btn-put').on('click',function(){
+                $this.val($(this).text());
+                $listContainer.hide();
+            });
+        }
+       </script>
+</body>
+</html>

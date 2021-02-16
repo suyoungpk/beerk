@@ -1,0 +1,622 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=1, target-densitydpi=medium-dpi' />
+	<title>Beerk</title>
+	<style type="text/css">
+	body, html, td, h1, th {
+		font-family: 'Nanum Gothic', '맑은 고딕', '돋움', Dotum, AppleGothic, Helvetica, sans-serif
+	}
+	h1 {
+		width: 100%;
+		height: 22px;
+		line-height: 22px;
+		text-align: center;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	table {
+		border-right: 1px solid #ddd;
+		border-bottom: 1px solid #ddd
+	}
+	th {
+		background: #eee
+	}
+	th,
+	td {
+		padding: 8px 5px;
+		border-top: 1px solid #ddd;
+		border-left: 1px solid #ddd;
+		font-size: 12px
+	}
+	.complete {
+		background: #FDFABF;
+		font-weight: 700;
+		color: #085e77;
+		text-align: left
+	}
+	.recent {
+		background: #0788da;
+		font-weight: 700;
+		color: #fff;
+		text-align: left
+	}
+	.recent td a{color: #fff;}
+	</style>
+</head>
+
+<body>
+<h1>퍼블리싱 List</h1>
+
+<div class="tab-control">
+	<div class="frame" id="page_2">
+		<p>1차</p>
+		<table cellpadding="0" cellspacing="0" width="100%">
+			<colgroup>
+				<col style="width:10%" />                   
+				<col style="width:13%" />
+				<col style="width:13%" />
+				<col style="width:13%" />
+				<col style="width:20%" />
+				<col  />
+				<col style="width:11%" />
+				<col style="width:11%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>분류</th>
+					<th>Depth1</th>
+					<th>Depth2</th>
+					<th>Depth3</th>
+					<th>화면ID/화면명</th>
+					<th>File Name/링크</th>
+					<th>담당자</th>
+					<th>완료</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- <tr>
+					<td></td> 
+					<td>업장 조회 관리</td>
+					<td></td>
+					<td></td>
+					<td>ppt8</td>
+					<td>
+						<a href="./sub/beerk8.html" target="_blank">beerk8.html</a>
+					</td>
+					<td>김효진J</td>
+					<td>2021.01.22</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>업장 상세 정보 </td>
+					<td></td>
+					<td></td>
+					<td>ppt10~11</td>
+					<td>
+						<a href="./sub/beerk10.html" target="_blank">beerk10.html</a>
+					</td>
+					<td>김효진J</td>
+					<td>2021.01.22</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>업장 상세 수정</td>
+					<td></td>
+					<td></td>
+					<td>ppt 12</td>
+					<td>
+						<a href="./sub/beerk12.html" target="_blank">beerk12.html</a>
+					</td>
+					<td>김효진J</td>
+					<td>2021.01.19</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>신규 업장 등록</td>
+					<td></td>
+					<td></td>
+					<td>ppt 13</td>
+					<td>
+						<a href="./sub/beerk13.html" target="_blank">beerk13.html</a>
+					</td>
+					<td>김효진J</td>
+					<td>2021.01.19</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>도매장 조회 관리</td>
+					<td></td>
+					<td></td>
+					<td>ppt 14</td>
+					<td>
+						<a href="./sub/beerk14.html" target="_blank">beerk14.html</a>
+					</td>
+					<td>김효진J</td>
+					<td>2020.01.22</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>도매장 상세 정보</td>
+					<td></td>
+					<td></td>
+					<td>ppt 15~16</td>
+					<td>
+						<a href="./sub/beerk15.html" target="_blank">beerk15.html</a>
+					</td>
+					<td>김효진J</td>
+					<td>2020.01.22</td>
+				</tr> -->
+				<tr>
+					<td></td> 
+					<td>영업 활동 캘린더 - month</td>
+					<td></td>
+					<td></td>
+					<td>ppt17 </td>
+					<td>
+						<a href="./sub/beerk17.html" target="_blank">beerk17.html</a>
+					</td>
+					<td>박수영D</td>
+					<td>20.12.24</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>영업 활동 캘린더 - week</td>
+					<td></td>
+					<td></td>
+					<td>ppt18 </td>
+					<td>
+						<a href="./sub/beerk18.html" target="_blank">beerk18.html</a>
+					</td>
+					<td>박수영D</td>
+					<td>21.01.18</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>영업 활동 캘린더 - day</td>
+					<td></td>
+					<td></td>
+					<td>-</td>
+					<td>
+						<a href="./sub/beerk19.html" target="_blank">beerk19.html</a>
+					</td>
+					<td>박수영D</td>
+					<td>21.01.18</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>영업 활동 캘린더 - 팝업</td>
+					<td></td>
+					<td></td>
+					<td>ppt20~23,28 </td>
+					<td>
+						<a href="./sub/beerk20.html" target="_blank">beerk20.html</a>
+					</td>
+					<td>김효진J</td>
+					<td>21.01.18</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>영업활동조회</td>
+					<td></td>
+					<td></td>
+					<td>ppt25 </td>
+					<td>
+						<a href="./sub/beerk25.html" target="_blank">beerk25.html</a>
+					</td>
+					<td>박수영D</td>
+					<td>2020.01.22</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>영업 1본부 call 현황</td>
+					<td></td>
+					<td></td>
+					<td>ppt26</td>
+					<td>
+						<a href="./sub/beerk26.html" target="_blank">beerk26.html</a>
+					</td>
+					<td>박수영D</td>
+					<td>2020.01.22</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>영업 행사 캘린더</td>
+					<td></td>
+					<td></td>
+					<td>ppt28</td>
+					<td>
+						<a href="./sub/beerk28.html" target="_blank">beerk28.html</a>
+					</td>
+					<td>박수영D</td>
+					<td>21.01.18</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>영업 행사 캘린더 - 팝업</td>
+					<td></td>
+					<td></td>
+					<td>ppt28</td>
+					<td>
+						<a href="./sub/beerk20.html" target="_blank">beerk20.html</a>
+					</td>
+					<td>김효진J</td>
+					<td>20.12.16</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>거래처 제품 입점 조회</td>
+					<td></td>
+					<td></td>
+					<td>ppt29</td>
+					<td>
+						<a href="./sub/beerk29.html" target="_blank">beerk29.html</a>
+					</td>
+					<td>김효진J</td>
+					<td>2020.01.22</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>월별 Listing 현황</td>
+					<td></td>
+					<td></td>
+					<td>ppt30~31</td>
+					<td>
+						<a href="./sub/beerk30.html" target="_blank">beerk30.html</a>
+					</td>
+					<td>박수영D</td>
+					<td>2020.01.22</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>월별 Listing 현황 </td>
+					<td></td>
+					<td></td>
+					<td>ppt32</td>
+					<td>
+						<a href="./sub/beerk32.html" target="_blank">beerk32.html</a>
+					</td>
+					<td>박수영D</td>
+					<td>2020.01.22</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>파트 별 Listing 현황</td>
+					<td></td>
+					<td></td>
+					<td>ppt34</td>
+					<td>
+						<a href="./sub/beerk34.html" target="_blank">beerk34.html</a>
+					</td>
+					<td>박수영D</td>
+					<td>2020.01.22</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>Seg별 Listing 현황</td>
+					<td></td>
+					<td></td>
+					<td>ppt36</td>
+					<td>
+						<a href="./sub/beerk36.html" target="_blank">beerk36.html</a>
+					</td>
+					<td>박수영D</td>
+					<td>2020.01.22</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>신규 영업 목표 실적 현황</td>
+					<td></td>
+					<td></td>
+					<td>ppt38</td>
+					<td>
+						<a href="./sub/beerk38.html" target="_blank">beerk38.html</a>
+					</td>
+					<td>박수영D</td>
+					<td>2020.01.22</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>신규 영업 목표 등록</td>
+					<td></td>
+					<td></td>
+					<td>ppt39</td>
+					<td>
+						<a href="./sub/beerk39.html" target="_blank">beerk39.html</a>
+					</td>
+					<td>박수영D</td>
+					<td>2021.01.11</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>제품 명 구분</td>
+					<td></td>
+					<td></td>
+					<td>ppt40</td>
+					<td>
+						<a href="./sub/beerk40.html" target="_blank">beerk40.html</a>
+					</td>
+					<td>박수영D</td>
+					<td>2021.01.11</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>POSM 등록 조회</td>
+					<td></td>
+					<td></td>
+					<td>ppt41</td>
+					<td>
+						<a href="./sub/beerk41.html" target="_blank">beerk41.html</a>
+					</td>
+					<td>박수영D</td>
+					<td>2020.01.22</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>업장 판매량 등록 조회</td>
+					<td></td>
+					<td></td>
+					<td>ppt43</td>
+					<td>
+						<a href="./sub/beerk43.html" target="_blank">beerk43.html</a>
+					</td>
+					<td>박수영D</td>
+					<td>2020.01.22</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>채널 별 판매량 조회</td>
+					<td></td>
+					<td></td>
+					<td>ppt44</td>
+					<td>
+						<a href="./sub/beerk44.html" target="_blank">beerk44.html</a>
+					</td>
+					<td>박수영D</td>
+					<td>2020.01.22</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>지역 별 판매량 조회</td>
+					<td></td>
+					<td></td>
+					<td>ppt47</td>
+					<td>
+						<a href="./sub/beerk47.html" target="_blank">beerk47.html</a>
+					</td>
+					<td>박수영D</td>
+					<td>2020.01.22</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>도매장 재고 조회</td>
+					<td></td>
+					<td></td>
+					<td>ppt50</td>
+					<td>
+						<a href="./sub/beerk50.html" target="_blank">beerk50.html</a>
+					</td>
+					<td>김효진J</td>
+					<td>2020.01.27</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>도매장 평균 재고 관리</td>
+					<td></td>
+					<td></td>
+					<td>ppt56</td>
+					<td>
+						<a href="./sub/beerk56.html" target="_blank">beerk56.html</a>
+					</td>
+					<td>김효진J</td>
+					<td>2020.01.27</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>파트별 도매장 재고 현황</td>
+					<td></td>
+					<td></td>
+					<td>ppt58</td>
+					<td>
+						<a href="./sub/beerk58.html" target="_blank">beerk58.html</a>
+					</td>
+					<td>김효진J</td>
+					<td>2020.01.22</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>파트별 도매장 제품 명 구분</td>
+					<td></td>
+					<td></td>
+					<td>ppt60</td>
+					<td>
+						<a href="./sub/beerk60.html" target="_blank">beerk60.html</a>
+					</td>
+					<td>박수영D</td>
+					<td>2021.01.11</td>
+				</tr>
+				<tr>
+					<td></td> 
+					<td>관리자 코드 관리</td>
+					<td></td>
+					<td></td>
+					<td>ppt63~68</td>
+					<td>
+						<a href="./sub/beerk67.html" target="_blank">beerk67.html</a>
+					</td>
+					<td>박수영D</td>
+					<td>2021.01.11</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- 공통 -->
+	<div class="frame" id="page_1">
+		<p>0차</p>
+		<table cellpadding="0" cellspacing="0" width="100%">
+			<colgroup>
+				<col style="width:10%" />                   
+				<col style="width:13%" />
+				<col style="width:13%" />
+				<col style="width:13%" />
+				<col style="width:20%" />
+				<col  />
+				<col style="width:11%" />
+				<col style="width:11%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>분류</th>
+					<th>Depth1</th>
+					<th>Depth2</th>
+					<th>Depth3</th>
+					<th>화면ID/화면명</th>
+					<th>File Name/링크</th>
+					<th>담당자</th>
+					<th>완료</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>공통</td> 
+					<td>Guide</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="./guide.html" target="_blank">guide.html</a>
+					</td>
+					<td></td>
+					<td>박수영D</td>
+                </tr>
+                <tr>
+					<td>공통</td> 
+					<td>Guide</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="./elements.html" target="_blank">elements.html</a>
+					</td>
+					<td></td>
+					<td></td>
+                </tr>
+                <tr>
+					<td>공통</td> 
+					<td>Guide</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="./layout.html" target="_blank">layout.html</a>
+					</td>
+					<td></td>
+					<td>박수영D</td>
+                </tr>
+                <tr>
+					<td>login</td> 
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="./login.html" target="_blank">login.html</a>
+					</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>수주 조회</td> 
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="./sub/orderList.html" target="_blank">orderList.html</a>
+					</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>수주 조회</td> 
+					<td>리스트</td>
+					<td>없을 경우</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="./sub/orderList_no.html" target="_blank">orderList_no.html</a>
+					</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>수주 조회</td> 
+					<td>상세보기</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="./sub/orderDetail.html" target="_blank">orderDetail.html</a>
+					</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>수주 등록</td> 
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="./sub/orderRegister.html" target="_blank">orderRegister.html</a>
+					</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>반품 조회</td> 
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="./sub/returnList.html" target="_blank">returnList.html</a>
+					</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>반품 조회</td> 
+					<td>상세보기</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="./sub/returnDetail.html" target="_blank">returnDetail.html</a>
+					</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>반품 등록</td> 
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="./sub/returnRegister.html" target="_blank">returnRegister.html</a>
+					</td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- //공통 -->
+</div>
+</body>
+
+</html>

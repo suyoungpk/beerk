@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = 0, viewport-fit=cover"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="../assets/css/pages.css">
+    <link rel="stylesheet" href="../assets/css/pages-temp.css">
+    <title>BeerK</title>
+
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="skip">
+            <li><a href="#nav">메뉴바로가기</a></li>
+            <li><a href="#contents">본문바로가기</a></li>
+        </ul>
+        <header>
+            <div class="pc-wrap">
+                <h1 class="logo">
+                    <a href="javascript:void(0)">
+                        BK Co.,Ltd Import & Distribution pf world's finest beers
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li>ID : ABC0001</li>
+                        <li><a href="javascript:void(0)">수도권 도매 1파트&nbsp;<strong>김영업<span>님</span></strong></a></li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn btn_logout">로그아웃</a>
+                </nav>
+            </div>
+            <div class="mobile-wrap center">
+                <h2 class="title">업장 판매량 등록 조회</h2>
+                <!-- <button class="btn btn-menu" type="button">메뉴 열기</button> -->
+                <button class="btn btn-back" type="button">뒤로가기</button>
+            </div>
+        </header>
+        <nav id="nav">
+            <h1 class="hidden">메인 내비게이션</h1>
+            <button class="btn btn-menu-close" type="button">메뉴 닫기</button>
+            <ul class="gnb">
+                <li class="gnb1">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 활동 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li>
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb2">
+                    <a href="javascript:void(0)"  class="on current"><span>도매장 수주 관리</span></a>
+                    <ul>
+                        <li><a href="#">수주 조회</a></li>
+                        <li><a href="#">수주 등록</a></li>
+                        <li><a href="#">반품 조회</a></li>
+                        <li><a href="#">반품 등록</a></li>
+                        <!-- <li><a href="#">도매장 기말 재고 등록</a></li>
+                        <li><a href="#">도매장 기말 재고 조회</a></li>
+                        <li><a href="#">도매장 평균 재고 관리</a></li>
+                        <li><a href="#"> 파트별 도매장 재고 현황</a></li> -->
+                    </ul>
+                </li>
+                <li class="gnb3">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 운영 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li>
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul> -->
+                    <!-- <ul>
+                        <li><a href="#">신규 입점 현황</a></li>
+                        <li><a href="#">개인 별 신규 영업 목표 실적</a></li>
+                        <li><a href="#">파트 별 목표 실적 현황</a></li>
+                        <li><a href="#">posm 등록</a></li>                       
+                    </ul> -->
+                </li>
+                <li class="gnb4">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>판매량 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb5">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>도매장 재고 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 판매량 등록</a></li>
+                        <li><a href="#">재널 별 판매량 등록</a></li>
+                        <li><a href="#">지역 별 판매량 등록</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb6">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>거래처 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb7">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>프로모션 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">visibility 영업 조회 등록</a></li> 
+                        <li><a href="#">visibility 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 대시보드</a></li> 
+                        <li><a href="#">gift 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 대시보드</a></li>
+                    </ul> -->
+                </li>
+            </ul>
+        </nav>
+        <section id="contents" class="brandSalesReportListing">
+           <div class="container">
+                <div class="headline clear">
+                    <h1 class="title-style">업장 판매량 등록 조회</h1>
+                    <!-- <ul class="location">
+                        <li><a href="javascript:void(0)">홈</a></li>
+                        <li><a href="javascript:void(0)">수주 관리</a></li>
+                        <li><a href="javascript:void(0)" class="on">수주 조회</a></li>
+                    </ul> -->
+                </div>
+                <div class="info">
+                    <dl class="dl_col02">
+                        <dt>거래처 명</dt>
+                        <dd>
+                            <div class="row">
+                                <div class="result-box">
+                                    <input type="text" class="input_type01" placeholder="거래처 명 입력하세요" id="partnerName" onkeyup="searchPartner()" title="거래처 명">
+                                    <div class="searchList">
+                                        <div class="searchList-box">
+                                            <ul id="partnerList"> </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+                        <dt>거래처 담당</dt>
+                        <dd>
+                            <div class="row">
+                                <select name="" id="">
+                                    <option value="">전체</option>
+                                    <option value="">전체</option>
+                                    <option value="">전체</option>
+                                </select>
+                                <div class="result-box searchManager">
+                                    <input type="text" class="input_type02" onkeyup="searchsManger(this)" placeholder="담당자를 입력하세요" title="담당자">
+                                    <div class="searchList">
+                                        <div class="searchList-box">
+                                            <ul class="sManageList"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="dl_col02">
+                        <dt>거래처 구분</dt>
+                        <dd>
+                            <div class="row">
+                                <select name="" id="">
+                                    <option value="">채널</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">Seg</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">Sub Seg1</option>
+                                </select>
+                            </div>
+                        </dd>
+                        <dt>조회일자</dt>
+                        <dd>
+                            <div class="row">
+                                <select name="" id="">
+                                    <option value="">2020년</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">1월</option>
+                                </select>
+                            </div>
+                        </dd>
+                    </dl>
+                    <div class="btn_wrap">
+                        <button type="button" class="btn btn_navy">조회</button>
+                    </div>
+                </div>
+               
+                <div class="result-box box_flow">
+                    <div class="scroll-box">
+                        <div class="lBox">
+                            <table class="table01">
+                                <caption>업장 판매량 등록 조회 리스트</caption>
+                                <thead>
+                                   <tr>
+                                       <th>거래처 명</th>
+                                       <th>거래처 명</th>
+                                       <th>채널</th>
+                                       <th>Seg</th>
+                                       <th>Sub seg1</th>
+                                       <th>거래처 담당 부서</th>
+                                       <th>거래처 담당자</th>
+                                       <th>등록일자</th>
+                                       <th>등급</th>
+                                   </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="javascript:void(0)" onclick="openPop('pop-register')">도림-롯데호텔(서면)</a></td>
+                                        <td><a href="javascript:void(0)" onclick="openPop('pop-register')">도림-롯데호텔(서면)</a></td>
+                                        <td>ON</td>
+                                        <td>Simply Food</td>
+                                        <td>중식당</td>
+                                        <td>부산</td>
+                                        <td>이동준b</td>
+                                        <td>2020-08-03</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)" onclick="openPop('pop-register')">신주양꼬치 경성대</a></td>
+                                        <td><a href="javascript:void(0)" onclick="openPop('pop-register')">신주양꼬치 경성대</a></td>
+                                        <td>ON</td>
+                                        <td>Simply Food</td>
+                                        <td>중식당</td>
+                                        <td>부산</td>
+                                        <td>이동준b</td>
+                                        <td>2020-08-03</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)" onclick="openPop('pop-register')">버거앤파스타 중동</a></td>
+                                        <td><a href="javascript:void(0)" onclick="openPop('pop-register')">버거앤파스타 중동</a></td>
+                                        <td>ON</td>
+                                        <td>Simply Food</td>
+                                        <td>중식당</td>
+                                        <td>부산</td>
+                                        <td>이동준b</td>
+                                        <td>2020-08-03</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)" onclick="openPop('pop-register')">도림-롯데호텔(서면)</a></td>
+                                        <td><a href="javascript:void(0)" onclick="openPop('pop-register')">도림-롯데호텔(서면)</a></td>
+                                        <td>ON</td>
+                                        <td>Simply Food</td>
+                                        <td>중식당</td>
+                                        <td>부산</td>
+                                        <td>이동준b</td>
+                                        <td>2020-08-03</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)" onclick="openPop('pop-register')">도림-롯데호텔(서면)</a></td>
+                                        <td><a href="javascript:void(0)" onclick="openPop('pop-register')">도림-롯데호텔(서면)</a></td>
+                                        <td>ON</td>
+                                        <td>Simply Food</td>
+                                        <td>중식당</td>
+                                        <td>부산</td>
+                                        <td>이동준b</td>
+                                        <td>2020-08-03</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)" onclick="openPop('pop-register')">도림-롯데호텔(서면)</a></td>
+                                        <td><a href="javascript:void(0)" onclick="openPop('pop-register')">도림-롯데호텔(서면)</a></td>
+                                        <td>ON</td>
+                                        <td>Simply Food</td>
+                                        <td>중식당</td>
+                                        <td>부산</td>
+                                        <td>이동준b</td>
+                                        <td>2020-08-03</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)" onclick="openPop('pop-register')">도림-롯데호텔(서면)</a></td>
+                                        <td><a href="javascript:void(0)" onclick="openPop('pop-register')">도림-롯데호텔(서면)</a></td>
+                                        <td>ON</td>
+                                        <td>Simply Food</td>
+                                        <td>중식당</td>
+                                        <td>부산</td>
+                                        <td>이동준b</td>
+                                        <td>2020-08-03</td>
+                                        <td>A</td>
+                                    </tr>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="rBox">
+                            <div class="scroll-box">
+                                <table class="table01">
+                                    <caption>업장 판매량 등록 조회 리스트</caption>
+                                    <thead>
+                                        <tr>
+                                            <th class="fix-data">거래처 명</th>
+                                            <th class="fix-data">거래처 명</th>
+                                            <th class="fix-data">채널</th>
+                                            <th class="fix-data">Seg</th>
+                                            <th class="fix-data">Sub seg1</th>
+                                            <th class="fix-data">거래처 담당 부서</th>
+                                            <th class="fix-data">거래처 담당자</th>
+                                            <th class="fix-data">등록일자</th>
+                                            <th class="fix-data">등급</th>
+    
+                                            <!-- data cell start -->
+                                            <th>라오샨 600ml(병)</th>
+                                            <th>칭따오 330ml(병)</th>
+                                            <th>칭따오 640ml(병)</th>
+                                            <th>칭따오 위트 330ml(병)</th>
+                                            <th>칭따오 스타우트 330ml(병)</th>
+                                            <th>칭따오 IPA 330ml(병)</th>                                    
+                                            <th>칭따오 논알콜릭 330ml(병)</th>
+                                            <th>칭따오 640ml(병)</th>
+                                            <th>칭따오 20L(keg)</th>
+                                            <th>매그너스 쥬시 애플 330ml(병)</th>
+                                            <th>라오샨 600ml(병)</th>
+                                            <th>칭따오 330ml(병)</th>                                    
+                                            <th>칭따오 640ml(병)</th>                                    
+                                            <th>칭따오 위트 330ml(병)</th>                                    
+                                            <th>칭따오 스타우트 330ml(병)</th>                                    
+                                            <th>칭따오 IPA 330ml(병)</th>                                    
+                                            <th>칭따오 논알콜릭 330ml(병)</th>                                    
+                                            <th>칭따오 640ml(병)</th>                                    
+                                            <th>칭따오 20L(keg)</th>                                    
+                                            <th>매그너스 쥬시 애플 330ml(병)</th>                                    
+                                            <th>라오샨 600ml(병)</th>                                    
+                                            <th>칭따오 330ml(병)</th>                                    
+                                            <th>칭따오 640ml(병)</th>                                    
+                                            <th>칭따오 위트 330ml(병)</th>                                    
+                                            <th>칭따오 스타우트 330ml(병)</th>                                    
+                                            <th>칭따오 IPA 330ml(병)</th>                                    
+                                            <th>칭따오 논알콜릭 330ml(병)</th>                                    
+                                            <th>칭따오 640ml(병)</th>                                    
+                                            <th>칭따오 20L(keg)</th>                                    
+                                            <th>매그너스 쥬시 애플 330ml(병)</th>
+                                            <!--// data cell end -->
+                                        </tr>
+                                     </thead>
+                                     <tbody>
+                                         <tr>
+                                             <td class="fix-data"><a href="javascript:void(0)" onclick="openPop('pop-register')">도림-롯데호텔(서면)</a></td>
+                                             <td class="fix-data"><a href="javascript:void(0)" onclick="openPop('pop-register')">도림-롯데호텔(서면)</a></td>
+                                             <td class="fix-data">ON</td>
+                                             <td class="fix-data">Simply Food</td>
+                                             <td class="fix-data">중식당</td>
+                                             <td class="fix-data">부산</td>
+                                             <td class="fix-data">이동준b</td>
+                                             <td class="fix-data">2020-08-03</td>
+                                             <td class="fix-data">A</td>
+    
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                         </tr>
+                                         <tr>
+                                             <td class="fix-data"><a href="javascript:void(0)" onclick="openPop('pop-register')">신주양꼬치 경성대</a></td>
+                                             <td class="fix-data"><a href="javascript:void(0)" onclick="openPop('pop-register')">신주양꼬치 경성대</a></td>
+                                             <td class="fix-data">ON</td>
+                                             <td class="fix-data">Simply Food</td>
+                                             <td class="fix-data">중식당</td>
+                                             <td class="fix-data">부산</td>
+                                             <td class="fix-data">이동준b</td>
+                                             <td class="fix-data">2020-08-03</td>
+                                             <td class="fix-data">A</td>
+    
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                         </tr>
+                                         <tr>
+                                             <td class="fix-data"><a href="javascript:void(0)" onclick="openPop('pop-register')">버거앤파스타 중동</a></td>
+                                             <td class="fix-data"><a href="javascript:void(0)" onclick="openPop('pop-register')">버거앤파스타 중동</a></td>
+                                             <td class="fix-data">ON</td>
+                                             <td class="fix-data">Simply Food</td>
+                                             <td class="fix-data">중식당</td>
+                                             <td class="fix-data">부산</td>
+                                             <td class="fix-data">이동준b</td>
+                                             <td class="fix-data">2020-08-03</td>
+                                             <td class="fix-data">A</td>
+    
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                         </tr>
+                                         <tr>
+                                             <td class="fix-data"><a href="javascript:void(0)" onclick="openPop('pop-register')">도림-롯데호텔(서면)</a></td>
+                                             <td class="fix-data"><a href="javascript:void(0)" onclick="openPop('pop-register')">도림-롯데호텔(서면)</a></td>
+                                             <td class="fix-data">ON</td>
+                                             <td class="fix-data">Simply Food</td>
+                                             <td class="fix-data">중식당</td>
+                                             <td class="fix-data">부산</td>
+                                             <td class="fix-data">이동준b</td>
+                                             <td class="fix-data">2020-08-03</td>
+                                             <td class="fix-data">A</td>
+    
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                         </tr>
+                                         <tr>
+                                             <td class="fix-data"><a href="javascript:void(0)" onclick="openPop('pop-register')">도림-롯데호텔(서면)</a></td>
+                                             <td class="fix-data"><a href="javascript:void(0)" onclick="openPop('pop-register')">도림-롯데호텔(서면)</a></td>
+                                             <td class="fix-data">ON</td>
+                                             <td class="fix-data">Simply Food</td>
+                                             <td class="fix-data">중식당</td>
+                                             <td class="fix-data">부산</td>
+                                             <td class="fix-data">이동준b</td>
+                                             <td class="fix-data">2020-08-03</td>
+                                             <td class="fix-data">A</td>
+    
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                         </tr>
+                                         <tr>
+                                             <td class="fix-data"><a href="javascript:void(0)" onclick="openPop('pop-register')">도림-롯데호텔(서면)</a></td>
+                                             <td class="fix-data"><a href="javascript:void(0)" onclick="openPop('pop-register')">도림-롯데호텔(서면)</a></td>
+                                             <td class="fix-data">ON</td>
+                                             <td class="fix-data">Simply Food</td>
+                                             <td class="fix-data">중식당</td>
+                                             <td class="fix-data">부산</td>
+                                             <td class="fix-data">이동준b</td>
+                                             <td class="fix-data">2020-08-03</td>
+                                             <td class="fix-data">A</td>
+    
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                         </tr>
+                                         <tr>
+                                             <td class="fix-data"><a href="javascript:void(0)" onclick="openPop('pop-register')">도림-롯데호텔(서면)</a></td>
+                                             <td class="fix-data"><a href="javascript:void(0)" onclick="openPop('pop-register')">도림-롯데호텔(서면)</a></td>
+                                             <td class="fix-data">ON</td>
+                                             <td class="fix-data">Simply Food</td>
+                                             <td class="fix-data">중식당</td>
+                                             <td class="fix-data">부산</td>
+                                             <td class="fix-data">이동준b</td>
+                                             <td class="fix-data">2020-08-03</td>
+                                             <td class="fix-data">A</td>
+    
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                         </tr>
+                                     </tr>
+                                     </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--//result-box-->
+                <div class="pagination">
+                        
+                    <div class="btn-area right">
+                        <button type="button" class="btn btn btn_navy btn-big btn-excel">EXCEL</button>
+                    </div>
+                </div> 
+                <div class="popup popup_wrap pop04" id="pop-register">
+                    <div class="popup_container">
+                        <h2 class="pop_tit">업소 판매량 등록</h2>
+                        <div class="pop_contents">
+                            <div class="scrollBox ps">
+                                <div class="pop_head">
+                                    <input type="text">
+                                    <div class="row">
+                                        <select name="" id="">
+                                            <option value="2020년">2020년</option>
+                                            <option value="2020년">2021년</option>
+                                            <option value="2020년">2022년</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="1">1월</option>
+                                            <option value="2">2월</option>
+                                            <option value="3">3월</option>
+                                        </select>
+                                    </div>
+                                    <button type="button" class="btn btn_navy">조회</button>
+                                </div>
+                                <div class="pop_list">
+                                    <dl>
+                                        <dt>라오샨 600ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 330ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 640ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 위트 330ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 스타우트 330ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 IPA 330ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 논알콜릭 330ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 640ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 20L(keg)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>매그너스 쥬시 애플 330ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>라오샨 600ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 330ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 640ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 위트 330ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 스타우트 330ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 IPA 330ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 논알콜릭 330ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 640ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 20L(keg)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>매그너스 쥬시 애플 330ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>라오샨 600ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 330ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 640ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 위트 330ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 스타우트 330ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 IPA 330ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 논알콜릭 330ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 640ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>칭따오 20L(keg)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>매그너스 쥬시 애플 330ml(병)</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                </div>
+                                <div class="btn-area right">
+                                    <button type="button" class="btn btn_white">등록</button>
+                                </div>
+                            <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: -13px; height: 580px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 181px;"></div></div></div><!--// scrollBox -->
+                        </div>
+                        <button type="button" class="btn_close">닫기</button>
+                    </div>
+                </div>
+           </div>
+        </section> <!--// contents -->
+    </div> <!--// wrapper -->
+    <script src="../assets/js/jquery-1.12.4.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+    <script src="../assets/js/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script>
+        var partnerData = [ //  임시 데이터
+           {'name':'(신당)기배이자카야'},
+           {'name':'(신당)기배이자카야'},
+           {'name':'(신당)기배이자카야'},
+           {'name':'(신당)기배이자카야'}
+       ];
+        
+        var sManagerData = [ //  임시 데이터
+            {'name':'김길동'},
+            {'name':'김길동'},
+            {'name':'김길동'},
+            {'name':'김길동'}
+        ];
+
+       //var partnerPs = null; //scroll design 관련
+       function searchPartner(){
+           if($('#partnerName').val() =="" || $('#partnerName').val() == null) alert('[입력값]을 입력해 주세요');
+           else{
+               //var keyword = $('#partnerName').val();
+               $('#partnerList').html('');
+               var keyword = "(";
+               $.each(partnerData,function(i,item){
+                   var broken = item.name.split(keyword);
+                   var result = broken[0] + "<strong>"+keyword+"</strong>" + broken[1];
+                   var temp = '<li><button type="button" class="btn-put">'+result+'</button></li>';
+                   $('#partnerList').append(temp);
+               })
+               $('#partnerName').siblings('.searchList').show();
+               
+               //if(partnerPs == null) partnerPs = new PerfectScrollbar('.searchList-box');	//scroll design 관련
+           }
+           $(document).on('click','#partnerList .btn-put',function(){
+               $('#partnerName').val($(this).text());
+               $('.searchList').hide();
+               // if(partnerPs != null){ //scroll design 관련
+               // 	partnerPs.destory();
+               // 	partnerPs = null;
+               // }
+           });
+       }
+        
+       function searchsManger(event){
+            var $this = $(event),
+                $container = $this.parent(),
+                $listContainer = $container.find('.searchList');
+                $list = $listContainer.find('.sManageList');
+            if($this.val() =="" || $this.val() == null) alert('[입력값]을 입력해 주세요');
+            else{
+                $list.html('');
+                var keyword = "김";
+                $.each(sManagerData,function(i,item){
+                    var broken = item.name.split(keyword);
+                    var result = broken[0] + "<strong>"+keyword+"</strong>" + broken[1];
+                    var temp = '<li><button type="button" class="btn-put">'+result+'</button></li>';
+                    $list.append(temp);
+                })
+                $listContainer.show();
+            }
+            $list.find('.btn-put').on('click',function(){
+                $this.val($(this).text());
+                $listContainer.hide();
+            });
+        }
+    </script>
+</body>
+</html>

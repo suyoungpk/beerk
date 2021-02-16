@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = 0, viewport-fit=cover"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="../assets/css/pages.css">
+    <title>BeerK</title>
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="skip">
+            <li><a href="#nav">메뉴바로가기</a></li>
+            <li><a href="#contents">본문바로가기</a></li>
+        </ul>
+        <header>
+            <div class="pc-wrap">
+                <h1 class="logo">
+                    <a href="javascript:void(0)">
+                        BK Co.,Ltd Import & Distribution pf world's finest beers
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li>ID : ABC0001</li>
+                        <li><a href="javascript:void(0)">수도권 도매 1파트&nbsp;<strong>김영업<span>님</span></strong></a></li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn btn_logout">로그아웃</a>
+                </nav>
+            </div>
+            <div class="mobile-wrap">
+                <h2 class="title">반품 조회</h2>
+                <button class="btn btn-menu" type="button">메뉴 열기</button>
+            </div>
+        </header>
+        <nav id="nav">
+            <h1 class="hidden">메인 내비게이션</h1>
+            <button class="btn btn-menu-close" type="button">메뉴 닫기</button>
+            <ul class="gnb">
+                <li class="gnb1">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 활동 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li>
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb2">
+                    <a href="javascript:void(0)"  class="on current"><span>도매장 수주 관리</span></a>
+                    <ul>
+                        <li><a href="#">수주 조회</a></li>
+                        <li><a href="#">수주 등록</a></li>
+                        <li><a href="#">반품 조회</a></li>
+                        <li><a href="#">반품 등록</a></li>
+                        <!-- <li><a href="#">도매장 기말 재고 등록</a></li>
+                        <li><a href="#">도매장 기말 재고 조회</a></li>
+                        <li><a href="#">도매장 평균 재고 관리</a></li>
+                        <li><a href="#"> 파트별 도매장 재고 현황</a></li> -->
+                    </ul>
+                </li>
+                <li class="gnb3">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 운영 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li>
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul> -->
+                    <!-- <ul>
+                        <li><a href="#">신규 입점 현황</a></li>
+                        <li><a href="#">개인 별 신규 영업 목표 실적</a></li>
+                        <li><a href="#">파트 별 목표 실적 현황</a></li>
+                        <li><a href="#">posm 등록</a></li>                       
+                    </ul> -->
+                </li>
+                <li class="gnb4">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>판매량 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb5">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>도매장 재고 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 판매량 등록</a></li>
+                        <li><a href="#">재널 별 판매량 등록</a></li>
+                        <li><a href="#">지역 별 판매량 등록</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb6">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>거래처 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb7">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>프로모션 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">visibility 영업 조회 등록</a></li> 
+                        <li><a href="#">visibility 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 대시보드</a></li> 
+                        <li><a href="#">gift 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 대시보드</a></li>
+                    </ul> -->
+                </li>
+            </ul>
+        </nav>
+        <section id="contents" class="order_inquiry">
+            <div class="container">
+                <div class="headline clear">
+                    <h1 class="title-style">반품 조회</h1>
+                    <!-- <ul class="location">
+                        <li><a href="javascript:void(0)">홈</a></li>
+                        <li><a href="javascript:void(0)">수주 관리</a></li>
+                        <li><a href="javascript:void(0)" class="on">수주 조회</a></li>
+                    </ul> -->
+                </div>
+                <form action="">
+                    <div class="search-box">
+                        <div class="select_area">
+                            <select name="" id="">
+                                <option value="">2020년</option>
+                                <option value="">2019년</option>
+                                <option value="">2018년</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="">1월</option>
+                                <option value="">2월</option>
+                                <option value="">3월</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="">1일</option>
+                                <option value="">2일</option>
+                                <option value="">3일</option>
+                            </select>
+                        </div>
+                        <input type="text" placeholder="거래쳐명을 입력하세요" title="거래처명을 입력하세요">
+                        <div class="chk_area chk01">
+                            <input type="checkbox" id="new">
+                            <label for="new">담당 거래처만 조회</label>
+                        </div>
+                        <button type="button" class="btn btn-blue big">검색</button>
+                    </div>
+                </form>
+                <div class="box_flow">
+                    <div class="scroll-box">
+                        <table class="table01">
+                            <caption>반품 조회의 수주번호, 거래처, 반품일, 수주금액, 유통기한, 상태 테이블 입니다.</caption>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col style="width:15%">
+                                <col style="width:20%">
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>수주 번호</th>
+                                    <th>거래처</th>
+                                    <th>반품일</th>
+                                    <th>수주 금액</th>
+                                    <th>유통기한</th>
+                                    <th>상태</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>156165</td>
+                                    <td>월트컵상사</td>
+                                    <td>2020-09-03</td>
+                                    <td>￦ 2,500,000</td>
+                                    <td>2020-09-03</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>165484</td>
+                                    <td>뉴주류</td>
+                                    <td>2020-09-03</td>
+                                    <td>￦ 1,500,000</td>
+                                    <td>2020-09-03</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>65165</td>
+                                    <td>뉴주류</td>
+                                    <td>2020-09-03</td>
+                                    <td>￦ 1,500,000</td>
+                                    <td>2020-09-03</td>
+                                    <td>반품확정</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                 </div>
+                <ul class="list-style">
+                    <li>
+                        <a href="">
+                            <p class="date"><span class="status-date">반품일</span>20.10.28</p>
+                            <p class="date"><span class="status-date">유통기한</span>20.10.28</p>
+                            <div class="info">
+                                <p class="tit">1's 카츠곳간 1's 카츠곳간 1's 카츠곳간 1's 카츠곳간 1's 카츠곳간</p>
+                                <span class="price">￦<strong>2,500,500</strong></span>
+                            </div>
+                            <!-- <span class="status">주문확정</span> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="date"><span class="status-date">반품일</span>20.10.28</p>
+                            <p class="date"><span class="status-date">유통기한</span>20.10.28</p>
+                            <div class="info">
+                                <p class="tit">1's 카츠곳간</p>
+                                <span class="price">￦<strong>2,500,500</strong></span>
+                            </div>
+                            <!-- <span class="status">주문확정</span> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="date"><span class="status-date">반품일</span>20.10.28</p>
+                            <p class="date"><span class="status-date">유통기한</span>20.10.28</p>
+                            <div class="info">
+                                <p class="tit">1's 카츠곳간</p>
+                                <span class="price">￦<strong>2,500,500</strong></span>
+                            </div>
+                            <span class="status">반품확정</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="date"><span class="status-date">반품일</span>20.10.28</p>
+                            <p class="date"><span class="status-date">유통기한</span>20.10.28</p>
+                            <div class="info">
+                                <p class="tit">1's 카츠곳간</p>
+                                <span class="price">￦<strong>2,500,500</strong></span>
+                            </div>
+                            <span class="status">반품확정</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="date"><span class="status-date">반품일</span>20.10.28</p>
+                            <p class="date"><span class="status-date">유통기한</span>20.10.28</p>
+                            <div class="info">
+                                <p class="tit">1's 카츠곳간</p>
+                                <span class="price">￦<strong>2,500,500</strong></span>
+                            </div>
+                            <span class="status">반품확정</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="date"><span class="status-date">반품일</span>20.10.28</p>
+                            <p class="date"><span class="status-date">유통기한</span>20.10.28</p>
+                            <div class="info">
+                                <p class="tit">1's 카츠곳간</p>
+                                <span class="price">￦<strong>2,500,500</strong></span>
+                            </div>
+                            <span class="status">반품확정</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="date"><span class="status-date">반품일</span>20.10.28</p>
+                            <p class="date"><span class="status-date">유통기한</span>20.10.28</p>
+                            <div class="info">
+                                <p class="tit">1's 카츠곳간</p>
+                                <span class="price">￦<strong>2,500,500</strong></span>
+                            </div>
+                            <span class="status">반품확정</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="pagination">
+                    <ul>
+                        <li class="arrow_left">
+                            <a href="javascript:void(0)" title="이전"></a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="on">1</a></li>
+                        <li><a href="javascript:void(0)">2</a></li>
+                        <li><a href="javascript:void(0)">3</a></li>
+                        <li><a href="javascript:void(0)">4</a></li>
+                        <li><a href="javascript:void(0)">5</a></li>
+                        <li class="arrow_right">
+                            <a href="javascript:void(0)" title="다음"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div> <!--// wrapper -->
+    <script src="../assets/js/jquery-1.12.4.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+    <script src="../assets/js/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,2202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = 0, viewport-fit=cover"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="../assets/css/pages.css">
+    <title>BeerK</title>
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="skip">
+            <li><a href="#nav">메뉴바로가기</a></li>
+            <li><a href="#contents">본문바로가기</a></li>
+        </ul>
+        <header>
+            <div class="pc-wrap">
+                <h1 class="logo">
+                    <a href="javascript:void(0)">
+                        BK Co.,Ltd Import & Distribution pf world's finest beers
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li>ID : ABC0001</li>
+                        <li><a href="javascript:void(0)">수도권 도매 1파트&nbsp;<strong>김영업<span>님</span></strong></a></li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn btn_logout">로그아웃</a>
+                </nav>
+            </div>
+            <div class="mobile-wrap center">
+                <h2 class="title">관리자 코드 관리</h2>
+                <!-- <button class="btn btn-menu" type="button">메뉴 열기</button> -->
+                <button class="btn btn-back" type="button">뒤로가기</button>
+            </div>
+        </header>
+        <nav id="nav">
+            <h1 class="hidden">메인 내비게이션</h1>
+            <button class="btn btn-menu-close" type="button">메뉴 닫기</button>
+            <ul class="gnb">
+                <li class="gnb1">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 활동 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li>
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb2">
+                    <a href="javascript:void(0)"  class="on current"><span>도매장 수주 관리</span></a>
+                    <ul>
+                        <li><a href="#">수주 조회</a></li>
+                        <li><a href="#">수주 등록</a></li>
+                        <li><a href="#">반품 조회</a></li>
+                        <li><a href="#">반품 등록</a></li>
+                        <!-- <li><a href="#">도매장 기말 재고 등록</a></li>
+                        <li><a href="#">도매장 기말 재고 조회</a></li>
+                        <li><a href="#">도매장 평균 재고 관리</a></li>
+                        <li><a href="#"> 파트별 도매장 재고 현황</a></li> -->
+                    </ul>
+                </li>
+                <li class="gnb3">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 운영 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li>
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul> -->
+                    <!-- <ul>
+                        <li><a href="#">신규 입점 현황</a></li>
+                        <li><a href="#">개인 별 신규 영업 목표 실적</a></li>
+                        <li><a href="#">파트 별 목표 실적 현황</a></li>
+                        <li><a href="#">posm 등록</a></li>                       
+                    </ul> -->
+                </li>
+                <li class="gnb4">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>판매량 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb5">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>도매장 재고 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 판매량 등록</a></li>
+                        <li><a href="#">재널 별 판매량 등록</a></li>
+                        <li><a href="#">지역 별 판매량 등록</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb6">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>거래처 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb7">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>프로모션 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">visibility 영업 조회 등록</a></li> 
+                        <li><a href="#">visibility 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 대시보드</a></li> 
+                        <li><a href="#">gift 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 대시보드</a></li>
+                    </ul> -->
+                </li>
+            </ul>
+        </nav>
+        <section id="contents" class="adminCodeManagement">
+           <div class="container">
+                <div class="headline clear">
+                    <h1 class="title-style">관리자 코드 관리</h1>
+                    <!-- <ul class="location">
+                        <li><a href="javascript:void(0)">홈</a></li>
+                        <li><a href="javascript:void(0)">수주 관리</a></li>
+                        <li><a href="javascript:void(0)" class="on">수주 조회</a></li>
+                    </ul> -->
+                </div>
+                <div class="tab_wrap02">
+                    <ul class="tab tab02 clear">
+                        <li class="on"><a href="javascript:void(0)">등급</a></li>
+                        <li><a href="javascript:void(0)">영업상태</a></li>
+                        <li><a href="javascript:void(0)">경쟁사 제품</a></li>
+                        <li><a href="javascript:void(0)">POSM</a></li>
+                        <li><a href="javascript:void(0)">프로모션</a></li>
+                        <li><a href="javascript:void(0)">행사거래처</a></li>
+                        <li><a href="javascript:void(0)">SKU</a></li>
+                        <li><a href="javascript:void(0)">업장 구분</a></li>
+                    </ul>
+                    <div class="tab-con" style="display:block">
+                        <div class="box_flow">
+                            <div class="scroll-box">
+                                <div class="table-wrap">
+                                    <table class="table01 chk">
+                                        <caption>관리자 코드 관리</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>No</th>
+                                                <th>코드</th>
+                                                <th>등급 명</th>
+                                                <th>사용유무</th>
+                                                <th>삭제</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>4</td>
+                                                <td><input type="text" value="LV004"></td>
+                                                <td><input type="text" value="미등급"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab01-radio4-1" name="tab01-radio4" checked>
+                                                        <label for="tab01-radio4-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab01-radio4-2" name="tab01-radio4">
+                                                        <label for="tab01-radio4-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td><input type="text" value="LV003"></td>
+                                                <td><input type="text" value="C등급"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab01-radio3-1" name="tab01-radio3" checked>
+                                                        <label for="tab01-radio3-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab01-radio3-2" name="tab01-radio3">
+                                                        <label for="tab01-radio3-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td><input type="text" value="LV002"></td>
+                                                <td><input type="text" value="B등급"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab01-radio2-1" name="tab01-radio2" checked>
+                                                        <label for="tab01-radio2-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab01-radio2-2" name="tab01-radio2">
+                                                        <label for="tab01-radio2-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><input type="text" value="LV001"></td>
+                                                <td><input type="text" value="A등급"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab01-radio1-1" name="tab01-radio1" checked>
+                                                        <label for="tab01-radio1-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab01-radio1-2" name="tab01-radio1">
+                                                        <label for="tab01-radio1-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="btn_wrap">
+                            <div class="row">
+                                <button type="button" class="btn_red mr10">추가</button>
+                                <button type="button" class="btn btn_navy">저장</button>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="tab-con">
+                        <div class="box_flow">
+                            <div class="scroll-box">
+                                <div class="table-wrap">
+                                    <table class="table01 chk">
+                                        <caption>관리자 코드 관리</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>No</th>
+                                                <th>코드</th>
+                                                <th>등급 명</th>
+                                                <th>사용유무</th>
+                                                <th>삭제</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>5</td>
+                                                <td><input type="text" value="ST005"></td>
+                                                <td><input type="text" value="삭제"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab02-radio5-1" name="tab02-radio5" checked>
+                                                        <label for="tab02-radio5-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab02-radio5-2" name="tab02-radio5">
+                                                        <label for="tab02-radio5-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td><input type="text" value="ST004"></td>
+                                                <td><input type="text" value="삭제요청"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab02-radio4-1" name="tab02-radio4" checked>
+                                                        <label for="tab02-radio4-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab02-radio4-2" name="tab02-radio4">
+                                                        <label for="tab02-radio4-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td><input type="text" value="ST003"></td>
+                                                <td><input type="text" value="폐업"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab02-radio3-1" name="tab02-radio3" checked>
+                                                        <label for="tab02-radio3-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab02-radio1-2" name="tab02-radio3">
+                                                        <label for="tab02-radio3-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td><input type="text" value="ST002"></td>
+                                                <td><input type="text" value="휴업"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab02-radio2-1" name="tab02-radio2" checked>
+                                                        <label for="tab02-radio1-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab02-radio2-2" name="tab02-radio2">
+                                                        <label for="tab02-radio2-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><input type="text" value="ST001"></td>
+                                                <td><input type="text" value="영업"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab02-radio1-1" name="tab02-radio1" checked>
+                                                        <label for="tab02-radio1-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab02-radio1-2" name="tab02-radio1">
+                                                        <label for="tab02-radio1-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="btn_wrap">
+                            <div class="row">
+                                <button type="button" class="btn_red mr10">추가</button>
+                                <button type="button" class="btn btn_navy">저장</button>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="tab-con">
+                        <div class="box_flow">
+                            <div class="scroll-box">
+                                <div class="table-wrap">
+                                    <table class="table01 chk">
+                                        <caption>관리자 코드 관리</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>No</th>
+                                                <th>코드</th>
+                                                <th>등급 명</th>
+                                                <th>사용유무</th>
+                                                <th>삭제</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>10</td>
+                                                <td><input type="text" value="CO010"></td>
+                                                <td><input type="text" value="경쟁사 10"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab03-radio10-1" name="tab03-radio10" checked>
+                                                        <label for="tab03-radio10-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab02-radio10-2" name="tab03-radio10">
+                                                        <label for="tab03-radio10-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td><input type="text" value="CO009"></td>
+                                                <td><input type="text" value="경쟁사 09"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab03-radio9-1" name="tab03-radio9" checked>
+                                                        <label for="tab03-radio9-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab02-radio9-2" name="tab03-radio9">
+                                                        <label for="tab03-radio9-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td><input type="text" value="CO008"></td>
+                                                <td><input type="text" value="경쟁사 08"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab03-radio8-1" name="tab03-radio8" checked>
+                                                        <label for="tab03-radio8-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab02-radio8-2" name="tab03-radio8">
+                                                        <label for="tab03-radio8-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td><input type="text" value="CO007"></td>
+                                                <td><input type="text" value="경쟁사 07"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab03-radio7-1" name="tab03-radio7" checked>
+                                                        <label for="tab03-radio7-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab02-radio7-2" name="tab03-radio7">
+                                                        <label for="tab03-radio7-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td><input type="text" value="CO006"></td>
+                                                <td><input type="text" value="경쟁사 06"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab03-radio6-1" name="tab03-radio6" checked>
+                                                        <label for="tab03-radio6-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab02-radio6-2" name="tab03-radio6">
+                                                        <label for="tab03-radio6-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td><input type="text" value="CO005"></td>
+                                                <td><input type="text" value="경쟁사 05"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab03-radio5-1" name="tab03-radio5" checked>
+                                                        <label for="tab03-radio5-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab02-radio5-2" name="tab03-radio5">
+                                                        <label for="tab03-radio5-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td><input type="text" value="CO004"></td>
+                                                <td><input type="text" value="경쟁사 04"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab03-radio4-1" name="tab03-radio4" checked>
+                                                        <label for="tab03-radio4-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab02-radio4-2" name="tab03-radio4">
+                                                        <label for="tab03-radio4-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td><input type="text" value="CO003"></td>
+                                                <td><input type="text" value="경쟁사 03"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab03-radio3-1" name="tab03-radio3" checked>
+                                                        <label for="tab03-radio3-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab02-radio3-2" name="tab03-radio3">
+                                                        <label for="tab03-radio3-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td><input type="text" value="CO002"></td>
+                                                <td><input type="text" value="경쟁사 02"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab03-radio2-1" name="tab03-radio2" checked>
+                                                        <label for="tab03-radio2-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab02-radio2-2" name="tab03-radio2">
+                                                        <label for="tab03-radio2-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><input type="text" value="CO001"></td>
+                                                <td><input type="text" value="경쟁사 01"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab03-radio1-1" name="tab03-radio1" checked>
+                                                        <label for="tab03-radio1-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab02-radio1-2" name="tab03-radio1">
+                                                        <label for="tab03-radio1-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="btn_wrap">
+                            <div class="row">
+                                <button type="button" class="btn_red mr10">추가</button>
+                                <button type="button" class="btn btn_navy">저장</button>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="tab-con">
+                        <div class="box_flow">
+                            <div class="scroll-box">
+                                <div class="table-wrap">
+                                    <table class="table01 chk">
+                                        <caption>관리자 코드 관리</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>No</th>
+                                                <th>코드</th>
+                                                <th>등급 명</th>
+                                                <th>사용유무</th>
+                                                <th>삭제</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>5</td>
+                                                <td><input type="text" value="PO005"></td>
+                                                <td><input type="text" value="칭따오 브랜딩 업장"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab04-radio5-1" name="tab04-radio5" checked>
+                                                        <label for="tab04-radio5-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab04-radio5-2" name="tab04-radio5">
+                                                        <label for="tab04-radio5-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td><input type="text" value="PO004"></td>
+                                                <td><input type="text" value="칭따오 스텐드 타오"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab04-radio4-1" name="tab04-radio4" checked>
+                                                        <label for="tab04-radio4-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab04-radio4-2" name="tab04-radio4">
+                                                        <label for="tab04-radio4-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td><input type="text" value="PO003"></td>
+                                                <td><input type="text" value="칭따오 아웃도어 사인"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab04-radio3-1" name="tab04-radio3" checked>
+                                                        <label for="tab04-radio3-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab04-radio3-2" name="tab04-radio3">
+                                                        <label for="tab04-radio3-2">미 사용</label>
+                                                    </div>
+                                                </td>   
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td><input type="text" value="PO002"></td>
+                                                <td><input type="text" value="아이스빈"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab04-radio2-1" name="tab04-radio2" checked>
+                                                        <label for="tab04-radio2-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab04-radio2-2" name="tab04-radio2">
+                                                        <label for="tab04-radio2-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><input type="text" value="PO001"></td>
+                                                <td><input type="text" value="에딩거 파라솔/테이블 셋트"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab04-radio1-1" name="tab04-radio1" checked>
+                                                        <label for="tab04-radio1-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab04-radio1-2" name="tab04-radio1">
+                                                        <label for="tab04-radio1-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="btn_wrap">
+                            <div class="row">
+                                <button type="button" class="btn_red mr10">추가</button>
+                                <button type="button" class="btn btn_navy">저장</button>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="tab-con">
+                        <div class="box_flow">
+                            <div class="scroll-box">
+                                <div class="table-wrap">
+                                    <table class="table01 chk">
+                                        <caption>관리자 코드 관리</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>No</th>
+                                                <th>코드</th>
+                                                <th>분류</th>
+                                                <th>아이템</th>
+                                                <th>사용유무</th>
+                                                <th>삭제</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>10</td>
+                                                <td><input type="text" value="VS004"></td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">선택</option>
+                                                        <option value="">Gift</option>
+                                                        <option value="" >Set</option>
+                                                        <option value="" selected>Visibility</option>
+                                                    </select>
+                                                </td>
+                                                <td><input type="text" value="Menu-board"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab05-radio10-1" name="tab05-radio10" checked>
+                                                        <label for="tab05-radio10-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab05-radio10-2" name="tab05-radio10">
+                                                        <label for="tab05-radio10-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td><input type="text" value="VS003"></td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">선택</option>
+                                                        <option value="">Gift</option>
+                                                        <option value="" >Set</option>
+                                                        <option value="" selected>Visibility</option>
+                                                    </select>
+                                                </td>
+                                                <td><input type="text" value="Wall"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab05-radio9-1" name="tab05-radio9" checked>
+                                                        <label for="tab05-radio9-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab05-radio9-2" name="tab05-radio9">
+                                                        <label for="tab05-radio9-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td><input type="text" value="VS002"></td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">선택</option>
+                                                        <option value="">Gift</option>
+                                                        <option value="" >Set</option>
+                                                        <option value="" selected>Visibility</option>
+                                                    </select>
+                                                </td>
+                                                <td><input type="text" value="Table"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab05-radio8-1" name="tab05-radio8" checked>
+                                                        <label for="tab05-radio8-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab05-radio8-2" name="tab05-radio8">
+                                                        <label for="tab05-radio8-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td><input type="text" value="VS001"></td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">선택</option>
+                                                        <option value="">Gift</option>
+                                                        <option value="" >Set</option>
+                                                        <option value="" selected>Visibility</option>
+                                                    </select>
+                                                </td>
+                                                <td><input type="text" value="Outdoor signage"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab05-radio7-1" name="tab05-radio7" checked>
+                                                        <label for="tab05-radio7-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab05-radio7-2" name="tab05-radio7">
+                                                        <label for="tab05-radio7-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td><input type="text" value="ST004"></td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">선택</option>
+                                                        <option value="">Gift</option>
+                                                        <option value="" selected>Set</option>
+                                                        <option value="">Visibility</option>
+                                                    </select>
+                                                </td>
+                                                <td><input type="text" value="앉아 먹고가"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab05-radio6-1" name="tab05-radio6" checked>
+                                                        <label for="tab05-radio6-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab05-radio6-2" name="tab05-radio6">
+                                                        <label for="tab05-radio6-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td><input type="text" value="ST003"></td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">선택</option>
+                                                        <option value="">Gift</option>
+                                                        <option value="" selected>Set</option>
+                                                        <option value="">Visibility</option>
+                                                    </select>
+                                                </td>
+                                                <td><input type="text" value="안주 쏜다 (set)"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab05-radio5-1" name="tab05-radio5" checked>
+                                                        <label for="tab05-radio5-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab05-radio5-2" name="tab05-radio5">
+                                                        <label for="tab05-radio5-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td><input type="text" value="ST002"></td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">선택</option>
+                                                        <option value="">Gift</option>
+                                                        <option value="" selected>Set</option>
+                                                        <option value="">Visibility</option>
+                                                    </select>
+                                                </td>
+                                                <td><input type="text" value="칭쏘 (소주set)"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab05-radio4-1" name="tab05-radio4" checked>
+                                                        <label for="tab05-radio4-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab05-radio4-2" name="tab05-radio4">
+                                                        <label for="tab05-radio4-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td><input type="text" value="ST001"></td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">선택</option>
+                                                        <option value="">Gift</option>
+                                                        <option value="" selected>Set</option>
+                                                        <option value="">Visibility</option>
+                                                    </select>
+                                                </td>
+                                                <td><input type="text" value="밥은 쏜다 (밥)"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab05-radio3-1" name="tab05-radio3" checked>
+                                                        <label for="tab05-radio3-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab05-radio3-2" name="tab05-radio3">
+                                                        <label for="tab05-radio3-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td><input type="text" value="GT002"></td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">선택</option>
+                                                        <option value="" selected>Gift</option>
+                                                        <option value="" >Set</option>
+                                                        <option value="">Visibility</option>
+                                                    </select>
+                                                </td>
+                                                <td><input type="text" value="리스테린"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab05-radio2-1" name="tab05-radio2" checked>
+                                                        <label for="tab05-radio2-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab05-radio2-2" name="tab05-radio2">
+                                                        <label for="tab05-radio2-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><input type="text" value="GT001"></td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">선택</option>
+                                                        <option value="" selected>Gift</option>
+                                                        <option value="" >Set</option>
+                                                        <option value="">Visibility</option>
+                                                    </select>
+                                                </td>
+                                                <td><input type="text" value="미니샤워키트"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab05-radio1-1" name="tab05-radio1" checked>
+                                                        <label for="tab05-radio1-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab05-radio1-2" name="tab05-radio1">
+                                                        <label for="tab05-radio1-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="btn_wrap">
+                            <div class="row">
+                                <button type="button" class="btn_red mr10">추가</button>
+                                <button type="button" class="btn btn_navy">저장</button>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="tab-con">
+                        <div class="box_flow">
+                            <div class="scroll-box">
+                                <div class="table-wrap">
+                                    <table class="table01 chk">
+                                        <caption>관리자 코드 관리</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>No</th>
+                                                <th>코드</th>
+                                                <th>제품 명</th>
+                                                <th>사용유무</th>
+                                                <th>삭제</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><input type="text" value="ac010"></td>
+                                                <td><input type="text" value="이마트"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio10-1" name="tab06-radio10" checked>
+                                                        <label for="tab06-radio10-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio10-2" name="tab06-radio10">
+                                                        <label for="tab06-radio10-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td><input type="text" value="ac009"></td>
+                                                <td><input type="text" value="홈플러스"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio9-1" name="tab06-radio9" checked>
+                                                        <label for="tab06-radio9-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio9-2" name="tab06-radio9">
+                                                        <label for="tab06-radio9-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td><input type="text" value="ac008"></td>
+                                                <td><input type="text" value="롯데마트"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio8-1" name="tab06-radio8" checked>
+                                                        <label for="tab06-radio8-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio8-2" name="tab06-radio8">
+                                                        <label for="tab06-radio8-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td><input type="text" value="ac007"></td>
+                                                <td><input type="text" value="코스트코"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio7-1" name="tab06-radio7" checked>
+                                                        <label for="tab06-radio7-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio7-2" name="tab06-radio7">
+                                                        <label for="tab06-radio7-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td><input type="text" value="ac006"></td>
+                                                <td><input type="text" value="CU"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio6-1" name="tab06-radio6" checked>
+                                                        <label for="tab06-radio6-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio6-2" name="tab06-radio6">
+                                                        <label for="tab06-radio6-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td><input type="text" value="ac005"></td>
+                                                <td><input type="text" value="GS 25"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio5-1" name="tab06-radio5" checked>
+                                                        <label for="tab06-radio5-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio5-2" name="tab06-radio5">
+                                                        <label for="tab06-radio5-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td><input type="text" value="ac004"></td>
+                                                <td><input type="text" value="세븐일레븐"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio4-1" name="tab06-radio4" checked>
+                                                        <label for="tab06-radio4-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio4-2" name="tab06-radio4">
+                                                        <label for="tab06-radio4-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td><input type="text" value="ac003"></td>
+                                                <td><input type="text" value="이마트24"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio3-1" name="tab06-radio3" checked>
+                                                        <label for="tab06-radio3-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio3-2" name="tab06-radio3">
+                                                        <label for="tab06-radio3-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td><input type="text" value="ac002"></td>
+                                                <td><input type="text" value="미니스톱"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio2-1" name="tab06-radio2" checked>
+                                                        <label for="tab06-radio2-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio2-2" name="tab06-radio2">
+                                                        <label for="tab06-radio2-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><input type="text" value="ac001"></td>
+                                                <td><input type="text" value="기타"></td>
+                                                <td>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio1-1" name="tab06-radio1" checked>
+                                                        <label for="tab06-radio1-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio1-2" name="tab06-radio1">
+                                                        <label for="tab06-radio1-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="btn_wrap">
+                            <div class="row">
+                                <button type="button" class="btn_red mr10">추가</button>
+                                <button type="button" class="btn btn_navy">저장</button>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="tab-con">
+                        <div class="box_flow">
+                            <div class="scroll-box">
+                                <div class="table-wrap">
+                                    <table class="table01 chk tab-con6">
+                                        <caption>관리자 코드 관리</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>No</th>
+                                                <th>코드</th>
+                                                <th>SKU명</th>
+                                                <th>품목</th>
+                                                <th>대분류</th>
+                                                <th>중분류</th>
+                                                <th>소분류</th>
+                                                <th>사용유무</th>
+                                                <th>상품 코드</th>
+                                                <th>일반 순번</th>
+                                                <th>리스팅순번</th>
+                                                <th>재고순번</th>
+                                                <th>삭제</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>10</td>
+                                                <td><input type="text" value="SK0010"></td>
+                                                <td class="min200"><input type="text" value="칭따오 라거 200ml 병"></td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">칭따오</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">라거</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">200ml</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">병</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="사용유무">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="상품 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="일반 순번">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="리스팅순번">
+                                                </td>
+                                                <td class="td-radio">
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio10-1" name="tab06-radio10" checked>
+                                                        <label for="tab06-radio10-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio10-2" name="tab06-radio10">
+                                                        <label for="tab06-radio10-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td class="td-btn">
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td><input type="text" value="SK0009"></td>
+                                                <td class="min200"><input type="text" value="칭따오 IPA 200ml 캔"></td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">칭따오</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">라거</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">200ml</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">병</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="사용유무">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="상품 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="일반 순번">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="리스팅순번">
+                                                </td>
+                                                <td class="td-radio">
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio9-1" name="tab06-radio9" checked>
+                                                        <label for="tab06-radio9-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio9-2" name="tab06-radio9">
+                                                        <label for="tab06-radio9-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td class="td-btn">
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td><input type="text" value="SK0008"></td>
+                                                <td class="min200"><input type="text" value="에딩거 헤페 20L 생"></td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">칭따오</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">라거</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">200ml</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">병</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="사용유무">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="상품 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="일반 순번">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="리스팅순번">
+                                                </td>
+                                                <td class="td-radio">
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio8-1" name="tab06-radio8" checked>
+                                                        <label for="tab06-radio8-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio8-2" name="tab06-radio8">
+                                                        <label for="tab06-radio8-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td class="td-btn">
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td><input type="text" value="SK0007"></td>
+                                                <td class="min200"><input type="text" value="칭따오 헤페 500ml 병"></td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">칭따오</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">라거</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">200ml</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">병</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="사용유무">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="상품 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="일반 순번">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="리스팅순번">
+                                                </td>
+                                                <td class="td-radio">
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio7-1" name="tab06-radio7" checked>
+                                                        <label for="tab06-radio7-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio7-2" name="tab06-radio7">
+                                                        <label for="tab06-radio7-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td class="td-btn">
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td><input type="text" value="SK0006"></td>
+                                                <td class="min200"><input type="text" value="칭따오 헤페 473ml 병"></td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">칭따오</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">라거</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">200ml</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">병</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="사용유무">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="상품 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="일반 순번">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="리스팅순번">
+                                                </td>
+                                                <td class="td-radio">
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio6-1" name="tab06-radio6" checked>
+                                                        <label for="tab06-radio6-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio6-2" name="tab06-radio6">
+                                                        <label for="tab06-radio6-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td class="td-btn">
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td><input type="text" value="SK0005"></td>
+                                                <td class="min200"><input type="text" value="칭따오 라거 330ml 병"></td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">칭따오</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">라거</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">200ml</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">병</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="사용유무">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="상품 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="일반 순번">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="리스팅순번">
+                                                </td>
+                                                <td class="td-radio">
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio5-1" name="tab06-radio5" checked>
+                                                        <label for="tab06-radio5-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio5-2" name="tab06-radio5">
+                                                        <label for="tab06-radio5-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td class="td-btn">
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td><input type="text" value="SK0004"></td>
+                                                <td class="min200"><input type="text" value="매그너스 라거 473ml 병 "></td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">칭따오</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">라거</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">200ml</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">병</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="사용유무">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="상품 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="일반 순번">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="리스팅순번">
+                                                </td>
+                                                <td class="td-radio">
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio4-1" name="tab06-radio4" checked>
+                                                        <label for="tab06-radio4-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio4-2" name="tab06-radio4">
+                                                        <label for="tab06-radio4-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td class="td-btn">
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td><input type="text" value="SK0003"></td>
+                                                <td class="min200"><input type="text" value="칭따오 라거 200ml 병"></td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">칭따오</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">라거</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">200ml</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">병</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="사용유무">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="상품 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="일반 순번">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="리스팅순번">
+                                                </td>
+                                                <td class="td-radio">
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio3-1" name="tab06-radio3" checked>
+                                                        <label for="tab06-radio3-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio3-2" name="tab06-radio3">
+                                                        <label for="tab06-radio3-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td class="td-btn">
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td><input type="text" value="SK0002"></td>
+                                                <td class="min200"><input type="text" value="미니스톱"></td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">칭따오</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">라거</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">200ml</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">병</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="사용유무">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="상품 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="일반 순번">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="리스팅순번">
+                                                </td>
+                                                <td class="td-radio">
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio2-1" name="tab06-radio2" checked>
+                                                        <label for="tab06-radio2-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio2-2" name="tab06-radio2">
+                                                        <label for="tab06-radio2-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td class="td-btn">
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><input type="text" value="SK0001"></td>
+                                                <td class="min200"><input type="text" value="기타"></td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">칭따오</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">라거</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">200ml</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select name="" id="">
+                                                        <option value="">병</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="사용유무">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="상품 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="일반 순번">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="리스팅순번">
+                                                </td>
+                                                <td class="td-radio">
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio1-1" name="tab06-radio1" checked>
+                                                        <label for="tab06-radio1-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio1-2" name="tab06-radio1">
+                                                        <label for="tab06-radio1-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td class="td-btn">
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="btn_wrap">
+                            <div class="row">
+                                <button type="button" class="btn_red mr10">추가</button>
+                                <button type="button" class="btn btn_navy">저장</button>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="tab-con">
+                        <div class="box_flow">
+                            <div class="scroll-box">
+                                <div class="table-wrap">
+                                    <table class="table01 chk tab-con6">
+                                        <caption>관리자 코드 관리</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>No</th>
+                                                <th>채널</th>
+                                                <th>채널코드</th>
+                                                <th>Seg</th>
+                                                <th>Seg 코드</th>
+                                                <th>Sub  Seg1</th>
+                                                <th>Sub  Seg1 코드</th>
+                                                <th>Sub Seg2</th>
+                                                <th>Sub Seg2 코드</th>
+                                                <th>조회 순번</th>
+                                                <th></th>
+                                                <th>삭제</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>
+                                                    <input type="text" title="채널">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="채널코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Seg">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Seg 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub  Seg1">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub  Seg1 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub Seg2">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub Seg2 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="조회 순번">
+                                                </td>
+                                                <td class="td-radio">
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio10-1" name="tab06-radio10" checked>
+                                                        <label for="tab06-radio10-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio10-2" name="tab06-radio10">
+                                                        <label for="tab06-radio10-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td class="td-btn">
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>
+                                                    <input type="text" title="채널">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="채널코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Seg">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Seg 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub  Seg1">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub  Seg1 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub Seg2">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub Seg2 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="조회 순번">
+                                                </td>
+                                                <td class="td-radio">
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio9-1" name="tab06-radio9" checked>
+                                                        <label for="tab06-radio9-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio9-2" name="tab06-radio9">
+                                                        <label for="tab06-radio9-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td class="td-btn">
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>
+                                                    <input type="text" title="채널">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="채널코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Seg">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Seg 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub  Seg1">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub  Seg1 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub Seg2">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub Seg2 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="조회 순번">
+                                                </td>
+                                                <td class="td-radio">
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio8-1" name="tab06-radio8" checked>
+                                                        <label for="tab06-radio8-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio8-2" name="tab06-radio8">
+                                                        <label for="tab06-radio8-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td class="td-btn">
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>
+                                                    <input type="text" title="채널">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="채널코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Seg">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Seg 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub  Seg1">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub  Seg1 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub Seg2">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub Seg2 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="조회 순번">
+                                                </td>
+                                                <td class="td-radio">
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio7-1" name="tab06-radio7" checked>
+                                                        <label for="tab06-radio7-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio7-2" name="tab06-radio7">
+                                                        <label for="tab06-radio7-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td class="td-btn">
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>
+                                                    <input type="text" title="채널">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="채널코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Seg">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Seg 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub  Seg1">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub  Seg1 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub Seg2">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub Seg2 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="조회 순번">
+                                                </td>
+                                                <td class="td-radio">
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio6-1" name="tab06-radio6" checked>
+                                                        <label for="tab06-radio6-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio6-2" name="tab06-radio6">
+                                                        <label for="tab06-radio6-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td class="td-btn">
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>
+                                                    <input type="text" title="채널">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="채널코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Seg">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Seg 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub  Seg1">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub  Seg1 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub Seg2">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub Seg2 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="조회 순번">
+                                                </td>
+                                                <td class="td-radio">
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio5-1" name="tab06-radio5" checked>
+                                                        <label for="tab06-radio5-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio5-2" name="tab06-radio5">
+                                                        <label for="tab06-radio5-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td class="td-btn">
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>
+                                                    <input type="text" title="채널">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="채널코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Seg">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Seg 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub  Seg1">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub  Seg1 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub Seg2">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub Seg2 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="조회 순번">
+                                                </td>
+                                                <td class="td-radio">
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio4-1" name="tab06-radio4" checked>
+                                                        <label for="tab06-radio4-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio4-2" name="tab06-radio4">
+                                                        <label for="tab06-radio4-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td class="td-btn">
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>
+                                                    <input type="text" title="채널">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="채널코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Seg">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Seg 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub  Seg1">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub  Seg1 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub Seg2">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub Seg2 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="조회 순번">
+                                                </td>
+                                                <td class="td-radio">
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio3-1" name="tab06-radio3" checked>
+                                                        <label for="tab06-radio3-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio3-2" name="tab06-radio3">
+                                                        <label for="tab06-radio3-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td class="td-btn">
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>
+                                                    <input type="text" title="채널">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="채널코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Seg">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Seg 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub  Seg1">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub  Seg1 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub Seg2">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub Seg2 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="조회 순번">
+                                                </td>
+                                                <td class="td-radio">
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio2-1" name="tab06-radio2" checked>
+                                                        <label for="tab06-radio2-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio2-2" name="tab06-radio2">
+                                                        <label for="tab06-radio2-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td class="td-btn">
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <input type="text" title="채널">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="채널코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Seg">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Seg 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub  Seg1">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub  Seg1 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub Seg2">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="Sub Seg2 코드">
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="조회 순번">
+                                                </td>
+                                                <td class="td-radio">
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio1-1" name="tab06-radio1" checked>
+                                                        <label for="tab06-radio1-1">사용</label>
+                                                    </div>
+                                                    <div class="ico-radio">
+                                                        <input type="radio" id="tab06-radio1-2" name="tab06-radio1">
+                                                        <label for="tab06-radio1-2">미 사용</label>
+                                                    </div>
+                                                </td>
+                                                <td class="td-btn">
+                                                    <button type="button" class="btn btn02 btn_white">삭제</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="btn_wrap">
+                            <div class="row">
+                                <button type="button" class="btn_red mr10">추가</button>
+                                <button type="button" class="btn btn_navy">저장</button>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+           </div>
+        </section> <!--// contents -->
+    </div> <!--// wrapper -->
+    <script src="../assets/js/jquery-1.12.4.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+    <script src="../assets/js/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script>
+       $(function(){
+        $('.tab li a').click(function(){
+            scrolledBox.init();
+        });
+       });
+    </script>
+</body>
+</html>

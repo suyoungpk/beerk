@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = 0, viewport-fit=cover"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="../assets/css/pages.css">
+    <title>BeerK</title>
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="skip">
+            <li><a href="#nav">메뉴바로가기</a></li>
+            <li><a href="#contents">본문바로가기</a></li>
+        </ul>
+        <header>
+            <div class="pc-wrap">
+                <h1 class="logo">
+                    <a href="javascript:void(0)">
+                        BK Co.,Ltd Import & Distribution pf world's finest beers
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li>ID : ABC0001</li>
+                        <li><a href="javascript:void(0)">수도권 도매 1파트&nbsp;<strong>김영업<span>님</span></strong></a></li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn btn_logout">로그아웃</a>
+                </nav>
+            </div>
+            <div class="mobile-wrap center">
+                <h2 class="title">팝업</h2>
+                <!-- <button class="btn btn-menu" type="button">메뉴 열기</button> -->
+                <button class="btn btn-back" type="button">뒤로가기</button>
+            </div>
+        </header>
+        <nav id="nav">
+            <h1 class="hidden">메인 내비게이션</h1>
+            <button class="btn btn-menu-close" type="button">메뉴 닫기</button>
+            <ul class="gnb">
+                <li class="gnb1">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 활동 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li>
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb2">
+                    <a href="javascript:void(0)"  class="on current"><span>도매장 수주 관리</span></a>
+                    <ul>
+                        <li><a href="#">수주 조회</a></li>
+                        <li><a href="#">수주 등록</a></li>
+                        <li><a href="#">반품 조회</a></li>
+                        <li><a href="#">반품 등록</a></li>
+                        <!-- <li><a href="#">도매장 기말 재고 등록</a></li>
+                        <li><a href="#">도매장 기말 재고 조회</a></li>
+                        <li><a href="#">도매장 평균 재고 관리</a></li>
+                        <li><a href="#"> 파트별 도매장 재고 현황</a></li> -->
+                    </ul>
+                </li>
+                <li class="gnb3">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 운영 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li>
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul> -->
+                    <!-- <ul>
+                        <li><a href="#">신규 입점 현황</a></li>
+                        <li><a href="#">개인 별 신규 영업 목표 실적</a></li>
+                        <li><a href="#">파트 별 목표 실적 현황</a></li>
+                        <li><a href="#">posm 등록</a></li>                       
+                    </ul> -->
+                </li>
+                <li class="gnb4">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>판매량 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb5">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>도매장 재고 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 판매량 등록</a></li>
+                        <li><a href="#">재널 별 판매량 등록</a></li>
+                        <li><a href="#">지역 별 판매량 등록</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb6">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>거래처 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb7">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>프로모션 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">visibility 영업 조회 등록</a></li> 
+                        <li><a href="#">visibility 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 대시보드</a></li> 
+                        <li><a href="#">gift 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 대시보드</a></li>
+                    </ul> -->
+                </li>
+            </ul>
+        </nav>
+        <section id="contents" class="businessRegister">
+           <div class="container">
+                <div class="headline clear">
+                    <h1 class="title-style">팝업</h1>
+                    <!-- <ul class="location">
+                        <li><a href="javascript:void(0)">홈</a></li>
+                        <li><a href="javascript:void(0)">수주 관리</a></li>
+                        <li><a href="javascript:void(0)" class="on">수주 등록</a></li>
+                    </ul> -->
+                </div>
+                
+            <div>
+                <h3>사용자 > 매니저</h3>
+                <ul>
+                    <li><a href="javascript:openPop('popup1')">팝업 열기 </a></li>
+                    <li><a href="javascript:openPop('popup2')">팝업 열기 </a></li>
+                    <li><a href="javascript:openPop('popup3')">팝업 열기 </a></li>
+                    <li><a href="javascript:openPop('popup4')">팝업 열기 </a></li>
+                    <li><a href="javascript:openPop('popup5')">팝업 열기 </a></li>
+                </ul>
+                <h3>사용자 > 파트원</h3>
+                <ul>
+                    <li><a href="javascript:openPop('popup6')">팝업 열기 </a></li>
+                    <li><a href="javascript:openPop('popup7')">팝업 열기 </a></li>
+                    <li><a href="javascript:openPop('popup8')">팝업 열기 </a></li>
+                </ul>
+                <h3>사용자 > Quality 파트</h3>
+                <ul>
+                    <li><a href="javascript:openPop('popup9')">팝업 열기 </a></li>
+                </ul>
+                <h3>사용자 >공통</h3>
+                <ul>
+                    <li><a href="javascript:openPop('popup10')">팝업 열기 </a></li>
+                </ul>
+                <h3>영업 행사 캘린더 팝업1</h3>
+                <ul>
+                    <li><a href="javascript:openPop('popup11')">팝업 열기 </a></li>
+                </ul>
+                <h3>영업 행사 캘린더 팝업2</h3>
+                <ul>
+                    <li><a href="javascript:openPop('popup12')">팝업 열기 </a></li>
+                </ul>
+            </div>
+            <!-- popup area -->
+          
+            <div class="popup popup_wrap pop01" id="popup1"> 
+                <div class="popup_container">
+                    <h2 class="pop_tit">활동계획입력</h2>
+                    <div class="pop_contents">
+                        <div class="scrollBox">
+                            <div class="pop_info_form">
+                                <div class="list row">
+                                    <select name="" id="" class="mr10">
+                                        <option value="">매니저코칭</option>
+                                        <option value="">신규업장</option>
+                                        <option value="">Audit</option>
+                                        <option value="">도매장 영업활동</option>
+                                        <option value="">업장 방문</option>
+                                        <option value="">KEG 관리</option>
+                                        <option value="">개인활동</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">매니저 코칭</option>
+                                    </select>
+                                </div>
+                                <div class="list input-col3 row">
+                                    <input type="text" placeholder="2021.01.01(수)" class="calender-pop" title="연도.월.일"> <!-- 201230 class name 수정 -->
+                                    <!-- <input type="text" value="10:00 AM" class="time" placeholder="10:00 AM" title="시/분">  <!-- 201230 class name 추가 -->
+                                    <!-- <input type="text" value="10:30 PM" class="time" placeholder="10:00 PM" title="시/분"> --> <!-- 201230 class name 추가 -->
+                                </div>
+                                 <!-- 210118 수정 -->
+                                <div class="list input-col2 timeArea">
+                                    <div class="row">
+                                        <select name="" id="">
+                                            <option value="">00시</option>
+                                            <option value="">01시</option>
+                                            <option value="">02시</option>
+                                            <option value="">03시</option>
+                                            <option value="">04시</option>
+                                            <option value="">05시</option>
+                                            <option value="">06시</option>
+                                            <option value="">07시</option>
+                                            <option value="">08시</option>
+                                            <option value="" selected>09시</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00분</option>
+                                            <option value="">20분</option>
+                                            <option value="">40분</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00시</option>
+                                            <option value="">01시</option>
+                                            <option value="">02시</option>
+                                            <option value="">03시</option>
+                                            <option value="">04시</option>
+                                            <option value="">05시</option>
+                                            <option value="">06시</option>
+                                            <option value="">07시</option>
+                                            <option value="">08시</option>
+                                            <option value="" selected>09시</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00분</option>
+                                            <option value="">20분</option>
+                                            <option value="">40분</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                 <!--// 210118 수정 -->
+                                <div class="list input-col2">
+                                    <p class="tit03"><span class="star">*</span>방문 지역</p>
+                                    <div class="row">
+                                        <input type="text" class="mr10" placeholder="지역" title="지역">
+                                        <input type="text" placeholder="지역" title="지역">
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <label for=""><span class="star">*</span>방문 도매장 수</label>
+                                    <input type="text" placeholder="입력" title="방문 도매장 수">
+                                </div>
+                                <div class="list">
+                                    <label for=""><span class="star">*</span>방문 업장 수</label>
+                                    <input type="text" placeholder="입력" title="방문 업장 수">
+                                </div>
+                                <div class="list">
+                                    <label for=""><span class="star">*</span>동행 사원 수</label>
+                                    <input type="text" placeholder="입력" title="동행 사원 수">
+                                </div>
+                                <div class="list">
+                                    <label for=""><span class="star">*</span>동행 사원 성명</label>
+                                    <input type="text" placeholder="입력" title="동행 사원 성명">
+                                </div>
+                                <div class="list">
+                                    <label for="">코칭 내용</label>
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="활동 내용 입력" title="활동 내용 입력"></textarea>
+                                </div>
+                            </div>
+                            <div class="btn-area between">
+                                <div class="chk_area chk01">
+                                    <input type="checkbox" id="new">
+                                    <label for="new">활동완료</label>
+                                </div>
+                                <button type="button" class="btn btn_white">등록</button>
+                            </div>
+                        </div><!--// scrollBox -->
+                    </div>
+                    <button type="button" class="btn_close">닫기</button>
+                </div>
+            </div>
+            <div class="popup popup_wrap pop01" id="popup2">
+                <div class="popup_container">
+                    <h2 class="pop_tit">활동계획입력</h2>
+                    <div class="pop_contents">
+                        <div class="scrollBox">
+                            <div class="pop_info_form">
+                                <div class="list row">
+                                    <select name="" id="" class="mr10">
+                                        <option value="">신규업장</option>
+                                        <option value="">매니저코칭</option>
+                                        <option value="">Audit</option>
+                                        <option value="">도매장 영업활동</option>
+                                        <option value="">업장 방문</option>
+                                        <option value="">KEG 관리</option>
+                                        <option value="">개인활동</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">신규 업장</option>
+                                    </select>
+                                </div>
+                                <div class="list input-col3 row">
+                                    <input type="text" placeholder="2021.01.01(수)" class="calender-pop" title="연도.월.일"> <!-- 201230 class name 수정 -->
+                                    <!-- <input type="text" value="10:00 AM" class="time" placeholder="10:00 AM" title="시/분">  <!-- 201230 class name 추가 -->
+                                    <!-- <input type="text" value="10:30 PM" class="time" placeholder="10:00 PM" title="시/분"> --> <!-- 201230 class name 추가 -->
+                                </div>
+                                 <!-- 210118 수정 -->
+                                <div class="list input-col2 timeArea">
+                                    <div class="row">
+                                        <select name="" id="">
+                                            <option value="">00시</option>
+                                            <option value="">01시</option>
+                                            <option value="">02시</option>
+                                            <option value="">03시</option>
+                                            <option value="">04시</option>
+                                            <option value="">05시</option>
+                                            <option value="">06시</option>
+                                            <option value="">07시</option>
+                                            <option value="">08시</option>
+                                            <option value="" selected>09시</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00분</option>
+                                            <option value="">20분</option>
+                                            <option value="">40분</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00시</option>
+                                            <option value="">01시</option>
+                                            <option value="">02시</option>
+                                            <option value="">03시</option>
+                                            <option value="">04시</option>
+                                            <option value="">05시</option>
+                                            <option value="">06시</option>
+                                            <option value="">07시</option>
+                                            <option value="">08시</option>
+                                            <option value="" selected>09시</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00분</option>
+                                            <option value="">20분</option>
+                                            <option value="">40분</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                 <!--// 210118 수정 -->
+                                <div class="list">
+                                    <label for=""><span class="star">*</span>업장 명</label>
+                                    <div class="result-box">
+                                        <input type="text" placeholder="입력" id="partnerName" onkeyup="searchPartner()" title="업장 명">
+                                        <div class="searchList">
+                                            <div class="searchList-box">
+                                                <ul id="partnerList"> </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list input-col2">
+                                    <p class="tit03"><span class="star">*</span>방문 지역</p>
+                                    <div class="row">
+                                        <input type="text" class="mr10" placeholder="지역" title="지역">
+                                        <input type="text" placeholder="지역" title="지역">
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="활동 내용 입력" title="활동 내용 입력"></textarea>
+                                </div>
+                            </div>
+                            <div class="btn-area between">
+                                <div class="chk_area chk01">
+                                    <input type="checkbox" id="new" title="활동완료">
+                                    <label for="new">활동완료</label>
+                                </div>
+                                <button type="button" class="btn btn_white">등록</button>
+                            </div>
+                        </div><!--// scrollBox -->
+                    </div>
+                    <button type="button" class="btn_close">닫기</button>
+                </div>
+            </div>
+            <div class="popup popup_wrap pop01" id="popup3">
+                <div class="popup_container">
+                    <h2 class="pop_tit">활동계획입력</h2>
+                    <div class="pop_contents">
+                        <div class="scrollBox">
+                            <div class="pop_info_form">
+                                <div class="list row">
+                                    <select name="" id="" class="mr10">
+                                        <option value="">Audit</option>
+                                        <option value="">신규업장</option>
+                                        <option value="">매니저코칭</option>
+                                        <option value="">도매장 영업활동</option>
+                                        <option value="">업장 방문</option>
+                                        <option value="">KEG 관리</option>
+                                        <option value="">개인활동</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">Audit</option>
+                                    </select>
+                                </div>
+                                <div class="list">
+                                    <input type="text" placeholder="거래처 조회" title="거래처 조회">
+                                </div>
+                                <div class="list input-col3 row">
+                                    <input type="text" placeholder="2021.01.01(수)" class="calender-pop" title="연도.월.일"> <!-- 201230 class name 수정 -->
+                                    <!-- <input type="text" value="10:00 AM" class="time" placeholder="10:00 AM" title="시/분">  <!-- 201230 class name 추가 -->
+                                    <!-- <input type="text" value="10:30 PM" class="time" placeholder="10:00 PM" title="시/분"> --> <!-- 201230 class name 추가 -->
+                                </div>
+                                 <!-- 210118 수정 -->
+                                <div class="list input-col2 timeArea">
+                                    <div class="row">
+                                        <select name="" id="">
+                                            <option value="">00시</option>
+                                            <option value="">01시</option>
+                                            <option value="">02시</option>
+                                            <option value="">03시</option>
+                                            <option value="">04시</option>
+                                            <option value="">05시</option>
+                                            <option value="">06시</option>
+                                            <option value="">07시</option>
+                                            <option value="">08시</option>
+                                            <option value="" selected>09시</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00분</option>
+                                            <option value="">20분</option>
+                                            <option value="">40분</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00시</option>
+                                            <option value="">01시</option>
+                                            <option value="">02시</option>
+                                            <option value="">03시</option>
+                                            <option value="">04시</option>
+                                            <option value="">05시</option>
+                                            <option value="">06시</option>
+                                            <option value="">07시</option>
+                                            <option value="">08시</option>
+                                            <option value="" selected>09시</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00분</option>
+                                            <option value="">20분</option>
+                                            <option value="">40분</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                 <!--// 210118 수정 -->
+                                <div class="list">
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="활동 내용 입력" title="활동 내용 입력"></textarea>
+                                </div>
+                            </div>
+                            <div class="btn-area between">
+                                <div class="chk_area chk01">
+                                    <input type="checkbox" id="new" >
+                                    <label for="new">활동완료</label>
+                                </div>
+                                <button type="button" class="btn btn_white">등록</button>
+                            </div>
+                        </div><!--// scrollBox -->
+                    </div>
+                    <button type="button" class="btn_close">닫기</button>
+                </div>
+            </div>
+            <div class="popup popup_wrap pop01" id="popup4">
+                <div class="popup_container">
+                    <h2 class="pop_tit">활동계획입력</h2>
+                    <div class="pop_contents">
+                        <div class="scrollBox">
+                            <div class="pop_info_form">
+                                <div class="list row">
+                                    <select name="" id="" class="mr10">
+                                        <option value="">업장 방문</option>
+                                        <option value="">매니저코칭</option>
+                                        <option value="">신규업장</option>
+                                        <option value="">Audit</option>
+                                        <option value="">도매장 영업활동</option>
+                                        <option value="">KEG 관리</option>
+                                        <option value="">개인활동</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">업주면담</option>
+                                        <option value="">방문 요청</option>
+                                        <option value="">판촉물 전달</option>
+                                    </select>
+                                </div>
+                                <div class="list">
+                                    <input type="text" placeholder="거래처 조회"  title="거래처 조회">
+                                </div>
+                                <div class="list input-col3 row">
+                                    <input type="text" placeholder="2021.01.01(수)" class="calender-pop" title="연도.월.일"> <!-- 201230 class name 수정 -->
+                                    <!-- <input type="text" value="10:00 AM" class="time" placeholder="10:00 AM" title="시/분">  <!-- 201230 class name 추가 -->
+                                    <!-- <input type="text" value="10:30 PM" class="time" placeholder="10:00 PM" title="시/분"> --> <!-- 201230 class name 추가 -->
+                                </div>
+                                 <!-- 210118 수정 -->
+                                <div class="list input-col2 timeArea">
+                                    <div class="row">
+                                        <select name="" id="">
+                                            <option value="">00시</option>
+                                            <option value="">01시</option>
+                                            <option value="">02시</option>
+                                            <option value="">03시</option>
+                                            <option value="">04시</option>
+                                            <option value="">05시</option>
+                                            <option value="">06시</option>
+                                            <option value="">07시</option>
+                                            <option value="">08시</option>
+                                            <option value="" selected>09시</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00분</option>
+                                            <option value="">20분</option>
+                                            <option value="">40분</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00시</option>
+                                            <option value="">01시</option>
+                                            <option value="">02시</option>
+                                            <option value="">03시</option>
+                                            <option value="">04시</option>
+                                            <option value="">05시</option>
+                                            <option value="">06시</option>
+                                            <option value="">07시</option>
+                                            <option value="">08시</option>
+                                            <option value="" selected>09시</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00분</option>
+                                            <option value="">20분</option>
+                                            <option value="">40분</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                 <!--// 210118 수정 -->
+                                <div class="list">
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="활동 내용 입력" title="활동 내용 입력"></textarea>
+                                </div>
+                            </div>
+                            <div class="btn-area between">
+                                <div class="chk_area chk01">
+                                    <input type="checkbox" id="new" >
+                                    <label for="new">활동완료</label>
+                                </div>
+                                <button type="button" class="btn btn_white">등록</button>
+                            </div>
+                        </div><!--// scrollBox -->
+                    </div>
+                    <button type="button" class="btn_close">닫기</button>
+                </div>
+            </div>
+            <div class="popup popup_wrap pop01" id="popup5">
+                <div class="popup_container">
+                    <h2 class="pop_tit">활동계획입력</h2>
+                    <div class="pop_contents">
+                        <div class="scrollBox">
+                            <div class="pop_info_form">
+                                <div class="list row">
+                                    <select name="" id="" class="mr10">
+                                        <option value="">도매장 영업활동</option>
+                                        <option value="">매니저코칭</option>
+                                        <option value="">신규업장</option>
+                                        <option value="">Audit</option>
+                                        <option value="">업장 방문</option>
+                                        <option value="">KEG 관리</option>
+                                        <option value="">개인활동</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">업주면담</option>
+                                        <option value="">방문 요청</option>
+                                        <option value="">재고 확인</option>
+                                        <option value="">수금 활동</option>
+                                    </select>
+                                </div>
+                                <div class="list">
+                                    <input type="text" placeholder="거래처 조회"  title="거래처 조회">
+                                </div>
+                                <div class="list input-col3 row">
+                                    <input type="text" placeholder="2021.01.01(수)" class="calender-pop" title="연도.월.일"> <!-- 201230 class name 수정 -->
+                                    <!-- <input type="text" value="10:00 AM" class="time" placeholder="10:00 AM" title="시/분">  <!-- 201230 class name 추가 -->
+                                    <!-- <input type="text" value="10:30 PM" class="time" placeholder="10:00 PM" title="시/분"> --> <!-- 201230 class name 추가 -->
+                                </div>
+                                 <!-- 210118 수정 -->
+                                <div class="list input-col2 timeArea">
+                                    <div class="row">
+                                        <select name="" id="">
+                                            <option value="">00시</option>
+                                            <option value="">01시</option>
+                                            <option value="">02시</option>
+                                            <option value="">03시</option>
+                                            <option value="">04시</option>
+                                            <option value="">05시</option>
+                                            <option value="">06시</option>
+                                            <option value="">07시</option>
+                                            <option value="">08시</option>
+                                            <option value="" selected>09시</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00분</option>
+                                            <option value="">20분</option>
+                                            <option value="">40분</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00시</option>
+                                            <option value="">01시</option>
+                                            <option value="">02시</option>
+                                            <option value="">03시</option>
+                                            <option value="">04시</option>
+                                            <option value="">05시</option>
+                                            <option value="">06시</option>
+                                            <option value="">07시</option>
+                                            <option value="">08시</option>
+                                            <option value="" selected>09시</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00분</option>
+                                            <option value="">20분</option>
+                                            <option value="">40분</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                 <!--// 210118 수정 -->
+                                <div class="list">
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="활동 내용 입력" title="활동 내용 입력"></textarea>
+                                </div>
+                            </div>
+                            <div class="btn-area between">
+                                <div class="chk_area chk01">
+                                    <input type="checkbox" id="new" >
+                                    <label for="new">활동완료</label>
+                                </div>
+                                <button type="button" class="btn btn_white">등록</button>
+                            </div>
+                        </div><!--// scrollBox -->
+                    </div>
+                    <button type="button" class="btn_close">닫기</button>
+                </div>
+            </div>
+            <div class="popup popup_wrap pop01" id="popup6">
+                <div class="popup_container">
+                    <h2 class="pop_tit">활동계획입력</h2>
+                    <div class="pop_contents">
+                        <div class="scrollBox">
+                            <div class="pop_info_form">
+                                <div class="list row">
+                                    <select name="" id="" class="mr10">
+                                        <option value="">신규 업장</option>
+                                        <option value="">매니저코칭</option>
+                                        <option value="">Audit</option>
+                                        <option value="">도매장 영업활동</option>
+                                        <option value="">업장 방문</option>
+                                        <option value="">KEG 관리</option>
+                                        <option value="">개인활동</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">신규 업장</option>
+                                    </select>
+                                </div>
+                                <div class="list input-col3 row">
+                                    <input type="text" placeholder="2021.01.01(수)" class="calender-pop" title="연도.월.일"> <!-- 201230 class name 수정 -->
+                                    <!-- <input type="text" value="10:00 AM" class="time" placeholder="10:00 AM" title="시/분">  <!-- 201230 class name 추가 -->
+                                    <!-- <input type="text" value="10:30 PM" class="time" placeholder="10:00 PM" title="시/분"> --> <!-- 201230 class name 추가 -->
+                                </div>
+                                 <!-- 210118 수정 -->
+                                <div class="list input-col2 timeArea">
+                                    <div class="row">
+                                        <select name="" id="">
+                                            <option value="">00시</option>
+                                            <option value="">01시</option>
+                                            <option value="">02시</option>
+                                            <option value="">03시</option>
+                                            <option value="">04시</option>
+                                            <option value="">05시</option>
+                                            <option value="">06시</option>
+                                            <option value="">07시</option>
+                                            <option value="">08시</option>
+                                            <option value="" selected>09시</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00분</option>
+                                            <option value="">20분</option>
+                                            <option value="">40분</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00시</option>
+                                            <option value="">01시</option>
+                                            <option value="">02시</option>
+                                            <option value="">03시</option>
+                                            <option value="">04시</option>
+                                            <option value="">05시</option>
+                                            <option value="">06시</option>
+                                            <option value="">07시</option>
+                                            <option value="">08시</option>
+                                            <option value="" selected>09시</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00분</option>
+                                            <option value="">20분</option>
+                                            <option value="">40분</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                 <!--// 210118 수정 -->
+                                <div class="list input-col2">
+                                    <p class="tit03"><span class="star">*</span>방문 지역</p>
+                                    <div class="row">
+                                        <input type="text" class="mr10" placeholder="지역" title="지역">
+                                        <input type="text" placeholder="지역" title="지역">
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <label for=""><span class="star">*</span>업장 명</label>
+                                    <div class="result-box">
+                                        <input type="text" placeholder="입력" id="partnerName" onkeyup="searchPartner()" title="업장 명">
+                                        <div class="searchList">
+                                            <div class="searchList-box">
+                                                <ul id="partnerList"> </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="활동 내용 입력" title="활동 내용 입력"></textarea>
+                                </div>
+                            </div>
+                            <div class="btn-area between">
+                                <div class="chk_area chk01">
+                                    <input type="checkbox" id="new" >
+                                    <label for="new">활동완료</label>
+                                </div>
+                                <button type="button" class="btn btn_white">등록</button>
+                            </div>
+                        </div><!--// scrollBox -->
+                    </div>
+                    <button type="button" class="btn_close">닫기</button>
+                </div>
+            </div>
+            <div class="popup popup_wrap pop01" id="popup7">
+                <div class="popup_container">
+                    <h2 class="pop_tit">활동계획입력</h2>
+                    <div class="pop_contents">
+                        <div class="scrollBox">
+                            <div class="pop_info_form">
+                                <div class="list row">
+                                    <select name="" id="" class="mr10">
+                                        <option value="">도매장 영업활동</option>
+                                        <option value="">매니저코칭</option>
+                                        <option value="">신규업장</option>
+                                        <option value="">Audit</option>
+                                        <option value="">업장 방문</option>
+                                        <option value="">KEG 관리</option>
+                                        <option value="">개인활동</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">업주면담</option>
+                                        <option value="">방문 요청</option>
+                                        <option value="">재고 확인</option>
+                                        <option value="">수금 활동</option>
+                                    </select>
+                                </div>
+                                <div class="list">
+                                    <input type="text" placeholder="거래처 조회"  title="거래처 조회">
+                                </div>
+                                <div class="list input-col3 row">
+                                    <input type="text" placeholder="2021.01.01(수)" class="calender-pop" title="연도.월.일"> <!-- 201230 class name 수정 -->
+                                    <!-- <input type="text" value="10:00 AM" class="time" placeholder="10:00 AM" title="시/분">  <!-- 201230 class name 추가 -->
+                                    <!-- <input type="text" value="10:30 PM" class="time" placeholder="10:00 PM" title="시/분"> --> <!-- 201230 class name 추가 -->
+                                </div>
+                                 <!-- 210118 수정 -->
+                                <div class="list input-col2 timeArea">
+                                    <div class="row">
+                                        <select name="" id="">
+                                            <option value="">00시</option>
+                                            <option value="">01시</option>
+                                            <option value="">02시</option>
+                                            <option value="">03시</option>
+                                            <option value="">04시</option>
+                                            <option value="">05시</option>
+                                            <option value="">06시</option>
+                                            <option value="">07시</option>
+                                            <option value="">08시</option>
+                                            <option value="" selected>09시</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00분</option>
+                                            <option value="">20분</option>
+                                            <option value="">40분</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00시</option>
+                                            <option value="">01시</option>
+                                            <option value="">02시</option>
+                                            <option value="">03시</option>
+                                            <option value="">04시</option>
+                                            <option value="">05시</option>
+                                            <option value="">06시</option>
+                                            <option value="">07시</option>
+                                            <option value="">08시</option>
+                                            <option value="" selected>09시</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00분</option>
+                                            <option value="">20분</option>
+                                            <option value="">40분</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                 <!--// 210118 수정 -->
+                                <div class="list">
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="활동 내용 입력" title="활동 내용 입력"></textarea>
+                                </div>
+                            </div>
+                            <div class="btn-area between">
+                                <div class="chk_area chk01">
+                                    <input type="checkbox" id="new" >
+                                    <label for="new">활동완료</label>
+                                </div>
+                                <button type="button" class="btn btn_white">등록</button>
+                            </div>
+                        </div><!--// scrollBox -->
+                    </div>
+                    <button type="button" class="btn_close">닫기</button>
+                </div>
+            </div>
+            <div class="popup popup_wrap pop01" id="popup8">
+                <div class="popup_container">
+                    <h2 class="pop_tit">활동계획입력</h2>
+                    <div class="pop_contents">
+                        <div class="scrollBox">
+                            <div class="pop_info_form">
+                                <div class="list row">
+                                    <select name="" id="" class="mr10">
+                                        <option value="">업장방문</option>
+                                        <option value="">매니저코칭</option>
+                                        <option value="">신규업장</option>
+                                        <option value="">Audit</option>
+                                        <option value="">도매장 영업활동</option>
+                                        <option value="">KEG 관리</option>
+                                        <option value="">개인활동</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">업주면담</option>
+                                        <option value="">방문 요청</option>
+                                        <option value="">판촉물 전달</option>
+                                    </select>
+                                </div>
+                                <div class="list">
+                                    <input type="text" placeholder="거래처 조회" title="거래처 조회">
+                                </div>
+                                <div class="list input-col3 row">
+                                    <input type="text" placeholder="2021.01.01(수)" class="calender-pop" title="연도.월.일"> <!-- 201230 class name 수정 -->
+                                    <!-- <input type="text" value="10:00 AM" class="time" placeholder="10:00 AM" title="시/분">  <!-- 201230 class name 추가 -->
+                                    <!-- <input type="text" value="10:30 PM" class="time" placeholder="10:00 PM" title="시/분"> --> <!-- 201230 class name 추가 -->
+                                </div>
+                                 <!-- 210118 수정 -->
+                                <div class="list input-col2 timeArea">
+                                    <div class="row">
+                                        <select name="" id="">
+                                            <option value="">00시</option>
+                                            <option value="">01시</option>
+                                            <option value="">02시</option>
+                                            <option value="">03시</option>
+                                            <option value="">04시</option>
+                                            <option value="">05시</option>
+                                            <option value="">06시</option>
+                                            <option value="">07시</option>
+                                            <option value="">08시</option>
+                                            <option value="" selected>09시</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00분</option>
+                                            <option value="">20분</option>
+                                            <option value="">40분</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00시</option>
+                                            <option value="">01시</option>
+                                            <option value="">02시</option>
+                                            <option value="">03시</option>
+                                            <option value="">04시</option>
+                                            <option value="">05시</option>
+                                            <option value="">06시</option>
+                                            <option value="">07시</option>
+                                            <option value="">08시</option>
+                                            <option value="" selected>09시</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00분</option>
+                                            <option value="">20분</option>
+                                            <option value="">40분</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                 <!--// 210118 수정 -->
+                                <div class="list">
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="활동 내용 입력" title="활동 내용 입력"></textarea>
+                                </div>
+                            </div>
+                            <div class="btn-area between">
+                                <div class="chk_area chk01">
+                                    <input type="checkbox" id="new" >
+                                    <label for="new">활동완료</label>
+                                </div>
+                                <button type="button" class="btn btn_white">등록</button>
+                            </div>
+                        </div><!--// scrollBox -->
+                    </div>
+                    <button type="button" class="btn_close">닫기</button>
+                </div>
+            </div>
+            <div class="popup popup_wrap pop01" id="popup9">
+                <div class="popup_container">
+                    <h2 class="pop_tit">활동계획입력</h2>
+                    <div class="pop_contents">
+                        <div class="scrollBox">
+                            <div class="pop_info_form">
+                                <div class="list row">
+                                    <select name="" id="" class="mr10">
+                                        <option value="">KEG 관리</option>
+                                        <option value="">매니저코칭</option>
+                                        <option value="">신규업장</option>
+                                        <option value="">Audit</option>
+                                        <option value="">도매장 영업활동</option>
+                                        <option value="">업장 방문</option>
+                                        <option value="">개인활동</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">KEG 설치</option>
+                                        <option value="">KEG 철수</option>
+                                        <option value="">KEG A/S</option>
+                                        <option value="">KEG B/S</option>
+                                    </select>
+                                </div>
+                                <div class="list">
+                                    <input type="text" placeholder="거래처 조회"  title="거래처 조회">
+                                </div>
+                                <div class="list input-col3 row">
+                                    <input type="text" placeholder="2021.01.01(수)" class="calender-pop" title="연도.월.일"> <!-- 201230 class name 수정 -->
+                                    <!-- <input type="text" value="10:00 AM" class="time" placeholder="10:00 AM" title="시/분">  <!-- 201230 class name 추가 -->
+                                    <!-- <input type="text" value="10:30 PM" class="time" placeholder="10:00 PM" title="시/분"> --> <!-- 201230 class name 추가 -->
+                                </div>
+                                 <!-- 210118 수정 -->
+                                <div class="list input-col2 timeArea">
+                                    <div class="row">
+                                        <select name="" id="">
+                                            <option value="">00시</option>
+                                            <option value="">01시</option>
+                                            <option value="">02시</option>
+                                            <option value="">03시</option>
+                                            <option value="">04시</option>
+                                            <option value="">05시</option>
+                                            <option value="">06시</option>
+                                            <option value="">07시</option>
+                                            <option value="">08시</option>
+                                            <option value="" selected>09시</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00분</option>
+                                            <option value="">20분</option>
+                                            <option value="">40분</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="" selected>09시</option>
+                                            <option value="">00시</option>
+                                            <option value="">01시</option>
+                                            <option value="">02시</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00분</option>
+                                            <option value="">20분</option>
+                                            <option value="">40분</option>
+                                        </select>
+                                    </div>
+                                     <!--// 210118 수정 -->
+                                </div>
+                                <div class="list">
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="활동 내용 입력" title="활동 내용 입력"></textarea>
+                                </div>
+                            </div>
+                            <div class="btn-area between">
+                                <div class="chk_area chk01">
+                                    <input type="checkbox" id="new" >
+                                    <label for="new">활동완료</label>
+                                </div>
+                                <button type="button" class="btn btn_white">등록</button>
+                            </div>
+                        </div><!--// scrollBox -->
+                    </div>
+                    <button type="button" class="btn_close">닫기</button>
+                </div>
+            </div>
+            <div class="popup popup_wrap pop01" id="popup10">
+                <div class="popup_container">
+                    <h2 class="pop_tit">활동계획입력</h2>
+                    <div class="pop_contents">
+                        <div class="scrollBox">
+                            <div class="pop_info_form">
+                                <div class="list row">
+                                    <select name="" id="" class="mr10">
+                                        <option value="">개인활동</option>
+                                        <option value="">매니저코칭</option>
+                                        <option value="">신규업장</option>
+                                        <option value="">Audit</option>
+                                        <option value="">도매장 영업활동</option>
+                                        <option value="">업장 방문</option>
+                                        <option value="">KEG 관리</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">사무실 내근</option>
+                                        <option value="">팀회식</option>
+                                        <option value="">교육/워크샵</option>
+                                        <option value="">휴가/공가</option>
+                                    </select>
+                                </div>
+                                <div class="list input-col3 row">
+                                    <input type="text" placeholder="2021.01.01(수)" class="calender-pop" title="연도.월.일"> <!-- 201230 class name 수정 -->
+                                    <!-- <input type="text" value="10:00 AM" class="time" placeholder="10:00 AM" title="시/분">  <!-- 201230 class name 추가 -->
+                                    <!-- <input type="text" value="10:30 PM" class="time" placeholder="10:00 PM" title="시/분"> --> <!-- 201230 class name 추가 -->
+                                </div>
+                                <!-- 210118 수정 -->
+                                <div class="list input-col2 timeArea">
+                                    <div class="row">
+                                        <select name="" id="">
+                                            <option value="">00시</option>
+                                            <option value="">01시</option>
+                                            <option value="">02시</option>
+                                            <option value="">03시</option>
+                                            <option value="">04시</option>
+                                            <option value="">05시</option>
+                                            <option value="">06시</option>
+                                            <option value="">07시</option>
+                                            <option value="">08시</option>
+                                            <option value="" selected>09시</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00분</option>
+                                            <option value="">20분</option>
+                                            <option value="">40분</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00시</option>
+                                            <option value="">01시</option>
+                                            <option value="">02시</option>
+                                            <option value="">03시</option>
+                                            <option value="">04시</option>
+                                            <option value="">05시</option>
+                                            <option value="">06시</option>
+                                            <option value="">07시</option>
+                                            <option value="">08시</option>
+                                            <option value="" selected>09시</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">00분</option>
+                                            <option value="">20분</option>
+                                            <option value="">40분</option>
+                                        </select>
+                                    </div>
+                                     <!-- // 210118 수정 -->
+                                </div>
+                                <div class="list">
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="활동 내용 입력" title="활동 내용 입력"></textarea>
+                                </div>
+                            </div>
+                            <div class="btn-area between">
+                                <div class="chk_area chk01">
+                                    <input type="checkbox" id="new" >
+                                    <label for="new">활동완료</label>
+                                </div>
+                                <button type="button" class="btn btn_white">등록</button>
+                            </div>
+                        </div><!--// scrollBox -->
+                    </div>
+                    <button type="button" class="btn_close">닫기</button>
+                </div>
+            </div>
+            <div class="popup popup_wrap pop02" id="popup11">
+                <div class="popup_container">
+                    <h2 class="pop_tit">영업행사등록</h2>
+                    <div class="pop_contents">
+                        <div class="scrollBox">
+                            <div class="pop_info_form">
+                                <div class="list">
+                                    <p class="tit03">행사일자</p>
+                                    <input type="text" id="calender3" placeholder="2020.07.06" class="input_type02 calender" title="년도.월.일">
+                                    <span class="etc">~</span>
+                                    <input type="text" id="calender4" placeholder="2020.07.06" class="input_type02 calender" title="년도.월.일">
+                                </div>
+                                <div class="list col01">
+                                    <p class="tit03">행사거래처</p>
+                                        <div class="row">
+                                            <select name="" id="">
+                                                <option value="">전체</option>
+                                                <option value="">전체</option>
+                                                <option value="">전체</option>
+                                            </select>
+                                            <div class="count">
+                                                <select name="" id="">
+                                                    <option value="">제품선택</option>
+                                                    <option value="">전체</option>
+                                                    <option value="">전체</option>
+                                                </select>
+                                                <input type="text" placeholder="내용 입력" title="내용 입력">
+                                                <button type="button" class="btn_plus" title="더하기"></button>
+                                            </div>
+                                        </div>
+                                    <div class="count row">
+                                        <select name="" id="">
+                                            <option value="">칭따오 660ml</option>
+                                            <option value="">전체</option>
+                                            <option value="">전체</option>
+                                        </select>
+                                        <input type="text" value="6입 11,900원" placeholder="내용 입력" title="내용 입력">
+                                        <button type="button" class="btn_minus" title="빼기"></button>
+                                    </div>
+                                    <div class="count row">
+                                        <select name="" id="">
+                                            <option value="">에딩거 500</option>
+                                            <option value="">전체</option>
+                                            <option value="">전체</option>
+                                        </select>
+                                        <input type="text" value="8입 14,900원" placeholder="내용 입력" title="내용 입력">
+                                        <button type="button" class="btn_minus" title="빼기"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-area right">
+                                <button type="submit" class="btn btn_white">등록</button>
+                            </div>
+                        </div><!--// scrollBox -->
+                    </div>
+                    <button type="button" class="btn_close">닫기</button>
+                </div>
+            </div>
+            <div class="popup popup_wrap pop02" id="popup12">
+                <div class="popup_container">
+                    <h2 class="pop_tit">영업행사수정</h2>
+                    <div class="pop_contents">
+                        <div class="scrollBox">
+                            <div class="pop_info_form">
+                                <div class="list col01">
+                                    <p class="tit03">행사일자</p>
+                                    <input type="text" id="calender3" placeholder="2020.07.06" class="input_type02 calender" title="년도.월.일">
+                                    <span class="etc">~</span>
+                                    <input type="text" id="calender4" placeholder="2020.07.06" class="input_type02 calender" title="년도.월.일">
+                                </div>
+                                <div class="list col01">
+                                    <p class="tit03">행사거래처</p>
+                                    <select name="" id="">
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                    </select>
+                                    <div class="count">
+                                        <select name="" id="">
+                                            <option value="">제품선택</option>
+                                            <option value="">전체</option>
+                                            <option value="">전체</option>
+                                        </select>
+                                        <input type="text" placeholder="내용 입력" title="내용 입력">
+                                        <button type="button" class="btn_plus" title="더하기"></button>
+                                    </div>
+                                    <div class="count row">
+                                        <select name="" id="">
+                                            <option value="">칭따오 660ml</option>
+                                            <option value="">전체</option>
+                                            <option value="">전체</option>
+                                        </select>
+                                        <input type="text" value="6입 11,900원" placeholder="내용 입력" title="내용 입력">
+                                        <button type="button" class="btn_minus" title="빼기"></button>
+                                    </div>
+                                    <div class="count row">
+                                        <select name="" id="">
+                                            <option value="">에딩거 500</option>
+                                            <option value="">전체</option>
+                                            <option value="">전체</option>
+                                        </select>
+                                        <input type="text" value="8입 14,900원" placeholder="내용 입력" title="내용 입력">
+                                        <button type="button" class="btn_minus" title="빼기"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-area right col02">
+                                <button type="button" class="btn btn_white mr10">삭제</button>
+                                <button type="button" class="btn btn_white">수정</button>
+                            </div>
+                        </div><!--// scrollBox -->
+                    </div>
+                    <button type="button" class="btn_close">닫기</button>
+                </div>
+           </div>
+        </section> <!--// contents -->
+    </div> <!--// wrapper -->
+    <script src="../assets/js/jquery-1.12.4.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+    <script src="../assets/js/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script>
+        var partnerData = [ //  임시 데이터
+           {'name':'(신당)기배이자카야'},
+           {'name':'(신당)기배이자카야'},
+           {'name':'(신당)기배이자카야'},
+           {'name':'(신당)기배이자카야'}
+       ];
+       //var partnerPs = null; //scroll design 관련
+       function searchPartner(){
+           if($('#partnerName').val() =="" || $('#partnerName').val() == null) alert('[입력값]을 입력해 주세요');
+           else{
+               //var keyword = $('#partnerName').val();
+               $('#partnerList').html('');
+               var keyword = "(";
+               $.each(partnerData,function(i,item){
+                   var broken = item.name.split(keyword);
+                   var result = broken[0] + "<strong>"+keyword+"</strong>" + broken[1];
+                   var temp = '<li><button type="button" class="btn-put">'+result+'</button></li>';
+                   $('#partnerList').append(temp);
+               })
+               $('#partnerName').siblings('.searchList').show();
+               
+               //if(partnerPs == null) partnerPs = new PerfectScrollbar('.searchList-box');	//scroll design 관련
+           }
+       }
+       
+       </script>
+</body>
+</html>

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = 0, viewport-fit=cover"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="../assets/css/pages.css">
+    <title>BeerK</title>
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="skip">
+            <li><a href="#nav">메뉴바로가기</a></li>
+            <li><a href="#contents">본문바로가기</a></li>
+        </ul>
+        <header>
+            <div class="pc-wrap">
+                <h1 class="logo">
+                    <a href="javascript:void(0)">
+                        BK Co.,Ltd Import & Distribution pf world's finest beers
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li>ID : ABC0001</li>
+                        <li><a href="javascript:void(0)">수도권 도매 1파트&nbsp;<strong>김영업<span>님</span></strong></a></li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn btn_logout">로그아웃</a>
+                </nav>
+            </div>
+            <div class="mobile-wrap center">
+                <h2 class="title">업장 상세 정보</h2>
+                <!-- <button class="btn btn-menu" type="button">메뉴 열기</button> -->
+                <button class="btn btn-back" type="button">뒤로가기</button>
+            </div>
+        </header>
+        <nav id="nav">
+            <h1 class="hidden">메인 내비게이션</h1>
+            <button class="btn btn-menu-close" type="button">메뉴 닫기</button>
+            <ul class="gnb">
+                <li class="gnb1">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 활동 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li>
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb2">
+                    <a href="javascript:void(0)"  class="on current"><span>도매장 수주 관리</span></a>
+                    <ul>
+                        <li><a href="#">수주 조회</a></li>
+                        <li><a href="#">수주 등록</a></li>
+                        <li><a href="#">반품 조회</a></li>
+                        <li><a href="#">반품 등록</a></li>
+                        <!-- <li><a href="#">도매장 기말 재고 등록</a></li>
+                        <li><a href="#">도매장 기말 재고 조회</a></li>
+                        <li><a href="#">도매장 평균 재고 관리</a></li>
+                        <li><a href="#"> 파트별 도매장 재고 현황</a></li> -->
+                    </ul>
+                </li>
+                <li class="gnb3">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 운영 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li>
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul> -->
+                    <!-- <ul>
+                        <li><a href="#">신규 입점 현황</a></li>
+                        <li><a href="#">개인 별 신규 영업 목표 실적</a></li>
+                        <li><a href="#">파트 별 목표 실적 현황</a></li>
+                        <li><a href="#">posm 등록</a></li>                       
+                    </ul> -->
+                </li>
+                <li class="gnb4">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>판매량 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb5">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>도매장 재고 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 판매량 등록</a></li>
+                        <li><a href="#">재널 별 판매량 등록</a></li>
+                        <li><a href="#">지역 별 판매량 등록</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb6">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>거래처 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb7">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>프로모션 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">visibility 영업 조회 등록</a></li> 
+                        <li><a href="#">visibility 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 대시보드</a></li> 
+                        <li><a href="#">gift 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 대시보드</a></li>
+                    </ul> -->
+                </li>
+            </ul>
+        </nav>
+        <section id="contents" class="businessDetail">
+           <div class="container">
+                <div class="headline clear">
+                    <h1 class="title-style">업장 상세 정보</h1>
+                    <!-- <ul class="location">
+                        <li><a href="javascript:void(0)">홈</a></li>
+                        <li><a href="javascript:void(0)">수주 관리</a></li>
+                        <li><a href="javascript:void(0)" class="on">수주 조회</a></li>
+                    </ul> -->
+                </div>
+                <div class="info_form clear">
+                    <div class="detail_wrap ">
+                        <div class="detail clear">
+                            <div class="list">
+                                <dl>
+                                    <dt>업장명</dt>
+                                    <dd>(신당)기배이자캬야</dd>
+                                </dl>
+                                <dl>
+                                    <dt>업장 구분</dt>
+                                    <dd>ON &gt; Social Drinking &gt; 이자카야</dd>
+                                </dl>
+                                <dl>
+                                    <dt>등급</dt>
+                                    <dd>A등급</dd>
+                                </dl>
+                                <dl>
+                                    <dt>대표자</dt>
+                                    <dd>
+                                        <p class="name">홍길동</p>
+                                        <p class="tel"><a href="tel:010-0000-0000">010-0000-0000</a></p>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>사업자등록번호</dt>
+                                    <dd>123-45-67890</dd>
+                                </dl>
+                                <dl>
+                                    <dt>사업장전화번호</dt>
+                                    <dd></dd>
+                                </dl>
+                                <dl>
+                                    <dt>키맨 1</dt>
+                                    <dd>
+                                        <p class="name">홍길동</p>
+                                        <p class="tel"><a href="tel:010-0000-0000">010-0000-0000</a></p>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>키맨 2</dt>
+                                    <dd></dd>
+                                </dl>
+                                <dl>
+                                    <dt>키맨 3</dt>
+                                    <dd></dd>
+                                </dl>
+                                <dl>
+                                    <dt>지역1</dt>
+                                    <dd>서울</dd>
+                                </dl>
+                                <dl>
+                                    <dt>지역2</dt>
+                                    <dd>중구</dd>
+                                </dl>
+                                <dl>
+                                    <dt>지역3</dt>
+                                    <dd>도원동</dd>
+                                </dl>
+                                <dl>
+                                    <dt>우편번호</dt>
+                                    <dd><a href="">04607</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt>신주소</dt>
+                                    <dd>서울특별시 중구 다산로 155-1 (신당동) </dd>
+                                </dl>
+                                <dl>
+                                    <dt>구주소</dt>
+                                    <dd></dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="detail clear">
+                            <div class="list">
+                                <dl>
+                                    <dt>영업상태</dt>
+                                    <dd>영업</dd>
+                                </dl>
+                                <dl>
+                                    <dt>담당자부서</dt>
+                                    <dd>수도권 업장2</dd>
+                                </dl>
+                                <dl>
+                                    <dt>담당자</dt>
+                                    <dd>주종원</dd>
+                                </dl>
+                                <dl>
+                                    <dt>사용도매장</dt>
+                                    <dd>(주)양지종합주류(석관)</dd>
+                                </dl>
+                                <dl>
+                                    <dt>도매장 담당자 부서</dt>
+                                    <dd>수도권 도매2</dd>
+                                </dl>
+                                <dl>
+                                    <dt>도매장 담당자</dt>
+                                    <dd>김도매</dd>
+                                </dl>
+                                <dl>
+                                    <dt>배달업체 여부</dt>
+                                    <dd>Y</dd>
+                                </dl>
+                                <dl>
+                                    <dt>업체 등록일</dt>
+                                    <dd>2020-02-03</dd>
+                                </dl>
+                                <dl class="txtarea">
+                                    <dt>비고</dt>
+                                    <dd>대표자 변경</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="radio_form">
+                    <div class="detail_wrap">
+                        <div class="detail clear">
+                            <h3 class="tit3">당사 입점제품</h3>
+                            <div class="radio_wrap">
+                                <div class="list">
+                                    <input type="checkbox" id="box1">
+                                    <label for="box1" onclick="openPop('popup3');">라오샨 600ml(병)</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box2">
+                                    <label for="box2" onclick="openPop('popup3');" class="chk_label">칭따오 330ml(병)</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box3">
+                                    <label for="box3" onclick="openPop('popup3');" class="chk_label">칭따오 640ml(병)</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box4">
+                                    <label for="box4" onclick="openPop('popup3');" class="chk_label">칭따오 위트 330ml(병)</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box5">
+                                    <label for="box5" onclick="openPop('popup3');" class="chk_label">칭따오 스타우트 330ml(병)</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box6">
+                                    <label for="box6" onclick="openPop('popup3');" class="chk_label">칭따오 IPA 330ml(병)</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box7">
+                                    <label for="box7" onclick="openPop('popup3');" class="chk_label">칭따오 640ml(순)</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box8">
+                                    <label for="box8" onclick="openPop('popup3');" class="chk_label">칭따오 20L(keg)</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box9">
+                                    <label for="box9" onclick="openPop('popup3');" class="chk_label">에딩거 헤페 330ml(병)</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box10">
+                                    <label for="box10" onclick="openPop('popup3');" class="chk_label">에딩거 헤페 500ml(병)</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box11">
+                                    <label for="box11" onclick="openPop('popup3');" class="chk_label">에딩거 둔겔 20L</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box12">
+                                    <label for="box12" onclick="openPop('popup3');" class="chk_label">에딩거 우르바이스우르바이스 30L에딩거 우르바이스우르바이스 30L에딩거 우르바이스우르바이스 30L에딩거 우르바이스우르바이스 30L에딩거 우르바이스우르바이스 30L에딩거 우르바이스우르바이스 30L</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box13">
+                                    <label for="box13" onclick="openPop('popup3');" class="chk_label">라오샨 500ml(캔)</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box14">
+                                    <label for="box14" onclick="openPop('popup3');" class="chk_label">칭따오 500ml(캔)</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box15">
+                                    <label for="box15" onclick="openPop('popup3');" class="chk_label">칭따오 330ml(캔)</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box16">
+                                    <label for="box16" onclick="openPop('popup3');" class="chk_label">위트비어 500ml(캔)</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box17">
+                                    <label for="box17" onclick="openPop('popup3');" class="chk_label">스타우트 500ml(캔)</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box18">
+                                    <label for="box18" onclick="openPop('popup3');" class="chk_label">퓨어드래프트 500ml(캔)</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box19">
+                                    <label for="box19" onclick="openPop('popup3');" class="chk_label">에딩거 헤페 500ml(캔)</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box20">
+                                    <label for="box20" onclick="openPop('popup3');" class="chk_label">에딩거 둔켈 500ml(캔)</label>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="detail clear">
+                            <h3 class="tit3">경쟁사 입점제품</h3>
+                            <div class="radio_wrap">
+                                <div class="list">
+                                    <input type="checkbox" id="box21">
+                                    <label for="box21" onclick="openPop('popup4');" class="chk_label">경쟁사1</span></label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box22">
+                                    <label for="box22" onclick="openPop('popup4');" class="chk_label">경쟁사2</span></label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box23">
+                                    <label for="box23" onclick="openPop('popup4');" class="chk_label">경쟁사3</span></label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box24">
+                                    <label for="box24" onclick="openPop('popup4');" class="chk_label">경쟁사4</span></label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box25">
+                                    <label for="box25" onclick="openPop('popup4');" class="chk_label">경쟁사5</span></label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box26">
+                                    <label for="box26" onclick="openPop('popup4');" class="chk_label">경쟁사6</span></label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box27">
+                                    <label for="box27" onclick="openPop('popup4');" class="chk_label">경쟁사7</span></label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box28">
+                                    <label for="box28" onclick="openPop('popup4');" class="chk_label">경쟁사8</span></label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box29">
+                                    <label for="box29" onclick="openPop('popup4');" class="chk_label">경쟁사9</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box30">
+                                    <label for="box30" onclick="openPop('popup4');" class="chk_label">경쟁사10</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box31">
+                                    <label for="box31" onclick="openPop('popup4');" class="chk_label">경쟁사11</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box32">
+                                    <label for="box32" onclick="openPop('popup4');" class="chk_label">경쟁사12</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box33">
+                                    <label for="box33" onclick="openPop('popup4');" class="chk_label">경쟁사13</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box34">
+                                    <label for="box34" onclick="openPop('popup4');" class="chk_label">경쟁사14</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box35">
+                                    <label for="box35" onclick="openPop('popup4');" class="chk_label">경쟁사15</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box36">
+                                    <label for="box36" onclick="openPop('popup4');" class="chk_label">경쟁사16</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box37">
+                                    <label for="box33" onclick="openPop('popup4');" class="chk_label">경쟁사17</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box38">
+                                    <label for="box34" onclick="openPop('popup4');" class="chk_label">경쟁사18</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box39">
+                                    <label for="box35" onclick="openPop('popup4');" class="chk_label">경쟁사19</label>
+                                </div>
+                                <div class="list">
+                                    <input type="checkbox" id="box40">
+                                    <label for="box36" onclick="openPop('popup4');" class="chk_label">경쟁사20</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="sum">
+                    <p>영업활동내역 (최근 <span>5</span>건)</p>
+                </div>
+                <div class="box_flow">
+                    <div class="scroll-box">
+                        <table class="table01">
+                            <caption>영업활동내역 테이블의 일자, 활동 구분, 활동 내용 테이블 입니다.</caption>
+                            <colgroup>
+                                <col style="width:20%">
+                                <col style="width:40%">
+                                <col style="width:40%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>일자</th>
+                                    <th>활동 구분</th>
+                                    <th>활동 내용</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="center">2020.08.23</td>
+                                    <td>업장방문&gt;업주면담</td>
+                                    <td>발주관련 내역 확인</td>
+                                </tr>
+                                <tr>
+                                    <td class="center">2020.06.30</td>
+                                    <td>업장방문&gt;판촉물 전달</td>
+                                    <td>에딩거 판촉물 전달</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+    
+                <div class="btn_wrap clear">
+                    <button type="button" class="btn btn02 btn_white">수정</button>
+                    <button type="button" class="btn btn02 btn_white">확인</button>
+                </div>
+           </div>
+           
+           <div class="popup popup_wrap pop01" id="popup3">
+            <div class="popup_container">
+                <h2 class="pop_tit">입점품목 Listing 설정</h2>
+                <div class="pop_contents">
+                    <div class="scrollBox ps">
+                        <div class="pop_info_form">
+                            <div class="list col02">
+                                <p class="tit03">Listing 일자</p>
+                                <input type="text" placeholder="Yyyy-mm-dd" title="Listing 일자">
+                            </div>
+                        </div>
+                        <div class="btn-area between"><!-- 01.22 라디오 버튼 - 예/아니오 추가 -->
+                            <div class="ico-radio">
+                                <input type="radio" id="radio01">
+                                <label for="radio01">예</label>
+                            </div>
+                            <div class="ico-radio">
+                                <input type="radio" id="radio02">
+                                <label for="radio02">아니오</label>
+                            </div>
+                            <button type="button" class="btn btn_white">등록</button>
+                        </div>
+                    <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: -13px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div><!--// scrollBox -->
+                </div>
+                <button type="button" class="btn_close">닫기</button>
+            </div>
+        </div>
+           
+        <div class="popup popup_wrap pop01" id="popup4">
+            <div class="popup_container">
+                <h2 class="pop_tit">입점품목 Delisting 설정</h2>
+                <div class="pop_contents">
+                    <div class="scrollBox ps">
+                        <div class="pop_info_form">
+                            <div class="list col02">
+                                <p class="tit03">Delisting 일자</p>
+                                <input type="text" placeholder="Yyyy-mm-dd" title="Delisting 일자">
+                            </div>
+                        </div>
+                        <div class="btn-area between right">
+                            <button type="button" class="btn btn_white">등록</button>
+                        </div>
+                    <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: -13px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div><!--// scrollBox -->
+                </div>
+                <button type="button" class="btn_close">닫기</button>
+            </div>
+        </div>
+        </section> <!--// contents -->
+    </div> <!--// wrapper -->
+    <script src="../assets/js/jquery-1.12.4.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+    <script src="../assets/js/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+</body>
+</html>

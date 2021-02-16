@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = 0, viewport-fit=cover"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <title>BeerK</title>
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="skip">
+            <li><a href="#nav">메뉴바로가기</a></li>
+            <li><a href="#contents">본문바로가기</a></li>
+        </ul>
+        <header>
+            <h1 class="logo">
+                <a href="javascript:void(0)">
+                    BK Co.,Ltd Import & Distribution pf world's finest beers
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li>ID : ABC0001</li>
+                    <li><a href="javascript:void(0)">수도권 도매 1파트&nbsp;<strong>김영업<span>님</span></strong></a></li>
+                </ul>
+                <a href="javascript:void(0)" class="btn_logout">로그아웃</a>
+            </nav>
+        </header>
+        <nav id="nav">
+            <h1 class="hidden">메인 내비게이션</h1>
+            <ul class="gnb">
+                <li class="gnb1">
+                    <a href="javascript:void(0)" class="on current"><span>거래처 관리</span></a>
+                    <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul>
+                </li>
+                <li class="gnb2">
+                    <a href="javascript:void(0)"><span>영업 활동 관리</span></a>
+                    <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li>
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul>
+                </li>
+                <li class="gnb3">
+                    <a href="javascript:void(0)"><span>영업 운영 관리</span></a>
+                    <ul>
+                        <li><a href="#">신규 입점 현황</a></li>
+                        <li><a href="#">개인 별 신규 영업 목표 실적</a></li>
+                        <li><a href="#">파트 별 목표 실적 현황</a></li>
+                        <li><a href="#">posm 등록</a></li>                       
+                    </ul>
+                </li>
+                <li class="gnb4">
+                    <a href="javascript:void(0)" ><span>프로모션 관리</span></a>
+                    <ul>
+                        <li><a href="#">visibility 영업 조회 등록</a></li> 
+                        <li><a href="#">visibility 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 대시보드</a></li> 
+                        <li><a href="#">gift 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 대시보드</a></li>
+                    </ul>
+                </li>
+                <li class="gnb5">
+                    <a href="javascript:void(0)"><span>판매량 관리</span></a>
+                    <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul>
+                </li>
+                <li class="gnb6">
+                    <a href="javascript:void(0)"><span>도매장 재고 관리</span></a>
+                    <ul>
+                        <li><a href="#">업소 판매량 등록</a></li>
+                        <li><a href="#">재널 별 판매량 등록</a></li>
+                        <li><a href="#">지역 별 판매량 등록</a></li>
+                    </ul>
+                </li>
+                <li class="gnb7">
+                    <a href="javascript:void(0)"><span>도매장 발주 관리</span></a>
+                    <ul>
+                        <li><a href="#">도매장 기말 재고 등록</a></li>
+                        <li><a href="#">도매장 기말 재고 조회</a></li>
+                        <li><a href="#">도매장 평균 재고 관리</a></li>
+                        <li><a href="#"> 파트별 도매장 재고 현황</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+       <section id="contents">
+           <div class="container">
+            <div class="guide_contents">
+                <h1></h1>
+                <div>
+                    <div class="ico-radio">
+                        <input type="radio" id="radio01" >
+                        <label for="radio01"></label>
+                    </div>
+                </div>
+                <div class="chk_area chk01">
+                    <input type="checkbox" id="chk01" >
+                    <label for="chk01"></label>
+                </div>
+                <div class="chk_area chk02">
+                    <input type="checkbox" id="chk02">
+                    <label for="chk02"></label>
+                </div>
+                <div class="chk_area chk_label chk01">
+                    <input type="checkbox" id="ex_chk" > 
+                    <label for="ex_chk">체크박스</label> 
+                </div>
+                <h1>버튼</h1>
+                <button type="button" class="btn_white">변경</button>
+                <button type="button" class="btn_red">변경</button>
+                <button type="button" class="btn_navy">변경</button>
+                <h1>탭 01</h1>
+                <div class="tab-wrap">
+                    <ul class="tab tab01 clear">
+                        <li>
+                            <a href="javascript:void(0)" class="on">당사 월 현황</a> 
+                        </li>
+                        <li><a href="javascript:void(0)">당사 분기 현황</a></li>
+                        <li><a href="javascript:void(0)">당사 연 현황</a></li>
+                    </ul>
+                    <div class="tab-con" style="display:block">con1</div>
+                    <div class="tab-con">con2</div>
+                    <div class="tab-con">con3</div>
+                </div>
+                <h1>탭 02</h1>
+                <ul class="tab tab02 clear">
+                    <li class="on"><a href="javascript:void(0)">기초 재고</a></li>
+                    <li><a href="javascript:void(0)">당월 입고</a></li>
+                    <li><a href="javascript:void(0)">기말 재고</a></li>
+                    <li><a href="javascript:void(0)">당월 판매</a></li>
+                    <li><a href="javascript:void(0)">재고 일수</a></li>
+                    <li><a href="javascript:void(0)">전월 대비</a></li>
+                </ul>
+                <table class="table1">
+                    <caption>기초 재고의 전체합계, 비중, 수도권1팀, 수도권계, 지역팀, 지역계 테이블 입니다.</caption>
+                    <colgroup>
+                        <col style="width:20%">
+                        <col style="width:40%">
+                        <col style="width:40%">
+                        <col style="width:20%">
+                        <col style="width:40%">
+                        <col style="width:40%">
+                        <col style="width:20%">
+                        <col style="width:40%">
+                        <col style="width:40%">
+                        <col style="width:20%">
+                        <col style="width:40%">
+                        <col style="width:40%">
+                        <col style="width:20%">
+                        <col style="width:40%">
+                        <col style="width:40%">
+                        <col style="width:40%">
+                    </colgroup>
+                </table>
+                <h1>input</h1>
+                <input type="text" id="txt01" placeholder="내용을 입력하세요" title="입력칸">
+                <label for="" id="txt01"></label>
+                <h1>셀렉트</h1>
+                <select name="" id="">
+                    <option value="">지역1</option>
+                    <option value="">지역1</option>
+                    <option value="">지역1</option>
+                </select>
+                <h1>테이블 01 (기본 -  無)</h1>
+                <table class="table01">
+                    <caption>영업활동내역 테이블의 일자, 활동 구분, 활동 내용 테이블 입니다.</caption>
+                    <colgroup>
+                        <col style="width:20%">
+                        <col style="width:40%">
+                        <col style="width:40%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>일자</th>
+                            <th>활동 구분</th>
+                            <th>활동 내용</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center">중앙정렬</td>
+                            <td>기본 좌측 정렬</td>
+                            <td class="right">우측정렬</td>
+                        </tr>
+                        <tr>
+                            <td class="center">2020.08.23</td>
+                            <td>업장방문>판촉물 전달</td>
+                            <td>에딩거 판촉물 전달</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h1>테이블 02 ( 有)</h1>
+                <table class="table01 chk">
+                    <caption>선택된 거래처들 테이블의 거래처 명, 채널, seg, subseg1, 등급, 거래처 담당 부서, 거래처 담당자, 최근 방문일, 상태 테이블 입니다.</caption>
+                    <colgroup>
+                        <col style="width:5%">
+                        <col style="width:15%">
+                        <col style="width:10%">
+                        <col style="width:10%">
+                        <col style="width:10%">
+                        <col style="width:5%">
+                        <col style="width:15%">
+                        <col style="width:15%">
+                        <col style="width:10%">
+                        <col style="width:5%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="chk_area chk_all chk02">
+                                    <input type="checkbox" id="allchk" name="tchk">
+                                    <label for="allchk"></label>
+                                </div>
+                            </th>
+                            <th>대림종합주류</th>
+                            <th>채널</th>
+                            <th>Seg</th>
+                            <th>subseg1</th>
+                            <th>등급</th>
+                            <th>거래처 담당 부서</th>
+                            <th>거래처 담당자</th>
+                            <th>최근 방문일</th>
+                            <th>상태</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center">
+                                <div class="chk_area chk02 t_chk">
+                                    <input type="checkbox" id="tchk1-1"  name="tchk">
+                                    <label for="tchk1-1"></label>
+                                </div>
+                            </td>
+                            <td>대림종합주류</td>
+                            <td class="center">도매장</td>
+                            <td class="center">도매장</td>
+                            <td class="center">도매장</td>
+                            <td class="center">A</td>
+                            <td>수도권 도매2</td>
+                            <td>강도매</td>
+                            <td class="center">2020-09-03</td>
+                            <td class="center">영업</td>
+                        </tr>
+                        <tr>
+                            <td class="center">
+                                <div class="chk_area chk02 t_chk">
+                                    <input type="checkbox" id="tchk1-2"  name="tchk">
+                                    <label for="tchk1-2"></label>
+                                </div>
+                            </td>
+                            <td>대림종합주류</td>
+                            <td class="center">도매장</td>
+                            <td class="center">도매장</td>
+                            <td class="center">도매장</td>
+                            <td class="center">B</td>
+                            <td>수도권 도매2</td>
+                            <td>김도매</td>
+                            <td class="center">2020-09-03</td>
+                            <td class="center">영업</td>
+                        </tr>
+                        <tr>
+                            <td class="center">
+                                <div class="chk_area chk02 t_chk">
+                                    <input type="checkbox" id="tchk1-3"  name="tchk">
+                                    <label for="tchk1-3"></label>
+                                </div>
+                            </td>
+                            <td>대림종합주류</td>
+                            <td class="center">도매장</td>
+                            <td class="center">도매장</td>
+                            <td class="center">도매장</td>
+                            <td class="center">C</td>
+                            <td>수도권 도매2</td>
+                            <td>최기재</td>
+                            <td class="center">2020-09-03</td>
+                            <td class="center">영업</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h1>테이블 (응용형)</h1>
+                <div class="box_flow">
+                    <div class="scroll-box">
+                        <table class="table01 adv chk">
+                            <caption>기초 재고의 수도권 1팀, 지역팀의 전체합계, 비중, 수도권계, 지역계 테이블 입니다.</caption>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col style="width:104px">
+                                <col style="width:88px">
+                                <col style="width:88px">
+                                <col style="width:88px">
+                                <col style="width:70px">
+                                <col style="width:104px">
+                                <col style="width:72px">
+                                <col style="width:72px">
+                                <col style="width:72px">
+                                <col style="width:72px">
+                                <col style="width:72px">
+                                <col style="width:72px">
+                                <col style="width:88px">
+                                <col style="width:104px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th rowspan="2" colspan="2"></th>
+                                    <th rowspan="2">전체합계</th>
+                                    <th rowspan="2">비중</th>
+                                    <th rowspan="1" colspan="3">수도권1팀</th>
+                                    <th rowspan="2">수도권계</th>
+                                    <th rowspan="1" colspan="6">지역팀</th>
+                                    <th rowspan="2">지역계</th>
+                                    <th rowspan="2">에딩거</th>
+                                </tr>
+                                <tr>
+                                    <th class="gray02 fw_nl">수도권<span class="word">도매1</span></th>
+                                    <th class="gray02 fw_nl">수도권<span class="word">업소1</span></th>
+                                    <th class="gray02">팀계</th>
+                                    <th class="gray02">부산</th>
+                                    <th class="gray02">경남</th>
+                                    <th class="gray02">경북</th>
+                                    <th class="gray02">충정</th>
+                                    <th class="gray02">전라</th>
+                                    <th class="gray02">제주</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="3" class="gray pd18">Social<span class="word">Drinking</span></td>
+                                    <td rowspan="1" class="wd110 center">A등급</td>
+                                    <td>1,776</td>
+                                    <td>30%</td>
+                                    <td>30%</td>
+                                    <td>1</td>
+                                    <td class="gray03">125</td>
+                                    <td>699</td>
+                                    <td>303</td>
+                                    <td>303</td>
+                                    <td>303</td>
+                                    <td>303</td>
+                                    <td>303</td>
+                                    <td>303</td>
+                                    <td class="gray03">1,077</td>
+                                    <td class="center gray03 bl_chk">
+                                        <div class="chk_area chk02 t_chk">
+                                            <input type="checkbox" id="tchk2-1">
+                                            <label for="tchk2-1"></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" class="wd110 center">B등급</td>
+                                    <td>1,776</td>
+                                    <td>20%</td>
+                                    <td>20%</td>
+                                    <td></td>
+                                    <td class="gray03">243</td>
+                                    <td>643</td>
+                                    <td>167</td>
+                                    <td>167</td>
+                                    <td>167</td>
+                                    <td>167</td>
+                                    <td>167</td>
+                                    <td>167</td>
+                                    <td class="gray03">539</td>
+                                    <td class="center gray03 bl_chk">
+                                        <div class="chk_area chk02 t_chk">
+                                            <input type="checkbox" id="tchk2-2" >
+                                            <label for="tchk2-2"></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="blue center">합계</td>
+                                    <td class="blue">2,949</td>
+                                    <td class="blue">50%</td>
+                                    <td class="blue">50%</td>
+                                    <td class="blue">1</td>
+                                    <td class="blue gray03">367</td>
+                                    <td class="blue">1,333</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue">1,616</td>
+                                    <td class="blue center gray03 bl_chk">
+                                        <div class="chk_area chk02 t_chk">
+                                            <input type="checkbox" id="tchk2-3">
+                                            <label for="tchk2-3"></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3" class="gray pd18">Social<span class="word">Drinking</span></td>
+                                    <td rowspan="1" class="wd110 center">A등급</td>
+                                    <td>1,776</td>
+                                    <td>30%</td>
+                                    <td>30%</td>
+                                    <td>1</td>
+                                    <td class="gray03">125</td>
+                                    <td>699</td>
+                                    <td>303</td>
+                                    <td>303</td>
+                                    <td>303</td>
+                                    <td>303</td>
+                                    <td>303</td>
+                                    <td>303</td>
+                                    <td class="gray03">1,077</td>
+                                    <td class="center gray03 bl_chk">
+                                        <div class="chk_area chk02 t_chk">
+                                            <input type="checkbox" id="tchk2-4" >
+                                            <label for="tchk2-4"></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" class="wd110 center">B등급</td>
+                                    <td>1,776</td>
+                                    <td>20%</td>
+                                    <td>20%</td>
+                                    <td></td>
+                                    <td class="gray03">243</td>
+                                    <td>643</td>
+                                    <td>167</td>
+                                    <td>167</td>
+                                    <td>167</td>
+                                    <td>167</td>
+                                    <td>167</td>
+                                    <td>167</td>
+                                    <td class="gray03">539</td>
+                                    <td class="center gray03 bl_chk">
+                                        <div class="chk_area chk02 t_chk">
+                                            <input type="checkbox" id="tchk2-5">
+                                            <label for="tchk2-5"></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="blue center">합계</td>
+                                    <td class="blue">2,949</td>
+                                    <td class="blue">50%</td>
+                                    <td class="blue">50%</td>
+                                    <td class="blue">1</td>
+                                    <td class="blue gray03">367</td>
+                                    <td class="blue">1,333</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue">470</td>
+                                    <td class="blue gray03">1,616</td>
+                                    <td class="center gray03 bl_chk">
+                                        <div class="chk_area chk02 t_chk">
+                                            <input type="checkbox" id="tchk2-6">
+                                            <label for="tchk2-6"></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3" class="gray center total">총계</span></td>
+                                    <td rowspan="1" class="wd110 center pd0">A등급 합계</td>
+                                    <td>3,630</td>
+                                    <td>61%</td>
+                                    <td>61%</td>
+                                    <td>1</td>
+                                    <td class="gray03">229</td>
+                                    <td>1,398</td>
+                                    <td>165</td>
+                                    <td>165</td>
+                                    <td>165</td>
+                                    <td>165</td>
+                                    <td>165</td>
+                                    <td>165</td>
+                                    <td class="gray03">2,232</td>
+                                    <td class="center gray03 bl_chk">
+                                        <div class="chk_area chk02 t_chk">
+                                            <input type="checkbox" id="tchk2-7">
+                                            <label for="tchk2-7"></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" class="wd110 center pd0">B등급 합계</td>
+                                    <td>2,330</td>
+                                    <td>39%</td>
+                                    <td>39%</td>
+                                    <td></td>
+                                    <td class="gray03">532</td>
+                                    <td>1,294</td>
+                                    <td>160</td>
+                                    <td>160</td>
+                                    <td>160</td>
+                                    <td>160</td>
+                                    <td>160</td>
+                                    <td>160</td>
+                                    <td class="gray03">1,006</td>
+                                    <td class="center gray03 bl_chk">
+                                        <div class="chk_area chk02 t_chk">
+                                            <input type="checkbox" id="tchk2-8">
+                                            <label for="tchk2-8"></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="blue center">합계</td>
+                                    <td class="blue">5,930</td>
+                                    <td class="blue">100%</td>
+                                    <td class="blue">100%</td>
+                                    <td class="blue">1</td>
+                                    <td class="blue gray01">761</td>
+                                    <td class="blue">2,692</td>
+                                    <td class="blue">325</td>
+                                    <td class="blue">325</td>
+                                    <td class="blue">325</td>
+                                    <td class="blue">325</td>
+                                    <td class="blue">325</td>
+                                    <td class="blue">325</td>
+                                    <td class="blue gray03">3,228</td>
+                                    <td class="blue gray03 bl_chk">
+                                        <div class="chk_area chk02 t_chk">
+                                            <input type="checkbox" id="tchk2-9">
+                                            <label for="tchk2-9"></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <h1>페이지네이션</h1>
+                <div class="pagination">
+                    <ul>
+                        <li class="arrow_left">
+                            <a href="javascript:void(0)" title="이전"></a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="on">1</a></li>
+                        <li><a href="javascript:void(0)">2</a></li>
+                        <li><a href="javascript:void(0)">3</a></li>
+                        <li><a href="javascript:void(0)">4</a></li>
+                        <li><a href="javascript:void(0)">5</a></li>
+                        <li class="arrow_right">
+                            <a href="javascript:void(0)" title="다음"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+           </div>
+       </section> <!--// contents -->
+    </div> <!--// wrapper -->
+    <script src="assets/js/jquery-1.12.4.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/common.js"></script>
+</body>
+</html>
